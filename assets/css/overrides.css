@@ -1,3 +1,5 @@
+/* Default Amy-Mac Site Styles */
+
 .inline-list .active {
   border-bottom: 2px solid #72A0C1;
 }
@@ -22,4 +24,57 @@ figure {
 figcaption {
   font-size: 0.9em;
   padding-top: 10px;
+}
+
+button.tiny, .button.tiny {
+  padding: 0.625rem 1.05rem 0.6875rem 1.05rem;
+  font-size: 0.8875rem;
+}
+
+/* POSTS */
+
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+  margin-left: 0.2em;
+}
+
+.posts span {
+  color: #aaa;
+  font-size: 90%;
+}
+
+/* standard */
+.post pre, .posts pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post code, .posts code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+
+/* BLOG SPECIFIC STYLES */
+
+.meta {
+  color: #aaa;
 }
