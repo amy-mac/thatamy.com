@@ -1,3 +1,18 @@
-name: Your New Jekyll Site
+title: My Blog
+description:
+disqus_shortname: amy-mac
+
+owner:
+  name: Amy MacKinnon
+  email: amy@amy-mac.com
+
+include: [images]
+
+permalink: /:year/:month/:title/
 markdown: redcarpet
+redcarpet:
+  extensions:
+    - smart
 pygments: true
+
+paginate: 10
