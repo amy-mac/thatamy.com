@@ -56,7 +56,14 @@ First thing we did was go over the long test we had taken the day prior, and we 
 
 Since it was Halloween there were a lot of celebrations throughout the day, and I felt like we really didn't do much that day in class, but I was okay with it, because it's kind of hard to work on Halloween. We all ate a lot of candy, cupcakes, etc and there was a piñata. Not a lot of people dressed up, but we had a costume contest and I ended up winning Runner-Up. My classmate, Luke, won the contest with his Emperor Norton costume and I was okay with losing to that. Here's some pictures of some of the costumes and festivities:
 
-[gallery type="rectangular" link="file" ids="1625,1626,1627,1628,1629,1630,1631"]
+<ul class="clearing-thumbs" data-clearing>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4777.jpg"><img src="{{ site.url }}/images/2013/IMG_4777-th.jpg"></a></li>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4782.jpg"><img src="{{ site.url }}/images/2013/IMG_4782-th.jpg"></a></li>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4787.jpg"><img src="{{ site.url }}/images/2013/IMG_4787-th.jpg"></a></li>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4792.jpg"><img src="{{ site.url }}/images/2013/IMG_4792-th.jpg"></a></li>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4794.jpg"><img src="{{ site.url }}/images/2013/IMG_4794-th.jpg"></a></li>
+  <li><a class="th" href="{{ site.url }}/images/2013/IMG_4796.jpg"><img src="{{ site.url }}/images/2013/IMG_4796-th.jpg"></a></li>
+</ul>
 
 Homework was another "book" report but this time we had two options which made me so much happier because I figured it wouldn't take me as long as it usually does. However when I tried to go to the website for the javascript library I was going to write about, it was completely down, giving a 403 error. I then spent about 2 hours trying to find something else to write about but starting falling asleep at my computer. So I gave up and watched The Thing with my husband to celebrate Halloween.
 
