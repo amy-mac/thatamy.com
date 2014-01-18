@@ -1,14 +1,17 @@
 title: My Blog
-description:
+description: Mostly about tech stuff
 disqus_shortname: amy-mac
+url: http://localhost:4000
 
 owner:
   name: Amy MacKinnon
   email: amy@amy-mac.com
 
-include: [images]
+include: ['images']
+show_drafts: nil
+timezone: America/Los_Angeles
 
-permalink: /:year/:month/:title/
+permalink: /blog/:year/:month/:title/
 markdown: redcarpet
 redcarpet:
   extensions:

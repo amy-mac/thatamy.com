@@ -1,9 +1,38 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article class="hentry post" role="main">
+  <header>
+    <h3 class="entry-title">{{ page.title }}</h3>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+      <span rel="tag">
+        {% for category in page.categories %}
+          {% unless category == page.categories.last %}
+            {{ category }},
+          {% else %}
+            {{ category }}
+          {% endunless %}
+        {% endfor %}
+      </span>
+    </div>
+  </header>
+  <div class="entry-content">
+    {{ content }}
+  </div>
 
-<div class="post">
-{{ content }}
-</div>
+  {% if page.share %}
+  <div class="share-buttons">
+    Share:
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a>
+    <div class="fb-share-button" data-type="button_count"></div>
+    <a href="http://www.tumblr.com/share/link?url={{ site.url }}/{{page.url}}&name={{ page.title }}&description={{ page.description }}" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+    <script type="IN/Share" data-counter="right"></script>
+  </div>
+  {% endif %}
+
+  {% if site.disqus_shortname and page.comments %}
+  <hr />
+    <section id="disqus_thread"></section>
+  {% endif %}
+</article>
