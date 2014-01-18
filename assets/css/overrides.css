@@ -31,6 +31,10 @@ button.tiny, .button.tiny {
   font-size: 0.8875rem;
 }
 
+.clearing-assembled {
+  margin-bottom: 1em;
+}
+
 /* POSTS */
 
 .entry-meta {
@@ -100,4 +104,8 @@ button.tiny, .button.tiny {
 .IN-widget > span {
   padding: 0 10px !important;
   font-size: 5px !important;
+}
+
+.medium-img {
+  width: 50%;
 }
