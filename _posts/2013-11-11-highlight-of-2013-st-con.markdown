@@ -14,12 +14,15 @@ post_format:
 tags:
 - Jonathan Frakes
 - star trek
+share: true
 ---
 
 So THIS happened.
 
+<div class="text-center">
+<a href="http://www.flickr.com/photos/amy_sloan/10804712076/#">
+  <img src="{{site.url}}/images/jonathan_frakes.jpg" title="Picture with Jonathan Frakes" alt="Me with Jonathan Frakes" class="th"></a>
 
-[![Picture with Jonathan Frakes](http://amy-mac.com/blog/wp-content/uploads/2013/11/10804712076_60c92aa5ac_z.jpg)](http://www.flickr.com/photos/amy_sloan/10804712076/#)
+<p>Us with Jonathan Frakes</p>
 
-
-[Us_and_Jonathan-Frakes | Flickr - Photo Sharing!](http://www.flickr.com/photos/amy_sloan/10804712076/#).
+</div>
