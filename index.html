@@ -1,55 +1,71 @@
 ---
 layout: default
-title: Latest Posts
+title: Amy MacKinnon
 ---
-<h3>Recent Blog Posts</h3>
-
-{% for post in paginator.posts %}
-<article class="hentry post">
-  <header>
-    <h4 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h4>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
-    </div>
-  </header>
-  <div class="entry-summary">
-    {{ post.excerpt }}
-    <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
-  </div>
-</article>
-  <hr />
-{% endfor %}
-
-<div class="pagination-centered">
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li class="arrow"><a href="{{ site.url }}">&laquo;</a></li>
-      {% else %}
-        <li class="arrow"><a href="{{ site.url }}/page{{ paginator.previous_page }}">&laquo;</a></li>
-      {% endif %}
-    {% else %}
-      <li class="arrow unavailable"><a href="">&laquo;</a></li>
-    {% endif %}
     
-    {% if paginator.page == 1 %}
-      <li class="current"><a href="">1</a></li>
-    {% else %}
-      <li><a href="{{ site.url }}">1</a></li>
-    {% endif %}
+<h3>About Me</h3>
+<p>Greetings! My name is Amy MacKinnon and I&rsquo;m a junior developer proficient in Ruby, Ruby on Rails, JavaScript, jQuery, and HTML/CSS.</p>
 
-    {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <li class="current"><a href="">{{ count }}</a></li>
-        {% else %}
-          <li><a href="{{ site.url }}/page{{ count }}">{{ count }}</a></li>
-        {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
-      <li class="arrow"><a href="{{ site.url }}/page{{ paginator.next_page }}">&raquo;</a></li>
-    {% else %}
-      <li class="arrow unavailable"><a href="">&raquo;</a></li>
-    {% endif %}
-  </ul>
+<p>I have been building static websites since 1999 but recently went through a 3-month long intensive full-time bootcamp to increase my skills in back-end web development. I&rsquo;m fulfilling a life long dream and enjoying myself every step of the way. If you're interested in this journey, you can read about it on my <a href="blog/index.php" title="Amy MacKinnon's Blog">blog</a>.</p>
 
+<p>Other interests and hobbies include: <a href="http://www.flickr.com/photos/amy_sloan/sets/72157626611783178/">baking pies</a>, live theatre, taking care of my cats, a <a href="http://usslomaprieta.com/">Star Trek Club</a>, and <a href="#" data-reveal-id="interests">many other interests</a> that keep my time quite filled. I sometimes think it&rsquo;s a curse to be so interested in what there is out there in the world. This website highlights only a small part of my adventures.</p>
+
+<!-- Reveal Modals -->
+<div id="interests" class="reveal-modal medium" data-reveal="" style="display: none; opacity: 1; visibility: hidden; top: 10px;">
+  <div class="row">
+    <div class="small-12 medium-6 columns">
+      <h3 class="subheader">Interests and Passions</h3>
+      <ul class="circle">
+        <li>Arthurian Legends</li>
+        <li>Astronomy
+        <li>Crocheting</li>
+        <li>Elephants</li>
+        <li>Knitting</li>
+        <li>Movies
+          <ul>
+            <li>Action</li>
+            <li>Classics</li>
+            <li>Drama</li>
+            <li>Horror</li>
+            <li>Indie</li>
+            <li>Musicals</li>
+          </ul>
+        </li>
+        <li>Playing Piano</li>
+        <li>Reading
+          <ul>
+            <li>Classics</li>
+            <li>Comic Books</li>
+            <li>Fantasy</li>
+            <li>Fiction</li>
+            <li>History</li>
+            <li>Instructional</li>
+            <li>Philosophy</li>
+            <li>Science Fiction</li>
+          </ul>
+        </li>
+        <li>Singing</li>
+        <li>Traveling</li>
+        <li>Video Games</li>
+        <li>Xena: Warrior Princess</li>
+      </ul>
+    </div>
+    <div class="small-12 medium-6 columns">
+      <h3 class="subheader">Things I Want to Learn</h3>
+      <ul class="circle">
+        <li>More programming stuff!
+          <ul>
+            <li>D3.js</li>
+            <li>HTML5 Canvas</li>
+            <li>Meteor.js</li>
+            <li>Node.js</li>
+            <li>Scala</li>
+            <li>Vim</li>
+          </ul>
+        </li>
+        <li>Tango</li>
+    </div>
+  </div>
+
+  <a class="close-reveal-modal">&#215;</a>
 </div>

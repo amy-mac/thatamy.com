@@ -8,7 +8,6 @@ owner:
   email: amy@amy-mac.com
 
 include: ['images']
-exclude:['_drafts']
 show_drafts: nil
 timezone: America/Los_Angeles
 
@@ -19,4 +18,5 @@ redcarpet:
     - smart
 pygments: true
 
+paginate_path: "blog/page:num"
 paginate: 10
