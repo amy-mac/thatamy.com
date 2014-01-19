@@ -17,6 +17,7 @@ tags:
 - Hackbright Academy
 - programming
 - web development
+share: true
 ---
 
 A lot of my closest friends have been following along on my private Twitter account with my career journey this year, but I can finally talk about it a bit more publicly. In February I decided that it was time to start pursuing my passions again and get back to working on my career in tech. My goal since December of 2011 has been to be a professional front-end web developer instead of just a hobbyist front-end web developer. To that end I spent a couple months of my unemployment trying to advance my skills at home independently. HTML and CSS have been in the bag since I was a teenager but I knew I needed to finally learn JavaScript and JQuery and build up a portfolio. Unfortunately, this wasn't progressing as quickly as I had hoped, as the resources I was using to learn weren't very great. In addition, I really needed a source of income, so I was spending a lot of time applying to anything I could find in order to pay the bills. After 5 months of unemployment I eventually got a job as an Office Manager at Viator, Inc and my career goals were put on hold.
@@ -28,7 +29,7 @@ Web Development Bootcamps have been popping up like crazy over the last year. Th
 Once I decided that this was a definite course for me I wanted to start right away, but unfortunately with the wedding and then the honeymoon a month after that, it looked like I wouldn't be able to start any of the programs until August or September. I was bummed I would have to wait but figured I'd continue learning all I could in the meantime and continued preparing and doing research. I also started discovering more bootcamps, like App Academy and Hack Reactor, and I realized in the midst of my obsessive research that I may not even get into any of the programs because they're extremely competitive and receive a lot of applications. I had my heart set on getting in, so this was a hard notion for me. Here are the summaries of my experiences applying for each of the bootcamps over the last 6 months:
 
 
-## Hackbright Academy
+#### Hackbright Academy
 
 
 [Hackbright](http://www.hackbrightacademy.com) was my top choice so I spent weeks working on my application for them. There really wasn't a lot you could put into the application form, but they let you submit a 2 minute video with your application and I recorded it over and over again trying to get it right. 2 days after my wedding I finally submitted my application, 4 ½ months before the session I wanted to do would even start. The application said they would initially respond within 2 weeks, but that's inaccurate. I spent over 2 months chewing my nails, wondering if my application got lost in the ether. 2 months and 2 weeks after submitting my application I finally got an email saying that they would be reviewing applications that week (this was the 2nd week of July). Then 2 days after that I got an email saying that they wanted to do a video-interview with me and to schedule a time.
@@ -38,13 +39,13 @@ I really wish the interview would have been a technical interview instead of a s
 But the next day came and no email, and then another day passed and no email. Finally, 4 days after the video interview, I received a form letter rejection saying that they would not be moving forward with me as a candidate, which made me extremely upset because 1) the form letter didn't even have the correct cohort session that I was applying for and 2) I was told by Liz that I would be moving on to the next step. I felt it was kind of cruel to say that and then not follow through. The email also said that I should try to apply again in 6 months, but after already waiting 6 months to do it in the first place, this was a really big blow. I know they get a lot of applicants and I know they can't possibly accept everyone, even good candidates, but I couldn't help but feel bitter every day for the next week when I saw them tweet, "The deadline for the next cohort is in one week. Apply now!" I ended up muting them in my twitter feed for a couple weeks because I kept getting really depressed about it. So that was the end of trying to get into Hackbright.
 
 
-## Devbootcamp
+#### Devbootcamp
 
 
 Originally, [Devbootcamp](http://www.devbootcamp.com) was going to be my backup if I didn't get into Hackbright Academy, but I had waited too long to submit my application because I was hoping to hear from Hackbright, and also because I didn't think I could come up with the money as fast as Devbootcamp required, if they accepted me while I was waiting to hear from Hackbright. In the end, waiting made the decision for me, because in the 2 months between when I was going to apply and decided to apply, the program filled up for the entire rest of the year. So it no longer was an option. In the end though, I'm not sure that I would have been happy with their particular program, the more I've read about it I don't know if I would have fit into their culture well, and with it only being 9 weeks, etc.
 
 
-## App Academy
+#### App Academy
 
 
 At first I considered [App Academy](http://www.appacademy.io) a worst-case scenario because while the price tag is attractive (you pay nothing until you get a job), they didn't seem to be as good of quality as the others. I was also extremely hesitant about them because their website was horribly out of date. It only had statistics for their first class, from a year prior, and that wasn't even the same kind of class they were teaching now. On top of all that I figured they were probably even harder to get into because of the deferred payment option. But after 2 months of waiting to hear back from Hackbright I thought I should go ahead and apply to App Academy just in case. They emailed me back the very next night (a Sunday) with a link to a timed coding challenge and some recommended prep-work to do before the challenge. They said there was no deadline to complete this. The next night after work I got started on the prep-work, which was a bunch of beginning Ruby exercises. Due to my limited free time after work, I had not yet finished all the prep-work by the end of the week but got an email from them saying, "Why haven't you completed the coding challenge yet?" We had a wedding to go to that weekend so I didn't have a lot of time to finish the prep-work then either.
@@ -54,7 +55,7 @@ On Monday night, the same day I did my video interview with Hackbright, I decide
 The next day I received an email saying that it looks like I don't have much programming experience (No App Academy, I just don't have much Ruby experience, which is what I would be learning in your program). They then gave a list of books and tutorials saying, if you do all this work then we'll review your application and MAYBE let you in. Some of the books cost quite a bit of money, and it was about 50 hours of work, and there was no way I was going to have enough time to complete it all by the deadline, with no guarantee of even getting in at that point, so I didn't pursue it. A week later they updated their program and their website, making the course longer and more expensive. I still had my doubts about them and the increased price tag made me kind of glad I didn't get in anyway.
 
 
-## Hack Reactor
+#### Hack Reactor
 
 
 After being rejected by both Hackbright and App Academy I started to have doubts about whether I was cut out to do back-end development. I had always worked on front-end and maybe I should stick with that. I started exploring my other options and took another look at [Hack Reactor](http://www.hackreactor.com). I had barely looked at them months before because all I saw was their high tuition price. They are definitely the most expensive program by far, but then giving them a fresh look, the more I learned about their program the more I realized that it's the program I should have been working towards all along and I was mad at myself for not trying to get into them sooner. The reason they're so expensive is because the value of their program is so much higher, their program requires more hours of your time, and they achieve top results (100% hiring rate). On top of all this, their focus is on JavaScript. Initially all I had set out to do was master JavaScript, so this focus was much more aligned with my goals. My excitement was renewed and I applied to them the night I got the rejection from Hackbright. I was worried about being able to afford it but thought I'd worry about that later. They also have an extremely competitive application process with many rounds of interviews so I was mad at myself for giving JavaScript a break to work on other languages etc.
@@ -68,7 +69,7 @@ Part of preparing for the technical interview was doing their chatbuilder app, t
 It's unfortunate. I think their program is the best and I would have loved to do it, but after trying to get a personal loan for another program, and having trouble getting a much lesser amount, I know I never would have been able to afford Hack Reactor's tuition. So that's that.
 
 
-## General Assembly
+#### General Assembly
 
 
 Even though I had known about [General Assembly](http://www.generalassemb.ly/san-francisco) for a long time through my meetup groups, I hadn't thought of them as a bootcamp since all the articles and comparison charts that talk about bootcamps never mention General Assembly. I knew they did some online courses and some workshops, but that was about it. After being rejected from App Academy and Hackbright Academy and trying to explore what my other options are, I delved into research on General Assembly trying to figure out if they were a worthwhile option to consider. They started out in New York City, and now have about 8 different bootcamps all over the world. They don't just have one area that they focus on, which worried me a little, but the program that I'd be doing through them is their [Web Development Immersive](https://generalassemb.ly/education/web-development-immersive/san-francisco). Something else that concerned me was that I could find lots of information about the New York City one, but not the San Francisco one and another thing that made me hesitant is that they're the only one that doesn't have a hiring day, or job placement rates, because they're not as job-focused and make no guarantees. After the rejection from Hackbright and App Academy I decided to go ahead and apply, since I couldn't afford to rule out any options.
@@ -90,7 +91,7 @@ The next evening, a Saturday night, I got an email from them saying "Congratulat
 There are certainly other bootcamps that I could have applied to in other cities, but it would have been more expensive to have to pay for housing elsewhere, and I didn't want to leave my new husband for that long. If I hadn't been accepted by anyone, I would have continued learning independently and strove towards a [ThoughtBot Apprenticeship](http://www.apprentice.io/). With any of these programs though, you get out of it what you put in, and I intend to make this experience the best one possible.
 
 
-## What does this mean now?
+#### What does this mean now?
 
 
 It means that I will now be able to dress however I want again, and look however I want again, so be on the lookout for some fun hair colors ;-)

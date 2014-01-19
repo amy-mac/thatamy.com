@@ -14,9 +14,7 @@ tags:
 - quotes
 ---
 
-> At times of change, the learners are the ones who will inherit the world, while the knowers will be beautifully prepared for a world which no longer exists.
+<blockquote>At times of change, the learners are the ones who will inherit the world, while the knowers will be beautifully prepared for a world which no longer exists.
 
-
-
-
-Alistair Smith (via [joshuakaufman](http://also.unraveled.com/))
+<cite>Alistair Smith (via <a href="http://also.unraveled.com/">joshuakaufman</a>)</cite>
+</blockquote>

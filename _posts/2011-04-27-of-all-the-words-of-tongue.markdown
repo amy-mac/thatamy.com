@@ -4,7 +4,7 @@ comments: true
 date: 2011-04-27 04:41:48+00:00
 layout: post
 slug: of-all-the-words-of-tongue
-title: No Content Found
+title: Of All the Words
 wordpress_id: 832
 categories:
 - Inspirational
@@ -14,14 +14,13 @@ post_format:
 tags:
 - poems
 - quotes
+share: true
 ---
 
-> Of all the words
-Of tongue and pen,
-The saddest are these—
-It might have been.
+<blockquote>Of all the words<br/>
+Of tongue and pen,<br/>
+The saddest are these—<br/>
+It might have been.<br/>
 
-
-
-
-John Whittier
+<cite>John Whittier</cite>
+</blockquote>

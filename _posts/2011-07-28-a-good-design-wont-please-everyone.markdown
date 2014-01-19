@@ -4,12 +4,13 @@ comments: true
 date: 2011-07-28 01:40:15+00:00
 layout: post
 slug: a-good-design-wont-please-everyone
-title: '"A good design won''t please everyone."'
+title: '&ldquo;A good design won''t please everyone.&rdquo;'
 wordpress_id: 178
 categories:
 - Design
 tags:
 - design
+share: true
 ---
 
 [Consensus is for Losers](http://www.dkeithrobinson.com/features/entry/consensus_is_for_losers/)

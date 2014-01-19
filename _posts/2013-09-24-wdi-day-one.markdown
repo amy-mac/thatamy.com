@@ -13,6 +13,7 @@ tags:
 - General Assembly
 - programming
 - ruby
+share: true
 ---
 
 Yesterday was the first day of class. I arrived out of breath and sweaty from my exertions of trying not be late on the first day. Normally this would not be an issue but for some reason all three public transit methods from Alameda were backed up today. It's the first time ever that I've seen the parking lot at the ferry terminal in Alameda completely full.
@@ -23,13 +24,13 @@ What I did learn, however, was how to finally fork something on Github and submi
 
 We were assigned homework, and the majority of it was so easy that I had it done before class even ended, but there were 2 problems that ended up taking me 3 hours to do. One of them was the evil prime number function that so many programming languages test you on. I know it's a common test, but I've always had trouble with it. Now of course, the dirt simple way to find all the primes from 1 - 100 in Ruby (which was the question) is to simply do this:
 
+{% highlight ruby %}
+require 'Prime'
     
-    require 'Prime'
-    
-    Prime(100).each do |x|
-      puts x
-    end
-
+Prime(100).each do |x|
+  puts x
+end
+{% endhighlight %}
 
 Done. There you go. But I'm pretty sure they wanted us to do things the manual way and I struggled with it. I know what primes are, of course, but I ended up reading so much documentation on prime numbers and the different algorithms that mathematicians have come up with to find them, and I even looked up examples of what other people do to find prime numbers in Ruby (without the Prime class), but I still couldn't get their examples to work. In the end I ended up doing a really sloppy function that worked but I know is not ideal.
 
@@ -37,37 +38,36 @@ The last problem on the homework was something that one of our instructors said 
 
 **The problem:**
 
-
 > 9. Use a pattern and consolidate the amount of characters into a simplified string.
 
-input pattern = "AAASSSDDDDRDDSASSDDDSSSAD"
-output pattern = 3A3S4DR2DSA2S3D3SAD
+> input pattern = "AAASSSDDDDRDDSASSDDDSSSAD"
+> output pattern = 3A3S4DR2DSA2S3D3SAD
 
-If a character is represented more than once, append the number of occurrences in front of it. If a character is only represented once, just put that letter.
+> If a character is represented more than once, append the number of occurrences in front of it. If a character is only represented once, just put that letter.
 
-Hint: Use a loop to iterate over a string. You can reference characters in a string similar to an array.
-
+> Hint: Use a loop to iterate over a string. You can reference characters in a string similar to an array.
 
 **My solution:**
 
-    
-    input = "AAASSSDDDDRDDSASSDDDSSSAD".split(//)
-    output = ''
-    char = 1
-    counter = 0
-    
-    while counter < input.length
-      input.each do |num|
-        if input[counter] == input[counter+1]
-          char += 1
-        else
-          output << char.to_s
-          output << num
-          char = 1
-        end
-        counter += 1
-      end
-      output = output.delete '1'
+{% highlight ruby linenos %}
+input = "AAASSSDDDDRDDSASSDDDSSSAD".split(//)
+output = ''
+char = 1
+counter = 0
+
+while counter < input.length
+  input.each do |num|
+    if input[counter] == input[counter+1]
+      char += 1
+    else
+      output << char.to_s
+      output << num
+      char = 1
     end
-    
-    puts output
+    counter += 1
+  end
+  output = output.delete '1'
+end
+
+puts output
+{% endhighlight %}

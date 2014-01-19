@@ -14,6 +14,7 @@ tags:
 - programming
 - Rails
 excerpt: <p>The app that I first set out to create, and the one that I presented on Demo Day on Friday are different, because I really had to scale my vision down and just produce the MVP due to lack of time. I'd like to think of what I presented as a working prototype. I plan on making it lots better.</p>
+share: true
 ---
 
 <div class="text-center">

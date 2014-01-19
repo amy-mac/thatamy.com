@@ -14,6 +14,7 @@ tags:
 - algorithms
 - JavaScript
 - programming
+share: true
 ---
 
 This blog post from Nicholas Zakas is the best explanation I've seen online for doing a merge sort in JavaScript. Most of the other posts I looked at give you code, but don't talk you through it. I knew there was a reason I buy his books!

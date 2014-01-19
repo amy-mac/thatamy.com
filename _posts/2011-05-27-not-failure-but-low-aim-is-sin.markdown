@@ -11,6 +11,7 @@ categories:
 - Personal
 tags:
 - articles
+share: true
 ---
 
 [swissmiss | Not Failure, but Low Aim is Sin](http://www.swiss-miss.com/2011/05/not-failure-but-low-aim-is-sin.html).

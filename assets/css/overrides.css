@@ -35,6 +35,10 @@ button.tiny, .button.tiny {
   margin-bottom: 1em;
 }
 
+.image-wrap {
+  padding: 10px;
+}
+
 /* POSTS */
 
 .entry-meta {
@@ -61,12 +65,15 @@ button.tiny, .button.tiny {
   content: " • ";
 }
 
+code {
+  font-weight: normal;
+  font-family: Menlo, Consolas, monospace;
+}
+
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  padding: 1em 1.4em;
   margin-bottom: 0.9em;
-  line-height: 1.35em;
+  overflow-x: auto;
 }
 
 .post code {
@@ -77,19 +84,11 @@ button.tiny, .button.tiny {
 
 .post pre code {
   border: none;
+  background-color: inherit;
+  padding: 0;
+  line-height: 1.25em;
+  font-size: 0.9em;
 }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
-
 
 /* BLOG SPECIFIC STYLES */
 .share-buttons {
@@ -109,3 +108,12 @@ button.tiny, .button.tiny {
 .medium-img {
   width: 50%;
 }
+
+/* MEDIA QUERIES */
+
+/*@media only screen and (min-width: 40.063em) {
+  .post pre code {
+    line-height: 1.35em;
+    font-size: 0.9em;
+  }
+}*/
