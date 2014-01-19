@@ -1,0 +1,105 @@
+---
+author: amy@amy-mac.com
+comments: true
+date: 2014-01-01 23:19:11+00:00
+layout: post
+slug: 2013-year-in-review
+title: 2013 Year in Review
+wordpress_id: 1668
+categories:
+- Personal
+tags:
+- life
+share: true
+---
+
+Usually I give much lengthier year in reviews with picture et cetera, but life is so busy these days I almost didn't do one at all. So this time I'm doing bullet points of some of the highlights of the year:
+
+#### January
+	
+  1. Celebrated New Year's in Colorado
+  2. Saw the Broadway Tour of *Anything Goes*
+  3. Moved into a new apartment
+  4. Went to the Edwardian Ball
+
+#### February
+	
+  1. Saw the *HMS Pinafore* (Star Trek version) with the USS Loma Prieta
+  2. Saw the Broadway Tour of Wicked
+  3. Decided to stop putting my career on hold and jumped back into web development
+  4. Did an iOS Programming workshop
+
+#### March
+	
+  1. Took a one-month Ruby on Rails online class
+  2. Took an online class on JavaScript
+  3. Did an AJAX workshop with Girls Develop It
+
+#### April
+	
+  1. Worked my ass off on a billion things
+  2. Applied to Hackbright Academy
+
+
+#### May
+
+
+  1. Got married
+
+#### June
+	
+  1. Performed in Cantare choir concerts
+  2. Went on Honeymoon to Scotland
+  3. Adopted a new kitten named Mal
+
+#### July
+
+
+  1. Applied to App Academy
+  2. Auditioned for *The Drowsy Chaperone*
+  3. Went to a friend's wedding (Kathy & Kevin)
+  4. Interviewed with Hackbright Academy
+  5. Applied to Hack Reactor
+  6. Interviewed with Hack Reactor
+  7. Applied to General Assembly
+
+#### August
+	
+  1. Went to the Oregon Shakespeare Festival
+  2. Interviewed with General Assembly
+  3. Saw *No Man's Land* with Patrick Stewart, Ian McKellen, Billy Crudup, and Shuler Hensley ^_^
+  4. Got accepted into General Assembly's Web Development Immersive
+  5. Saw the broadway tour of *Priscilla, Queen of the Desert*
+  6. Put in my 3-week notice at Viator
+  7. Saw Jesse perform in *The Lieutenant of Inishmore*
+  8. Went to the Highland Games at the Alameda County Fairgrounds
+
+#### September
+
+  1. Stopped working at Viator
+  2. Dyed hair blue
+  3. Started the General Assembly bootcamp
+
+#### October
+	
+  1. Took Jesse to see *1776* for his birthday
+  2. Did my first project in WDI
+  3. Modeled for X-Prize tricorder contest
+
+#### November
+	
+  1. Went to the SF Star Trek Convention
+  2. Did my second project in WDI
+  3. Tested the alpha version of Cards Against Star Trek
+  4. Went to 3 Thanksgivings in one day: a new record
+
+
+#### December
+	
+  1. Hung out at a private party with Amanda Palmer on my birthday (and Neil & Amanda sang happy birthday to me)
+  2. Went to the Dickens Fair
+  3. Completed my final project for the bootcamp
+  4. Graduated from General Assembly's Web Development Immersive
+  5. Went on a trip to Colorado to visit family/friends
+
+All in all it was probably one of my best year's ever and I'm sure that this upcoming year will top it. Lots of plans and adventures to look forward to.

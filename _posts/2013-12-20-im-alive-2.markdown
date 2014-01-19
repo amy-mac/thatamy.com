@@ -1,0 +1,19 @@
+---
+author: amy@amy-mac.com
+comments: true
+date: 2013-12-20 21:53:45+00:00
+layout: post
+slug: im-alive-2
+title: I'm Alive
+wordpress_id: 1656
+categories:
+- Technology
+tags:
+- General Assembly
+---
+
+There are two reasons that I stopped posting blog entries after the 6th week of WDI. The main reason is that I've simply been too busy. During the 7th week I was so busy on the 2nd project, which was a group project, and after that it just continued to stay busy; every spare minute I was either working on homework, projects, or studying. I even started to feel behind when I let myself go out a couple times. It's no joke, you cannot try to have a social life while doing a bootcamp.
+
+The 2nd, lesser, reason is that I have been in the process of transitioning my blog from a Wordpress format to [Jekyll](http://jekyllrb.com/). I'm not finished doing so yet, but I've had little time to work on it since it's not a priority compared to schoolwork. Since I had already exported my Wordpress posts and set them up with Jekyll I didn't want to keep adding posts to Wordpress. It finally got to the point though that I decided I shouldn't let this transition prevent me from writing.
+
+So yesterday was the last day of class, and it's bittersweet. It's been a long, short 3 months. I've been living in this bubble and have emerged shocked to find out that it's almost Christmas. I thought it was still October? I'm nervous about going back to the real world, but also excited at the adventures and opportunities that lie ahead. I have a lot of catching up to do on blogging and getting back in touch with my friends and relatives. My life is going to continue to be busy for the time being, but there's less pressure now so I can start having my evenings and weekends back. Looking forward to sharing more of my experiences at General Assembly soon.
