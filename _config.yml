@@ -8,6 +8,7 @@ owner:
   email: amy@amy-mac.com
 
 include: ['images']
+exclude: [_drafts]
 show_drafts: nil
 timezone: America/Los_Angeles
 
