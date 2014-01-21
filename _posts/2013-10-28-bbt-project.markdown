@@ -28,7 +28,7 @@ share: true
 The app that I first set out to create, and the one that I presented on Demo Day on Friday are different, because I really had to scale my vision down and just produce the MVP due to lack of time. I'd like to think of what I presented as a working prototype. I plan on making it lots better.
 
 
-#### What I Set Out to Create
+## What I Set Out to Create
 
 
 A quick and easy way for people to find out the best beach to go to for spontaneous beach trips. At a glance they can see a list of beaches nearby, the current drive time based on traffic, weather forecast, etc. It might sound lame, but I came up with the idea because I spent hours trying to come up with something that would be useful that didn't exist already.
@@ -40,7 +40,7 @@ So my vision included finding all the beaches within 50 miles, showing current t
 I thought it'd be easy to just aggregate all this information into one place, but I learned a lot about API's this week and the limitations of them. After 3 or 4 days of having to switch out API's for different ones when one wouldn't be good enough, I realized I was going to have to just produce the MVP.
 
 
-#### First Obstacles
+## First Obstacles
 	
   1. Trying to get the JavaScript variables created by the HTML5 Geolocation function into the controller
     - And then getting them into the controller but not being able to display results on the page
@@ -52,7 +52,7 @@ I thought it'd be easy to just aggregate all this information into one place, bu
   7. Not getting any of my Rspec tests to run; not to PASS, but to RUN. I think somewhere in the set-up process there was a hiccup.
 
 
-#### Solutions
+## Solutions
 	
   1. Transferred the JavaScript variables through an AJAX call to my controller action.
     - And then when that worked, but I could only get everything to display in the rails console and not get the front-end to re-route and show the results, and once it re-routed it no longer had the variables. I abandoned AJAX and settled on having 2 form input fields that the HTML5 Geolocation would automatically enter the information into, and then the user would have to press the "submit" button, which then got everything flowing properly through the proper CRUD actions in the controller. Why didn't I do this to begin with? I was trying to save my user from having to ever see the lat & lon and press a button.
@@ -63,7 +63,7 @@ I thought it'd be easy to just aggregate all this information into one place, bu
   6. I replaced the Yahoo Weather API with the Weather Underground API
   7. I had to build my app without tests and I'm really unhappy about it, as I feel like this is definitely a project that would have benefited heavily from TDD. There wasn't enough time though to trouble shoot why Rspec wasn't working if I wanted to have something functioning by Friday. The venn diagram comes to mind that says you can only have 2 of these three things: good, fast, cheap.
 
-#### Second Obstacles
+## Second Obstacles
 	
   1. Google Directions API only being able to show 10 results at a time
   2. Google Directions API not having CURRENT TRAFFIC, only regular drive time without traffic.
@@ -73,7 +73,7 @@ I thought it'd be easy to just aggregate all this information into one place, bu
     - And then getting to the afternoon before Demo Day and realizing that only one person can use my site at a time and this would be a problem if my classmates tried to use it the next day
 
 
-#### Solutions
+## Solutions
 
 	
   1. For 1, 2, and 3, my solution was to just not use Google Maps. Since my MVP only needed current traffic time, and Google Maps didn't provide that, it didn't make any kind of sense to use their API. So I looked into a couple other options and ended up choosing the MapQuest API. I was an avid user of MapQuest for many years, and only stopped using them when they changed their UI to look more like Google Maps, which in their case, was not in their favor. I'm pleased to say that for what I needed, their API is vastly superior, and I knew no one else would be using it. So I implemented it and it was smooth sailing.
@@ -83,7 +83,7 @@ I thought it'd be easy to just aggregate all this information into one place, bu
     - I realized that the way I had it set up really only allowed for one user at a time. If multiple people were on the site at the same time, it would instantly go over the API calls limit on Weather Underground. I thought long and hard about just removing the current temperature from the results page, but I knew that if I did that it would defeat the purpose of the entire app, because you wouldn't be able to see the most important information at a glance. When I complained about my API limit on Twitter, one of my developer friends commented back, "_Cache all the things!_" I knew that wouldn't completely solve my problem, because it would only work for people who were searching in the exact same area. Even if someone in SF was searching and someone in Oakland was searching, they were going to get different results. However, the more I thought about it, I realized that for Demo Day, all I needed was for my classmates to be able to access at the same time; I wasn't going to mass advertise the link. So I set out the night before Demos to figure out how to cache the results page, and also the show pages, so that I wouldn't have to worry so much about people accessing the site. It took me until 1am to fully implement it, but it worked. Another short-term solution.
 
 
-#### Conclusion
+## Conclusion
 
 The app still has a few bugs, but it's functioning fairly well. I fixed a few before heading to school on Friday, and I've made sure to log all of them in my Trello project to continue to fix when I can. I didn't get to style the pages as much as I wanted, since back-end was more important to get done. I also have a wishlist of items to make the site reach the completeness of my original vision. It ended up that I didn't have to stay up half the night implementing caching, because not a single person accessed my site during the school day, courtesy of Google Analytics. But I suppose it's not a total loss, because I was able to show it to a couple select friends on the weekend to start getting user feedback from people who are not me.
 

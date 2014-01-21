@@ -1,7 +1,7 @@
 title: My Blog
 description: Mostly about tech stuff
 disqus_shortname: amy-mac
-url: http://amy-mac.com
+url: http://localhost:4000
 
 owner:
   name: Amy MacKinnon

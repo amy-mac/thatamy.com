@@ -2,12 +2,12 @@
 layout: default
 title: Latest Posts
 ---
-<h3>Recent Blog Posts</h3>
+<h1>Recent Blog Posts</h1>
 
 {% for post in paginator.posts %}
 <article class="hentry post">
   <header>
-    <h4 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h4>
+    <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
     <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
     </div>

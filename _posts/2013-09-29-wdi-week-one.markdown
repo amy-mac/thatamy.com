@@ -19,7 +19,7 @@ share: true
 As I suspected, blogging every day was impossible; too busy with homework. So here is an overview of the week.
 
 
-#### Tuesday — Arrays, Hashes, JSON
+## Tuesday — Arrays, Hashes, JSON
 
 
 We went over the homework in the morning, and did some more exercises. The focus was on arrays, and I learned a couple new useful methods. I had been using the `.rand()` method to get random items from an array, but it turns out that the array class has its own method called `.sample()` that does the same thing in a much simpler manner. In the afternoon we did a lab project where we had to use Ruby to extract data from a JSON file. We also were told about a great browser extension called [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) for making JSON easier to read in the browser. It's also handy for showing you the path of a line item at the bottom of the screen. I've worked with JSON once before in the chatbuilder app for Hack Reactor, so I had a basic idea of what we were supposed to be doing, as far as accessing the values. I really enjoyed the lab, since working with JSON is one of the things I've been wanting to reinforce in my head. After class, Jack Danger from [Square](https://squareup.com/) came to talk to us about engineering, the work environment, advice, etc. and I found the talk very encouraging and inspiring.
@@ -32,7 +32,7 @@ The first part of the homework that night was mostly easy and I had finished it 
 The second part of the homework was tricky. We were given 4 subway lines that intersect at Union Square and had to be able to take input of where a user was getting on at, and getting off at, and tell them how many stops until their destination. I spent a couple of hours on it and got a fair amount done, but there was one thing tripping me up that I didn't know how to solve so I finally went to bed around midnight. About 5 minutes after going to bed I was laying there explaining in my head to my instructor the issue that I was having and a lightbulb appeared (Yay Rubber Ducky debugging!). I excitedly grabbed my iPad from the nightstand and started jotting down the solution with my stylus in Penultimate, and went back to sleep. The next morning before school I got it working and quite happily submitted my homework before heading out to class.
 
 
-#### Wednesday — Methods/Functions
+## Wednesday — Methods/Functions
 
 
 The morning was kind of slow again, as we went over methods, but the afternoon really started to pick up and provide some challenge. They combined the Camels and the Snakes and split us up into two groups. One group was going to go do review and the other was going to do some more challenging exercises. I chose the latter, of course. We worked through some exercises, such as testing whether a word is a palindrome. I started to solve it by doing looping and comparisons, and then I stopped and went, "Wait! Can't we just compare the string to the string reversed? Such as: `puts true if string1 == string1.reverse`? Alas, about 5 minutes after I had that "Duh!" moment, the instructor notified us that we can't just take the easy route, we have to do things the manual way. Luckily I had only commented out my original start to the solution, so I finished it up and was able to get it working the manual way.
@@ -44,7 +44,7 @@ After doing a couple more exercises like that, the instructors told us that the 
 Our homework assignment was to create a calculator app to run in the command line. I figured it would be pretty easy so I left class right away to head home. The calculator was in fact easy, but it took me over two hours just to type it all out. Once I got it in a fairly good working state I cuddled up to watch an episode of DS9 with my husband. He laughed at me because as soon as it ended I sat back down at the computer to fix some bugs. He went to sleep and I only continued working for about 5 minutes more before deciding to prove to him that I'm not an addict, and went to bed. In the morning, however, I chose to fix the bugs in my [calculator app](https://gist.github.com/amy-mac/3f19e38115c70dca6cfc) instead of using my time to eat breakfast before class. Dedication.
 
 
-#### Thursday — Culture, Github, and Classes
+## Thursday — Culture, Github, and Classes
 
 
 This was the day that tiredness was really starting to set in. The first part of the morning we were asked to get into our small sub-groups of buddies to brainstorm on culture for the classroom, since we hadn't gotten to that the first day. Every group had to go up and add to a list of what we thought was most important for the culture of our class. A lot of it kind of goes without saying, but I think it was a good reminder to people to be respectful, honest, encourage each other, etc.
@@ -64,7 +64,7 @@ So that all took 45 minutes and then I finally got started on the [homework](htt
 I'm starting to learn that I really like helping my classmates, and explaining concepts to them, because it helps me fully understand things better, it helps me learn to communicate more effectively—which is something I definitely have needed to improve—and I have always enjoyed helping other people, so everyone gets something out of it. I'm not the best communicator in the world, and I have often thought that I suck at explaining things, so the more practice I get...the better! ;-)
 
 
-#### Friday — Exceptions
+## Friday — Exceptions
 
 
 I was officially exhausted by this day. I was so drowsy and coffee wasn't really helping. This was also the first day that I had a really frustrating time in class. I think this was directly correlated to my tiredness. After going over the homework, we started learning about Exceptions (error handling). I paid full attention to this, because while I had started to see some stuff about Exceptions in the pre-work, this was not a subject I was fully comfortable with yet. We were told about the ninety-nine percent rule:
@@ -108,7 +108,7 @@ The result of this was that 30 minutes before Happy Hour started, we realized we
 
 We certainly wanted to make the game look nicer and more polished, but the point was that it worked, so we went out to celebrate. We excitedly told our instructor that we solved it, and he said, "Okay, now I want you to do this with it..." and it was something we had already done. We made it bulletproof, yo! All the cheese was gone by the time I joined the party, but breaking records was far more satisfying. I managed to get the last cup of white wine and excitedly socialized with my classmates. While talking to some of the Camels it ended up turning out that another classmate had finished the Tic Tac Toe game before we did, but he was really quiet about it. However, that classmate has a Computer Science degree. So while we may only actually be 2nd best, we're still the first beginners to solve it that quickly, so I'm still proud!
 
-#### Thoughts and Reflections
+## Thoughts and Reflections
 
 After waiting so long to be able to do this, I can't believe that the first week is already over. We have 11 more weeks to go, and it may seem like a long time, but I think they'll go by quickly. By the end of the week I was exhausted, but I was able to easily get out of bed every day because I had something to look forward to, and every morning I woke up immediately wanting to get back on my computer and make my code better.
 	

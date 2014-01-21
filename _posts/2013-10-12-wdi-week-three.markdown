@@ -23,7 +23,7 @@ share: true
 It really does feel like these weeks are just blowing by so quickly. Over the weekend I stumbled across some shortcuts in TextMate that I didn't realize existed and made me love the software even more. The first couple days of the week were very mini-project based, which was nice. I said to my husband Tuesday night, "I've made 3 basic web apps this week...and it's only Tuesday." It's really nice to have things like that to show the progress we're making. First business of the week was that they mixed up the Camels and the Snakes, because when they polled us they found that we wanted more interaction with the other students. So I had to switch into the Camel classroom, which I like a lot better because there's no glare on my glossy computer screen causing me extreme difficulty all day.
 
 
-#### Monday — jQuery Review and AJAX
+## Monday — jQuery Review and AJAX
 
 
 We went over homework and it turned out that I had completely misunderstood one of the requirements, so I tried to fix it while we were going over homework, but didn't get to finish. We played around with jQuery some more and I tried, once again, to get this basic jQuery animation working that I started last May. It frustratingly still wasn't working, and my instructor couldn't figure out why either. I think there are definitely some issues involving event handlers for .keypress, since the same exact thing worked with clicking a button, but not with pressing keys. Way to go Codecademy for teaching things that don't actually work when you're not using _your_ setup.
@@ -35,7 +35,7 @@ When I did the jQuery tutorials on Code School, they taught event delegation and
 Homework that night was somewhat optional. They said if you were still working on your movie app, to finish that, otherwise to do the jQuery tic-tac-toe homework. They already had the html set up for us, and we were just supposed to edit the JavaScript file. They had the outlines of functions, but not the insides, and I couldn't make heads or tails of how they wanted us to use those functions. I thought, "This would be so much easier if they just let us do it from scratch." I really wish I had done it from scratch because I wasted so much time trying to figure it out. After an hour of writing code I realized wasn't going to work, I started over and tried to ignore some of their functions, and that wasn't really going anywhere either. Then I saw the instructors post in hipchat that we didn't have to finish the tic-tac-toe and there would be time to work on it in the morning. So I called it a night.
 
 
-#### Tuesday — JavaScript and Ruby review
+## Tuesday — JavaScript and Ruby review
 
 
 In the morning we were going to be doing review. Those who wanted to review Ruby went to one classroom, and those wanting to review JavaScript went to the other. I went to the JavaScript review, but they didn't really go over anything I wasn't already comfortable with, so I continued working on the Tic-Tac-Toe whenever I had a spare minute, and also worked on my movie app some more.
@@ -61,7 +61,7 @@ After that it was smooth sailing. Here is what mine looked like: [To-Do Project]
 Homework was to just finish working on the projects, so I continued working on the Tic-Tac-Toe and finally got it working with their suggested functions. I extremely regret not writing it from scratch, and in the future will probably follow my instincts instead.
 
 
-#### Wednesday — SQL
+## Wednesday — SQL
 
 
 When they told us Wednesday morning that we were going to learn SQL I think I clapped with glee. It's a subject that I hadn't started to learn yet, but of course am anxious to learn because databases are so important. They explained the basic concepts to us while white-boarding out examples, and then they had us fire up sqlite3 in the command line. We then practiced creating tables, adding entries, editing entries, deleting entries, and of course querying the database. I was surprised at how intuitive and non-scary it was. We practiced a lot and then did a lab where we had to take the guestbook homework from Week 2 and turn it into a RESTful app that saves the entries to a database and then queries the database for the messages. It was pretty great to start having persistent data.
@@ -71,7 +71,7 @@ For homework, we had to create a Sinatra app called "Book Haikus" that uses a sq
 [![Book Haikus webpage]({{site.url}}/images/2013/Voila_Capture44.jpg)]({{site.url}}/images/2013/Voila_Capture44.jpg)
 
 
-#### Thursday — Rails
+## Thursday — Rails
 
 
 I showed off my page when we reviewed homework because no one else volunteered, and one of the instructors really liked it, so that made me feel better about it. She also rather enjoyed my haiku for _The Mists of Avalon_ ^_^
@@ -85,7 +85,7 @@ After that I started working a little on the homework which had just been assign
 *_A lot of people but we'll pretend like they don't exist._
 
 
-#### Friday — More Rails
+## Friday — More Rails
 
 
 The first hour or so of class was a "fireside" chat—complete with virtual fireplace playing on the projector—about failure and success. We sat in a circle and some people talked about their articles, and we all discussed what failure means to us, in regards to the program, and what success would look like. After that, the instructors informed us that there was a very important reason we had this kind of assignment and discussion, and that's because Friday was going to be an all day lab day of having to create a Rails project on our own, and that we might feel overwhelmed with failure.
@@ -99,7 +99,7 @@ After that I really wasn't sure what to do next, with the limitations of the lab
 I didn't find out what the homework was until late that night, and it turns out we have to take our Sinatra movie search app, and turn it into a Rails app, and then add on a reviews feature. I'm kind of excited we get to keep working with the movie search app, since I'm going to need a final one to present to my husband, for his movie searching needs, and it's a 3-day weekend, so hopefully I'll also get to study and review all the things I've been wanting to brush up on.
 
 
-#### Thoughts and Reflections
+## Thoughts and Reflections
 
 
 I was having really intense anxiety on Monday, to the point of hyperventilating and tears. I've been really demanding of myself and it's starting to take its toll. I know I need to learn to relax and stop thinking I can just study and work constantly, with no breaks. We've instituted a new rule at home that I'm not allowed to be on my computer or iPad for at least 30 minutes before bedtime and I'm not allowed to think about code, or read any coding books in that time. This has been a lot easier said than done, but I finally started reading _Sandman_ to try and distract myself.

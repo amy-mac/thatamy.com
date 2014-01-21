@@ -15,44 +15,44 @@ share: true
 
 Usually I give much lengthier year in reviews with picture et cetera, but life is so busy these days I almost didn't do one at all. So this time I'm doing bullet points of some of the highlights of the year:
 
-#### January
+## January
 	
   1. Celebrated New Year's in Colorado
   2. Saw the Broadway Tour of *Anything Goes*
   3. Moved into a new apartment
   4. Went to the Edwardian Ball
 
-#### February
+## February
 	
   1. Saw the *HMS Pinafore* (Star Trek version) with the USS Loma Prieta
   2. Saw the Broadway Tour of Wicked
   3. Decided to stop putting my career on hold and jumped back into web development
   4. Did an iOS Programming workshop
 
-#### March
+## March
 	
   1. Took a one-month Ruby on Rails online class
   2. Took an online class on JavaScript
   3. Did an AJAX workshop with Girls Develop It
 
-#### April
+## April
 	
   1. Worked my ass off on a billion things
   2. Applied to Hackbright Academy
 
 
-#### May
+## May
 
 
   1. Got married
 
-#### June
+## June
 	
   1. Performed in Cantare choir concerts
   2. Went on Honeymoon to Scotland
   3. Adopted a new kitten named Mal
 
-#### July
+## July
 
 
   1. Applied to App Academy
@@ -63,7 +63,7 @@ Usually I give much lengthier year in reviews with picture et cetera, but life i
   6. Interviewed with Hack Reactor
   7. Applied to General Assembly
 
-#### August
+## August
 	
   1. Went to the Oregon Shakespeare Festival
   2. Interviewed with General Assembly
@@ -74,19 +74,19 @@ Usually I give much lengthier year in reviews with picture et cetera, but life i
   7. Saw Jesse perform in *The Lieutenant of Inishmore*
   8. Went to the Highland Games at the Alameda County Fairgrounds
 
-#### September
+## September
 
   1. Stopped working at Viator
   2. Dyed hair blue
   3. Started the General Assembly bootcamp
 
-#### October
+## October
 	
   1. Took Jesse to see *1776* for his birthday
   2. Did my first project in WDI
   3. Modeled for X-Prize tricorder contest
 
-#### November
+## November
 	
   1. Went to the SF Star Trek Convention
   2. Did my second project in WDI
@@ -94,7 +94,7 @@ Usually I give much lengthier year in reviews with picture et cetera, but life i
   4. Went to 3 Thanksgivings in one day: a new record
 
 
-#### December
+## December
 	
   1. Hung out at a private party with Amanda Palmer on my birthday (and Neil & Amanda sang happy birthday to me)
   2. Went to the Dickens Fair

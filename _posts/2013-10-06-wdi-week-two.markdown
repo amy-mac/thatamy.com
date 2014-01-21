@@ -23,7 +23,7 @@ share: true
 
 ![Props Board]({{site.url}}/images/2013/IMG_4605.jpg) I made it onto the props board!
 
-#### Monday
+## Monday
 
 The entire morning was a lecture about the way the internet works. Things like:
 	
@@ -39,7 +39,7 @@ I was familiar with about half of what we went over, but it was a whole lot of i
 For homework we had to use Sinatra to make a guestbook, where you enter the message parameter through the address bar, and one page thanks you for the message, and displays it, while another page shows all the messages. We also started adding in CSS to our workflow on this day, and basically if you let me loose with CSS I will work on it indefinitely. I'm trying to get better about being able to walk away from my art instead of perfecting it and never finishing.
 
 
-#### Tuesday
+## Tuesday
 
 
 We started learning testing, and got an intro to Rspec. We did a lab where we had to calculator scores for bowling, and so we'd write the test first and then write the code that would make our tests pass. Unfortunately I didn't know anything about bowling scores so it was impossible for me to write the code without first understanding bowling. So I spent about 45 minutes just researching that and trying to get a grasp on the way it's scored, and then was able to make one test pass. I didn't get any further than that since I spent the majority of the time trying to figure out bowling. But now I understand what the term "test driven development" means. My initial intro to testing, through Learn Ruby the Hard Way, didn't use Rspec, it used the built in testing, and we wrote the code before we tried to test it. I definitely need to study up more on Rspec though, as we haven't spent a lot of time on it yet.
@@ -56,7 +56,7 @@ We worked with Sinatra some more, and HTML forms, and actually started using Sin
 Simple app, but we have to start somewhere! I also did very minimal CSS on it, because it was Jesse's birthday and I was taking him to see *1776* at A.C.T. so I only had an hour in between school and the show to try to get the homework done. I got a pretty good start on it before I had to leave, and then I was frantically trying to finish when we were on the BART home. By the time we got home I had all the functionality working but hadn't added in the styling yet, so I just threw in some quick CSS when we got home, and went to bed.
 
 
-#### Wednesday
+## Wednesday
 
 
 I was dead after being up so late the night before, and treated myself to coffee shop coffee. One of my instructors actually commented on the minimal CSS styling when I turned in my homework, and I told her that I just didn't have much time to work on it. She said that she just figured that I didn't care as much about front-end because my back-end was really solid and then it was just the little CSS. I laughed and told her that my background is actually in front-end, but I figured in this case, the bare minimum would have to do.
@@ -70,7 +70,7 @@ Homework was to use JavaScript to create a bank page where you could deposit mon
 ![Webpage screenshot]({{site.url}}/images/2013/badtz-maru-bank.jpg)
 
 
-#### Thursday
+## Thursday
 
 
 We were given a lab project to work on the entire day, and it was the largest scale of anything we've had to do so far. We had to combine Sinatra, Ruby, API's, HTML forms, JavaScript, and CSS to make a movie search app. We were using the [omdb API](http://www.omdbapi.com/) because it wasn't going to need authentication. I found it a little limiting but understand why it was used for the lab. I had a couple of frustrations while working on it, one minor, one larger.
@@ -88,7 +88,7 @@ Jesse says he likes the UI better than IMDb, so I'm thinking about finding a bet
 GA bought a bunch of Rubber Ducks and right after lunch let us pick out our own to use for [Rubber Duck Debugging](http://en.wikipedia.org/wiki/Rubber_duck_debugging). I chose one that had blue flowers on it. I have yet to name my duck though. Since we were completely immersed in the lab all day, and since GA was having a social gathering for us after class, they assigned "easy" homework for us of doing a sort-of book report where we had to find a controversial tech article, summarize it, state people's opposing viewpoints, and then state our own opinion. I didn't actually find the assignment easy and would have rather coded. The social gathering after class was fun though. We went across the street to a bar called Zeke's and they stuffed us full of beer while we all chatted about nerdy things. I ducked out before everyone else so that I'd have time to do the homework and because I was dead tired. I got home at 8pm and didn't finish the homework until 10pm and then went to bed. I would have posted the report on the blog if I thought the article that I assessed was worthwhile but I don't feel it needs any attention.
 
 
-#### Friday
+## Friday
 
 
 We went over homework, except of course this time it was just hearing other people's opinions concerning the book reports. I was glad that I wasn't randomly called on, since I had trouble finding a decent article on Hacker News to talk about, and I didn't have any recent articles saved in my Instapaper that would suffice, so I ended up just settling on one, because it was late, and I was tired and wanted to go to bed.
@@ -107,7 +107,7 @@ GA Happy Hour getting started
 When the day was almost over, they split the Snakes and the Camels into two groups again, for those that wanted more JavaScript review, and those who wanted to get a head start on the homework. Even though I didn't yet know what the homework was going to be, I chose the latter group, because I figured it was unlikely to be anything more complicated than the JavaScript that I've learned in the past. The homework problems weren't too hard, but I had trouble concentrating because the room we were in was very loud and disruptive. I still managed to get about 75% of the problems done before Happy Hour started though, so I am excited it's going to be an easy homework weekend. I had a couple glasses of wine and chatted with my classmates for an hour before heading home to a home-cooked meal by my wonderful husband. I plan on spending Saturday reviewing all the topics that we learned this week and doing some extra study. Then I plan on forcing myself to relax for the whole day on Sunday to help my body and mental state.
 
 
-#### Thoughts and Reflections
+## Thoughts and Reflections
 
 
 I was feeling really burned out the last couple days of the week. I think I haven't been getting enough quiet time to myself for re-energizing. Textmate is perpetually open on my computer these days. I still don't like SublimeText, no matter how many times I've tried to use it. I think I'm up to the 5th time this year of making the attempt.
