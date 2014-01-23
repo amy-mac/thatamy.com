@@ -4,15 +4,13 @@ comments: true
 date: 2014-01-22 20:03:00+00:00
 share: true
 layout: post
-title: Jekyll Conversation Complete
+title: Jekyll Conversion Complete
 categories:
 - Technology
 tags:
 - Jekyll
 - Blogging
 ---
-
-##Jekyll Conversion Complete
 
 I finally finished liberating my blog from Wordpress' clutches a few days ago and getting it set up with Jekyll instead. It feels really great to have so much more control over it and to have it also be more lightweight.
 
