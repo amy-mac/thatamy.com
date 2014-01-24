@@ -106,16 +106,7 @@ code {
 /* BLOG SPECIFIC STYLES */
 .share-buttons {
   margin-top: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.twitter-share-button {
-  padding: 0 10px;
-}
-
-.IN-widget > span {
-  padding: 0 10px !important;
-  font-size: 5px !important;
+  float: right;
 }
 
 .medium-img {

@@ -27,12 +27,13 @@ layout: default
 
   {% if page.share %}
   <div class="share-buttons">
-    <p>Share:</p>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a>
-    <div class="fb-share-button" data-type="button_count"></div>
-    <a href="http://www.tumblr.com/share/link?url={{ site.url }}{{page.url}}&name={{ page.title }}" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
-
-    <script type="IN/Share" data-counter="right"></script>
+    <ul class="no-bullet inline-list">
+      <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a></li>
+      <li><div class="fb-share-button" data-type="button_count"></div></li>
+      <li><div class="g-plus" data-action="share" data-annotation="bubble"></div></li>
+      <li><a href="http://www.tumblr.com/share/link?url={{ site.url }}{{page.url}}&name={{ page.title }}" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a></li>
+      <li><script type="IN/Share" data-counter="right"></script></li>
+    </ul>
   </div>
   {% endif %}
 
