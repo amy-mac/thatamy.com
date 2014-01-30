@@ -8,7 +8,6 @@ title: It Seems to Me Now...
 wordpress_id: 763
 categories:
 - Experiences
-- Life the Universe and Everything
 post_format:
 - Quote
 tags:

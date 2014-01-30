@@ -7,7 +7,7 @@ slug: technology
 title: Technology
 wordpress_id: 14
 categories:
-- Life the Universe and Everything
+- Technology
 ---
 
 I've spent most of the last week up to my elbows in fixing computers, setting up computers, and general technology. It should be enough to make someone's head explode. I sometimes think, "What would we do without it?" and yet I am the last generation that can remember what it was like without it. We get so used to habits though I can understand how we get so lazy. The other day I was going to ask a friend to give me his address before I stopped having a printer so I could print out directions from mapquest because how in the world would I find it otherwise and then I thought, "No, you'll do it the old fashioned way and you'll deal with it!" as memories of friends giving extensive directions about "turn left on this street, go 5 blocks..." flooded my brain.

@@ -8,7 +8,6 @@ title: Of All the Words
 wordpress_id: 832
 categories:
 - Inspirational
-- Life the Universe and Everything
 post_format:
 - Quote
 tags:

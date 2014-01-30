@@ -7,7 +7,6 @@ slug: heres-to-the-crazy-ones
 title: RIP Steve Jobs
 wordpress_id: 623
 categories:
-- Life the Universe and Everything
 - Technology
 post_format:
 - Quote

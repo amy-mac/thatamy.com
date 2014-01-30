@@ -13,6 +13,7 @@ show_drafts: nil
 timezone: America/Los_Angeles
 
 permalink: /blog/:year/:month/:title/
+category_dir: "blog/categories"
 markdown: redcarpet
 redcarpet:
   extensions:

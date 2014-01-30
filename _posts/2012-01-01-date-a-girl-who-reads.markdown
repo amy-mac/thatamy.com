@@ -8,7 +8,6 @@ title: Date a Girl Who Reads
 wordpress_id: 546
 categories:
 - Inspirational
-- Life the Universe and Everything
 post_format:
 - Quote
 tags:

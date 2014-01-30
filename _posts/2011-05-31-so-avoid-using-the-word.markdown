@@ -8,7 +8,6 @@ title: So Avoid Using the Word 'very'
 wordpress_id: 776
 categories:
 - Inspirational
-- Life the Universe and Everything
 post_format:
 - Quote
 tags:

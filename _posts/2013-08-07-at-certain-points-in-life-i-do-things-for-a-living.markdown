@@ -8,7 +8,6 @@ title: '&ldquo;...at certain points in life I do things for a living.&rdquo;'
 wordpress_id: 1011
 categories:
 - Dreams &amp; Goals
-- Life the Universe and Everything
 post_format:
 - Video
 tags:

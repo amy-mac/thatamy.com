@@ -7,7 +7,6 @@ slug: geek-vs-nerd
 title: Geek VS. Nerd
 wordpress_id: 536
 categories:
-- Life the Universe and Everything
 post_format:
 - Image
 tags:
