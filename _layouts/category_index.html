@@ -1,12 +1,23 @@
 ---
 layout: default
 ---
+{% assign category = page.category %}
+<h1>Posts in {{ category }}</h1>
 
-<div class="category-archive">
-  <div>
-    <span class="title">Category archive for {{ page.category }}</span>
-  </div>
-  <div>
-    {{ content }}
-  </div>
-</div>
+{% for post in site.categories[category] %}
+  <article class="hentry post">
+    <header>
+      <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <div class="entry-meta">
+        <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+      </div>
+    </header>
+    <div class="entry-summary">
+      {{ post.excerpt }}
+      <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
+    </div>
+  </article>
+  {% unless post == site.categories[category].last %}
+    <hr />
+  {% endunless %}
+{% endfor %}
