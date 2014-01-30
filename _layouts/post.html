@@ -6,13 +6,13 @@ layout: default
     <h1 class="entry-title">{{ page.title }}</h1>
     <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
-      {% if page.categories? %}
+      {% if page.categories %}
       <span rel="tag">
         {% for category in page.categories %}
           {% unless category == page.categories.last %}
-            {{ category }},
+            <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
           {% else %}
-            {{ category }}
+            <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
           {% endunless %}
         {% endfor %}
       </span>
@@ -24,6 +24,7 @@ layout: default
   <div class="entry-content">
     {{ content }}
   </div>
+  <i class="fi-price-tag"></i><span class="entry-meta" rel="tag"> {{ page.tags | array_to_sentence_string }}</span>
 
   {% if page.share %}
   <div class="share-buttons">
