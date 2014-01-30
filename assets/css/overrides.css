@@ -103,14 +103,23 @@ code {
   font-size: 0.9em;
 }
 
-/* BLOG SPECIFIC STYLES */
-.share-buttons {
-  margin-top: 2.5em;
-  float: right;
-}
-
 .medium-img {
   width: 50%;
+}
+/* SHARE BUTTONS */
+
+.share-buttons {
+  margin-top: 2.5em;
+  height: 30px;
+}
+
+div .share-icon {
+  float: left;
+  padding-right: 10px;
+}
+
+.share-icon .twitter-share {
+  padding-right: -10px;
 }
 
 /* MEDIA QUERIES */
