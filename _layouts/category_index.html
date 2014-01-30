@@ -10,6 +10,19 @@ layout: default
       <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
       <div class="entry-meta">
         <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+        {% if post.categories %}
+        <span rel="tag">
+          {% for cat in post.categories %}
+            {% unless cat == post.categories.last %}
+              <a href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>,
+            {% else %}
+              <a href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>
+            {% endunless %}
+          {% endfor %}
+        </span>
+        {% else %}
+        <span></span>
+        {% endif %}
       </div>
     </header>
     <div class="entry-summary">
