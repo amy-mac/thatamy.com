@@ -81,6 +81,7 @@ button.tiny, .button.tiny {
 code {
   font-weight: normal;
   font-family: Menlo, Consolas, monospace;
+  font-size: 0.9em;
 }
 
 .post pre {
@@ -118,8 +119,9 @@ div .share-icon {
   padding-right: 10px;
 }
 
-.share-icon .twitter-share {
-  padding-right: -10px;
+div .share-icon.twitter-share {
+  padding-right: 0;
+  margin-right: -18px;
 }
 
 /* MEDIA QUERIES */
