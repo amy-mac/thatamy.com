@@ -94,6 +94,9 @@
   </footer>
 
     <script src="{{site.url}}/assets/js/jquery.js"></script>
+    {% if page.url == '/theatre.html' %}
+      <script src="{{site.url}}/assets/js/main.js"></script>
+    {% endif %}
     <script src="{{site.url}}/assets/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
