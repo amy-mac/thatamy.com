@@ -4,9 +4,9 @@
 $accent-color: #3C5170;
 $sans-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-body {
-  font-family: 'Quattrocento', serif;
-}
+// body {
+//   font-family: 'Quattrocento', serif;
+// }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans-font;
@@ -15,11 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol {
   font-size: 1.1rem;
+  font-weight: 200;
 }
 
 nav ul {
   font-weight: normal;
   font-family: $sans-font;
+}
+
+aside {
+  padding-top: 1em;
 }
 
 .inline-list .active {
@@ -60,6 +65,10 @@ button.tiny, .button.tiny {
   padding: 10px;
 }
 
+.img-round {
+  border-radius: 20px;
+}
+
 .vcard .fn {
   font-size: inherit;
 }
@@ -71,6 +80,7 @@ button.tiny, .button.tiny {
 // POSTS
 
 .entry-meta {
+  font-size: 95%;
   color: #6f6f6f;
   margin: 0 0 1.25rem 0;
 }
