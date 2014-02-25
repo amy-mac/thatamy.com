@@ -33,7 +33,7 @@ layout: default
       <div class="entry-content">
         {{ content }}
       </div>
-      <i class="fi-price-tag"></i><span class="entry-meta" rel="tag"> {{ page.tags | array_to_sentence_string }}</span>
+      <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> {{ page.tags | array_to_sentence_string }}</span>
 
       {% if page.share %}
       <div class="share-buttons">

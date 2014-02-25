@@ -1,26 +1,49 @@
 // Default Amy-Mac Site Styles
 
-@import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400);
 $accent-color: #3C5170;
-$sans-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$sans-font: 'Open Sans', 'sans-serif';
+$light-gray: #5a5e5f;
+$orange: #D15934;
+$purple: #697299;
+$lt-orange: #FF9C60;
 
-// body {
-//   font-family: 'Quattrocento', serif;
-// }
-
-h1, h2, h3, h4, h5, h6 {
+body {
   font-family: $sans-font;
   font-weight: 300;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: $orange;
 }
 
 p, ul, ol {
   font-size: 1.1rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
-nav ul {
+strong {
+  font-weight: 400;
+}
+
+footer p, footer ul {
+  font-size: 90%;
+  color: $light-gray;
+}
+
+small {
+  font-size: 80%;
+  color: $light-gray;
+}
+
+hr {
+  border-color: $lt-orange;
+}
+
+nav ul, .vcard .summary {
   font-weight: normal;
-  font-family: $sans-font;
 }
 
 aside {
@@ -73,15 +96,11 @@ button.tiny, .button.tiny {
   font-size: inherit;
 }
 
-.vcard .summary {
-  font-weight: normal;
-}
-
 // POSTS
 
 .entry-meta {
   font-size: 95%;
-  color: #6f6f6f;
+  color: $light-gray;
   margin: 0 0 1.25rem 0;
 }
 
