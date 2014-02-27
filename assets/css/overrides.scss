@@ -1,12 +1,40 @@
 // Default Amy-Mac Site Styles
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400);
+
 $accent-color: #3C5170;
 $sans-font: 'Open Sans', 'sans-serif';
 $light-gray: #5a5e5f;
 $orange: #D15934;
 $purple: #697299;
 $lt-orange: #FF9C60;
+$dark-gray: #6f6f6f;
+$light-blue: #258faf;
+$link-hover: #18667E;
+
+// Foundation variables
+$button-med: rem-calc(12);
+$button-tny: 0.625rem 1.05rem 0.6875rem 1.05rem;
+$button-sml: 0.975rem 1.65rem 0.9375rem 1.65rem;
+$button-lrg: rem-calc(16);
+
+// MIXINS
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+      -ms-box-shadow: $shadow;
+       -o-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
 
 body {
   font-family: $sans-font;
@@ -15,6 +43,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-font;
   font-weight: 400;
   color: $orange;
 }
@@ -24,18 +53,24 @@ p, ul, ol {
   font-weight: 300;
 }
 
+a {
+  color: $light-blue;
+}
+
+a:hover {
+  color: $link-hover;
+}
+
 strong {
   font-weight: 400;
 }
 
 footer p, footer ul {
-  font-size: 90%;
-  color: $light-gray;
+  font-size: 94%;
 }
 
 small {
-  font-size: 80%;
-  color: $light-gray;
+  font-size: 90%;
 }
 
 hr {
@@ -50,29 +85,48 @@ aside {
   padding-top: 1em;
 }
 
+
+blockquote {
+  color: inherit;
+  border-left-color: $lt-orange;
+  cite {
+    color: inherit;
+    text-align: right;
+  }
+}
+
 .inline-list .active {
   border-bottom: 2px solid #72A0C1;
 }
 
 .project {
-  -webkit-box-shadow: 1px 1px 5px #8F8888;
-  -moz-box-shadow: 1px 1px 5px #8F8888;
-  box-shadow: 1px 1px 5px #8F8888;
-  margin-left: 0.6em;
+  @include box-shadow(1px 1px 5px #8F8888);
 }
 
 figure {
-  padding: 1% 0.5%;
   max-width: 100%;
 }
 
 figcaption {
-  font-size: 0.9em;
+  @extend small;
   padding-top: 10px;
 }
 
+button, .button {
+  background-color: $light-blue;
+}
+
+button:hover, .button:hover {
+  background-color: $link-hover;
+}
+
+button.small, .button.small {
+  padding: $button-sml;
+  font-size: 0.9125rem;
+}
+
 button.tiny, .button.tiny {
-  padding: 0.625rem 1.05rem 0.6875rem 1.05rem;
+  padding: $button-tny;
   font-size: 0.8875rem;
 }
 
@@ -85,23 +139,39 @@ button.tiny, .button.tiny {
 }
 
 .image-wrap {
-  padding: 10px;
+  margin: 10px;
+}
+
+.left-inline-img {
+  margin-right: 14px;
+  margin-bottom: 4px;
+}
+
+.right-inline-img {
+  margin-left: 14px;
+  margin-bottom: 4px;
 }
 
 .img-round {
-  border-radius: 20px;
+  @include border-radius(20px);
 }
 
 .vcard .fn {
   font-size: inherit;
+  font-weight: 400;
+}
+
+.vevent abbr {
+  font-weight: 300;
 }
 
 // POSTS
 
 .entry-meta {
   font-size: 95%;
-  color: $light-gray;
+  color: $dark-gray;
   margin: 0 0 1.25rem 0;
+  @extend strong;
 }
 
 .entry-meta .vcard {
