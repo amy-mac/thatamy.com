@@ -17,16 +17,31 @@ tags:
 - Rails
 share: true
 ---
-
-[![Arbitr Splash page]({{site.url}}/images/2014/Voila_Capture86.jpg)](http://arbitr.herokuapp.com) Arbitr Splash page
+<figure>
+  <a class="th" href="http://usearbitr.com" title="Arbitr">
+  <img src="{{site.url}}/images/2014/Voila_Capture86.jpg" alt="Arbitr Splash page
+" />
+  </a>
+  <figcaption>Arbitr Splash page</figcaption>
+</figure>
 
 The final project that I created in WDI was an app that had been on my mind for quite a few months because it was an app that my husband, Jesse, had been wanting someone to build since February 2013. He is an assistant debate coach and spends most of his weekends during the school year at Debate Tournaments. There is a particular way that both the judges and the teams track debate rounds and they are referred to as flows. A textbook shows an example of a flow as this:
 
-[![An example of a flow]({{site.url}}/images/2014/Flow_Note_Sample.jpg)]({{site.url}}/images/2014/Flow_Note_Sample.jpg) An example of a flow
+<figure>
+  <a class="th" href="{{site.url}}/images/2014/Flow_Note_Sample.jpg" title="An example of a flow">
+    <img src="{{site.url}}/images/2014/Flow_Note_Sample.jpg" alt="an example of a flow"/>
+  </a>
+  <figcaption>An example of a flow</figcaption>
+</figure>
 
 When in reality they end up looking more like this in the heat of the round:
 
-![A handwritten example flow]({{site.url}}/images/2014/IMG_5063-e1388441427372-1024x789.jpg) A handwritten example flow
+<figure>
+  <a class="th" href="{{site.url}}/images/2014/IMG_5063-e1388441427372-1024x789.jpg">
+    <img src="{{site.url}}/images/2014/IMG_5063-e1388441427372-1024x789.jpg" alt="a handwritten example flow" />
+  </a>
+  <figcaption>A handwritten example flow</figcaption>
+</figure>
 
 So Jesse had looked extensively to find a better tool for flowing a debate round. Some people tried to use Excel, but most people just settled on handwriting everything. Being unable to find any kind of software or tool that was ideal for the situation, Jesse decided that someone needed to build an app for this and he knew that if effective, it would become a popular tool.
 
@@ -42,7 +57,10 @@ I also was initially conflicted on what I was going to use as the back-end. Of c
 
 During the weekend of planning, I hit a huge bump with the data modeling. After discussing with Jesse more of the details surround the Debate events and what kind of interactions the site would need, I spent an entire day just working through how to do the database schema and object models, and at one point worried I would have to abandon the project because it'd be too complicated. After many pages of writing as I worked through it I realized I had been thinking about it the wrong way and came out with something much simpler than I thought it'd be.
 
-[![Data Modeling]({{site.url}}/images/2014/Voila_Capture87.jpg)]({{site.url}}/images/2014/Voila_Capture87.jpg) Data Modeling
+<figure>
+  <img src="{{site.url}}/images/2014/Voila_Capture87.jpg" alt="data modeling" />
+  <figcaption>Data Modeling</figcaption>
+</figure>
 
 ## Project Week 1
 
@@ -116,7 +134,7 @@ applyMarkdown: (value) ->
 
 From there on out it was all bug-fixing and styling and showing it to Jesse when I got home that evening and then doing a ton more styling changes after getting his feedback. There was so much more that I wanted to do with it but the MVP to present to my class the next day was finished. I did my final push to Heroku and refused to let myself pick at it the next morning as we were waiting for presentations to start.
 
-![Round page example]({{site.url}}/images/2014/arbitr_lg.jpg)
+<img class="th" src="{{site.url}}/images/2014/arbitr_lg.jpg" alt="round page example" />
 
 I spent my entire presentation time giving a tour of the app and talking about what it does, as well as explaining all the Debate stuff, and then ran out of time so I didn't get to show any of my code to my classmates. The feedback was overwhelmingly positive, however, and I was surprised by it. I figured that this project would be the one that was least interesting because it's such a niche thing, but it was my only project that people came up to tell me they liked, and I discovered a few people who used to be debaters in high school and/or college. It was a great way to end to the bootcamp.
 
