@@ -2,15 +2,15 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400);
 
-$accent-color: #3C5170;
+$accent-color: #3c5170;
 $sans-font: 'Open Sans', 'sans-serif';
 $light-gray: #5a5e5f;
-$orange: #D15934;
+$orange: #d15934;
 $purple: #697299;
-$lt-orange: #FF9C60;
+$lt-orange: #ff9c60;
 $dark-gray: #6f6f6f;
 $light-blue: #258faf;
-$link-hover: #18667E;
+$link-hover: #18667e;
 
 // Foundation variables
 $button-med: rem-calc(12);
@@ -19,7 +19,6 @@ $button-sml: 0.975rem 1.65rem 0.9375rem 1.65rem;
 $button-lrg: rem-calc(16);
 
 // MIXINS
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -42,13 +41,36 @@ body {
   color: #000;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $sans-font;
   font-weight: 400;
   color: $orange;
 }
 
-p, ul, ol {
+@media only screen and (min-width: 40.063em) {
+
+  h1 {
+    font-size: 2.44444rem;
+  }
+  h2 {
+    font-size: 2.05556rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.27778rem;
+  }
+}
+
+p,
+ul,
+ol {
   font-size: 1.1rem;
   font-weight: 300;
 }
@@ -65,7 +87,8 @@ strong {
   font-weight: 400;
 }
 
-footer p, footer ul {
+footer p,
+footer ul {
   font-size: 94%;
 }
 
@@ -77,7 +100,8 @@ hr {
   border-color: $lt-orange;
 }
 
-nav ul, .vcard .summary {
+nav ul,
+.vcard .summary {
   font-weight: normal;
 }
 
@@ -89,20 +113,12 @@ blockquote {
   color: inherit;
   border-left-color: $lt-orange;
   cite {
-    color: inherit;
     text-align: right;
+    color: inherit;
   }
   p {
     color: inherit;
   }
-}
-
-.inline-list .active {
-  border-bottom: 2px solid #72A0C1;
-}
-
-.project {
-  @include box-shadow(1px 1px 5px #8F8888);
 }
 
 figure {
@@ -110,30 +126,44 @@ figure {
 }
 
 figcaption {
-  @extend small;
   padding-top: 10px;
+  @extend small;
 }
 
-button, .button {
+button,
+.button {
   background-color: $light-blue;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   background-color: $link-hover;
 }
 
-button.small, .button.small {
+button.small,
+.button.small {
   padding: $button-sml;
   font-size: 0.9125rem;
 }
 
-button.tiny, .button.tiny {
+button.tiny,
+.button.tiny {
   padding: $button-tny;
   font-size: 0.8875rem;
 }
 
 span {
   line-height: inherit;
+}
+
+// Underline under active nav links
+.inline-list .active {
+  border-bottom: 2px solid #72A0C1;
+}
+
+// Box shadow for portfolio page images
+.project-img {
+  @include box-shadow(1px 1px 5px #8F8888);
 }
 
 .header {
@@ -174,15 +204,15 @@ span {
 // POSTS
 
 .entry-meta {
-  font-size: 95%;
-  color: $dark-gray;
   margin: 0 0 1.25rem 0;
+  font-size: 95%;
   @extend strong;
+  color: $dark-gray;
 }
 
 .entry-meta .vcard {
-  border: none;
   padding: 0;
+  border: none;
 }
 
 .entry-meta .vcard .fn {
@@ -211,27 +241,28 @@ code {
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
   padding: 0 .2em;
+  border: 1px solid #ddd;
+  background: #eef;
 }
 
 .post pre code {
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.35em;
   border: none;
   background-color: inherit;
-  padding: 0;
-  line-height: 1.35em;
-  font-size: 0.85em;
 }
 
 .medium-img {
   width: 50%;
 }
+
 // SHARE BUTTONS
 
 .share-buttons {
-  margin-top: 2.5em;
   height: 30px;
+  margin-top: 2.5em;
 }
 
 div .share-icon {
@@ -242,22 +273,4 @@ div .share-icon {
 div .share-icon.twitter-share {
   padding-right: 0;
   margin-right: -18px;
-}
-
-// MEDIA QUERIES
-
-@media only screen and (min-width: 40.063em) {
-
-  h1 {
-    font-size: 2.44444rem;
-  }
-  h2 {
-    font-size: 2.05556rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.27778rem;
-  }
 }
