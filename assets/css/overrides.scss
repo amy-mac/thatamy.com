@@ -192,6 +192,12 @@ span {
   @include border-radius(20px);
 }
 
+.vcard {
+  border: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .vcard .fn {
   font-size: inherit;
   font-weight: 400;
