@@ -89,5 +89,8 @@
 
     {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}
     {% if page.share %}{% include share-widget.html %}{% endif %}
+    {% if page.title == "Drag from Desktop Tricks" %}
+      <script src="{{site.url}}/assets/js/dragover.js"></script>
+    {% endif %}
 </body>
 </html>
