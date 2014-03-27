@@ -260,6 +260,10 @@ code {
   background-color: inherit;
 }
 
+.highlight {
+  @include border-radius(5px);
+}
+
 .medium-img {
   width: 50%;
 }
