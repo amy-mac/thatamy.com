@@ -76,7 +76,7 @@ function doSomething(event) {
 
 It's not an ideal solution of course because you'll have a lot of unnecessary events triggering if the user just happens to keep waving their mouse in and out of the browser, but it works and is better than the alternative of your users no longer being able to use the drop zone areas because they're blocked by new CSS items or overlays, etc.
 
-And finally a working example for you&mdash;try dragging a file in from your desktop.
+And finally a working example for you&mdash;try dragging a file in from your desktop and performing the scenarios mentioned above.
 
 <div id="dropzone" style="width:200px;height:200px;border:3px dashed #CCC;margin:0 auto 10px;text-align:center;"><p style="font-size:24px;font-weight:bold;color:red;margin-top:20px;display:none;">Drop Here!</p></div>
 

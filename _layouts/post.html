@@ -7,18 +7,18 @@ layout: default
   <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
   <div class="large-9 medium-9 push-3 columns">
 
-    <article class="hentry post" role="main">
+    <article class="h-entry post" role="main">
       <header>
-        <h1 class="entry-title">{{ page.title }}</h1>
+        <h1 class="p-name">{{ page.title }}</h1>
         <div class="entry-meta">
-          <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time>
           {% if page.categories != 0 %}
           <span rel="tag">
             {% for category in page.categories %}
               {% unless category == page.categories.last %}
-                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
+                <a class="p-category" href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
               {% else %}
-                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
+                <a class="p-category"  href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
               {% endunless %}
             {% endfor %}
           </span>
@@ -30,7 +30,7 @@ layout: default
 
       <hr />
 
-      <div class="entry-content">
+      <div class="e-content">
         {{ content }}
       </div>
 
@@ -68,19 +68,19 @@ layout: default
 
   <div class="large-3 medium-3 pull-9 columns">
     <aside>
-    <p><img class="img-round" src="{{ site.url }}/images/amymac2.jpg" alt="Amy MacKinnon"></p>
+    <p><img class="img-round u-photo" src="{{ site.url }}/images/amymac2.jpg" alt="Amy MacKinnon"></p>
 
     <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
 
     <h3>Everywhere Else</h3>
-    <a href="http://www.behance.net/amy_mac" class="webicon behance">Behance</a>
-    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr">Flickr</a>
-    <a href="https://github.com/amy-mac" class="webicon github" rel="me">Github</a>
-    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin">Linked In</a>
-    <a href="http://www.rdio.com/people/amy_mackinnon/" class="webicon rdio">Rdio</a>
-    <a href="http://amysloan.tumblr.com/" class="webicon tumblr">Tumblr</a>
-    <a href="https://twitter.com/thatamymac" class="webicon twitter" rel="me">Twitter</a>
-    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube">Youtube</a>
+    <a href="http://www.behance.net/amy_mac" class="webicon behance u-url">Behance</a>
+    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
+    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
+    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
+    <a href="http://www.rdio.com/people/amy_mackinnon/" class="webicon rdio u-url">Rdio</a>
+    <a href="http://amysloan.tumblr.com/" class="webicon tumblr u-url">Tumblr</a>
+    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
+    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
     </aside>
   </div>
 
