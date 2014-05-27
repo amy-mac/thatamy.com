@@ -26,7 +26,7 @@ share: true
 </figure>
 
 The final project that I created in WDI was an app that had been on my mind for quite a few months because it was an app that my husband, Jesse, had been wanting someone to build since February 2013. He is an assistant debate coach and spends most of his weekends during the school year at Debate Tournaments. There is a particular way that both the judges and the teams track debate rounds and they are referred to as flows. A textbook shows an example of a flow as this:
-{{excerpt_separator}}
+
 <figure>
   <a class="th" href="{{site.url}}/images/2014/Flow_Note_Sample.jpg" title="An example of a flow">
     <img src="{{site.url}}/images/2014/Flow_Note_Sample.jpg" alt="an example of a flow"/>

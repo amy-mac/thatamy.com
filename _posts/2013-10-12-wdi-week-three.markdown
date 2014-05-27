@@ -20,7 +20,7 @@ tags:
 share: true
 ---
 
-It really does feel like these weeks are just blowing by so quickly. Over the weekend I stumbled across some shortcuts in TextMate that I didn't realize existed and made me love the software even more. The first couple days of the week were very mini-project based, which was nice. I said to my husband Tuesday night, "I've made 3 basic web apps this week...and it's only Tuesday." {{excerpt_separator}}It's really nice to have things like that to show the progress we're making. First business of the week was that they mixed up the Camels and the Snakes, because when they polled us they found that we wanted more interaction with the other students. So I had to switch into the Camel classroom, which I like a lot better because there's no glare on my glossy computer screen causing me extreme difficulty all day.
+It really does feel like these weeks are just blowing by so quickly. Over the weekend I stumbled across some shortcuts in TextMate that I didn't realize existed and made me love the software even more. The first couple days of the week were very mini-project based, which was nice. I said to my husband Tuesday night, "I've made 3 basic web apps this week...and it's only Tuesday." It's really nice to have things like that to show the progress we're making. First business of the week was that they mixed up the Camels and the Snakes, because when they polled us they found that we wanted more interaction with the other students. So I had to switch into the Camel classroom, which I like a lot better because there's no glare on my glossy computer screen causing me extreme difficulty all day.
 
 
 ## Monday — jQuery Review and AJAX

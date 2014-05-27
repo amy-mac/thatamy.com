@@ -19,7 +19,7 @@ After 4 days of working with Ember, these are my thoughts about it.
 ###Input Helpers
 
 They don't let you use all the same options you'd be able to use in a normal input element, like <code>required=true</code>. You can just use a normal input element, but then you don't have the luxury of the value binding to a property in the controller.
-{{excerpt_separator}}
+
 ###Automated magic
 
 Ember makes a lot of things easier on you by doing some "magic" behind the scenes, but when those things don't perform the way they're supposed to, it's hard to tell why. That's the advantage of having to spell everything out yourself--it makes it much easier to fix things when they don't perform the way they ought to.

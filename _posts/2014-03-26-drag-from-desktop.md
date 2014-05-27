@@ -16,7 +16,7 @@ share: true
 
 Lately I've been reading a whole lot about drag and drop while I've tried to implement a 'drag from desktop to upload' feature. While some of these features have been around for a very long time, others are new and therefore finicky.
 
-One of the annoying things about dragging files from the desktop is that there are only 3 events that the browser will recognize for this target: `dragenter`, `dragover`, and `drop`; whereas when you drag items that are already in the browser you also have `dragstart`, `drag`, and `dragend`. {{excerpt_separator}}I read a lot of articles telling you that you **can't** do these things, but I wasn't satisfied with that. I knew there had to be a way to cheat. There are in fact a couple ways that you can fake the drag start and drag end events. Here are the tricks:
+One of the annoying things about dragging files from the desktop is that there are only 3 events that the browser will recognize for this target: `dragenter`, `dragover`, and `drop`; whereas when you drag items that are already in the browser you also have `dragstart`, `drag`, and `dragend`. I read a lot of articles telling you that you **can't** do these things, but I wasn't satisfied with that. I knew there had to be a way to cheat. There are in fact a couple ways that you can fake the drag start and drag end events. Here are the tricks:
 
 ## On Drag Start
 

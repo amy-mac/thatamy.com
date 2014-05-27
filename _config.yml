@@ -20,6 +20,8 @@ redcarpet:
     - smart
 highlighter: pygments
 
+excerpt_separator: "\n\n"
+
 paginate_path: "blog/page:num"
 paginate: 10
 

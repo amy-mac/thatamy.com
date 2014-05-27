@@ -17,7 +17,7 @@ tags:
 ---
 
 I've been promising to write a wrap-up post about General Assembly and have continued to receive requests asking about what my experience was like and if I think it's worth it. Now that it's been almost 3 months since the program ended, I feel I can do a better job of wrapping it all up.
-{{excerpt_separator}}
+
 To start with, if you're someone who hasn't read my Bootcamp Application Journey post, I'll reiterate the point that General Assembly was the very last on my list of preferred bootcamps. I went there because I didn't get accepted into any of my top choices and couldn't afford Hack Reactor (though I likely wouldn't have been accepted to Hack Reactor either). Information was so scarce on General Assembly that I questioned whether I might be better off just staying home to study on my own rather than spend the money, but I figured that I'd at least have the benefit of having the instructors to help me get unstuck when needed or to provide guidance. What also ended up convincing me to attend was their [apprenticeship program](https://generalassemb.ly/apprentice), which I figured was a good worst-case scenario that I'd have no problem getting into.
 
 The conclusion that I came to at the end of the program was that it wasn't worth $11,500; at least, not at the time that I took it. I've been envious of the current cohort at the SF General Assembly because it seems much more like what I was wanting out of my experience and the quality seems higher.
