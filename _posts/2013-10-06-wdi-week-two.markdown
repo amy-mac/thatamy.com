@@ -33,7 +33,7 @@ The entire morning was a lecture about the way the internet works. Things like:
   * SSL/TSL
   * Data Persistence
   * and more!
-
+{{excerpt_separator}}
 I was familiar with about half of what we went over, but it was a whole lot of information to try to absorb and I think my eyes were probably glazing over at points. We then started learning about HTTP methods: Get, Post, Put/Update, Delete. I was familiar with these from working with AJAX and doing the Parse API tutorial on Codecademy, not to mention first encountering these terms with my first rails app. We started to learn how to use Sinatra and put these methods to use. I was excited about finally getting a chance to put some back-end and front-end together. We started out with just a basic calculator, putting in the parameters through the address bar and having the answer appear on the page.
 
 For homework we had to use Sinatra to make a guestbook, where you enter the message parameter through the address bar, and one page thanks you for the message, and displays it, while another page shows all the messages. We also started adding in CSS to our workflow on this day, and basically if you let me loose with CSS I will work on it indefinitely. I'm trying to get better about being able to walk away from my art instead of perfecting it and never finishing.

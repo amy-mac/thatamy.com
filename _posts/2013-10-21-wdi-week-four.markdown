@@ -17,7 +17,7 @@ share: true
 ---
 
 We've started our first projects, so this will be a shorter summary than usual. Also, we only had a 4-day week due to [Bartolomé Day](http://theoatmeal.com/comics/columbus_day), so I spent a good portion of Monday making my homework better and better and trying to study up on stuff.
-
+{{excerpt_separator}}
 ## Tuesday — Field Trip and Wasted Time
 
 We went over the movie search rails app, and I showed mine off. Everyone liked the jQuery plugin I used for the star radio buttons:

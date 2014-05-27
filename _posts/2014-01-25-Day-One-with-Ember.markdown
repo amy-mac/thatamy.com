@@ -12,7 +12,7 @@ tags:
 ---
 
 I recently started giving myself a crash course in [Ember.js](http://emberjs.com "Ember.js") to do a quick example app for a job interview. I was pretty sure I could pick it up quickly since once thing I definitely learned in the bootcamp was how to learn fast and work quickly. This certainly isn't ideal for most real world situations because you want to produce high quality sites and apps which require proper planning, testing, and attention to detail. But it's nice to know what I am capable of doing in a pinch.
-
+{{excerpt_separator}}
 One of the things that is really starting to amaze me is that the more I learn about all these different technologies the less scary everything looks, as a whole. When I look at new languages, they don't look like Greek and I can generally get the gist of what they're doing. It's also the same with JavaScript frameworks, though I'm really only on my 2nd right now. After about 8 hours of working with Ember.js it reminds me so much of Rails with its naming conventions and automated "magic." I can see how Backbone.js gives you so much more liberty, which is nice, but Ember.js makes specific things quicker and easier because of the conventions. An example is when you're looping over a collection in its template, you don't have to specify the variables for what you're looping over because it knows that you're probably going to want to loop over the collection of objects that are associated with that template and controller.
 
 You could write this:

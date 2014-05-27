@@ -18,7 +18,7 @@ What we've "learned" in 6 weeks
 
 We are now half way through the WDI program, which I have mixed feelings about. I definitely have been experiencing a slump and some depression after finishing Project 1.
 
-
+{{excerpt_separator}}
 ## Monday — Refactoring and Rspec refresher
 
 
