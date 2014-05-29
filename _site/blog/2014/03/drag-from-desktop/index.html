@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Drag from Desktop Tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/overrides.css">
+    <script src="http://amy-mac.com/assets/js/vendor/modernizr.js"></script>
+
+  </head>
+    <body>
+      <!-- Header and Nav -->
+
+      <div class="row header">
+        <div class="large-3 columns">
+          <h1><a href="/index.html"><img class="u-logo" src="http://amy-mac.com/images/new-logo.png" data-interchange="[http://amy-mac.com/images/new-logo-rt.png, (retina)]"></a></h1>
+        </div>
+        <div class="large-9 columns">
+          <nav role="navigation">
+            <ul class="inline-list right">
+              <li><a href="/portfolio.html">Projects</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/theatre.html">Theatre</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+
+  <!-- Main Content Section -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-9 medium-9 push-3 columns">
+
+    <article class="h-entry post" role="main">
+      <header>
+        <h1 class="p-name">Drag from Desktop Tricks</h1>
+        <div class="entry-meta">
+          <time class="dt-published" datetime="2014-03-26T14:09:18-07:00">2014 March 26 at 02:09 PM</time>
+          
+          <span rel="tag">
+            
+              
+                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">technology</a>,
+              
+            
+              
+                <a class="p-category"  href="http://amy-mac.com/blog/categories/tutorial/index.html">tutorial</a>
+              
+            
+          </span>
+          
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="e-content">
+        <p>Lately I&rsquo;ve been reading a whole lot about drag and drop while I&rsquo;ve tried to implement a &lsquo;drag from desktop to upload&rsquo; feature. While some of these features have been around for a very long time, others are new and therefore finicky.</p>
+
+<p>One of the annoying things about dragging files from the desktop is that there are only 3 events that the browser will recognize for this target: <code>dragenter</code>, <code>dragover</code>, and <code>drop</code>; whereas when you drag items that are already in the browser you also have <code>dragstart</code>, <code>drag</code>, and <code>dragend</code>. I read a lot of articles telling you that you <strong>can&rsquo;t</strong> do these things, but I wasn&rsquo;t satisfied with that. I knew there had to be a way to cheat. There are in fact a couple ways that you can fake the drag start and drag end events. Here are the tricks:</p>
+
+<h2>On Drag Start</h2>
+
+<p>If there&rsquo;s nothing that you want to happen when an item starts being dragged then you&rsquo;re a lucky person, because you won&rsquo;t care that you can&rsquo;t initiate anything at the beginning of a drag. But what if you want a drop zone to become apparent when an item starts being dragged, or some other kind of notice or action that helps the user? There might be multiple ways to get around this, but the best way I&rsquo;ve found so far is to simply attach an event listener to the <code>body</code> tag for <code>dragover</code> like so:</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">page</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;dragenter&quot;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  
+  <span class="c1">// Whatever action you want performed when the drag starts</span>
+  
+  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>This works well because of course the body covers every last inch of your viewport, so as soon as the dragged item enters the window it&rsquo;ll start picking up that something is being dragged, so you effectively are faking a <code>dragstart</code> event.</p>
+
+<h2>On Drag End</h2>
+
+<p>Here&rsquo;s the tougher one. Most people will find themselves wanting something to happen when the dragging has stopped, even if it&rsquo;s just telling the hover CSS on the drop zone to go away. It&rsquo;s pretty easy to take care of any drag end actions if something has been properly dropped in the drop zone, because then you just tack on all the actions to the <code>drop</code> event. What if they stop mid-drag, however? Say you have the drop zone light up when an item starts being dragged and halfway there they let go of the mouse for whatever reason. Oops, the drop zone is still lit up and could even be preventing further actions. The way I solved this last one is by adding an event listener to the body once again for a drop event.</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">page</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;drop&#39;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  
+  <span class="c1">// Whatever actions you want to stop doing when the drag ends</span>
+
+<span class="p">}</span></code></pre></div>
+
+<p>This is effective for two reasons. One is that up to date browsers will automatically open files that you drop into them and you don&rsquo;t want to have that happen if you&rsquo;re letting users drop things in from the desktop and want to prevent the default behavior if they accidentally miss the drop zone. That&rsquo;s why those <code>preventDefault()</code> functions are so important. You&rsquo;re saying, &ldquo;Hey browser, don&rsquo;t do your thing because I&rsquo;ll take it from here.&rdquo; Then the second reason is to of course cancel any actions that you were performing on drag. This will probably be the same thing you were telling the &lsquo;drop&rsquo; function to stop doing once the item was properly dropped.</p>
+
+<p>Now here&rsquo;s where it got tough. What if instead of prematurely letting go of the item somewhere on the page, they drag it back to the desktop and let go? How do you account for that? I played around with a couple possible solutions, such as listening for the <code>mouseleave</code> event on the body but just like the drag events, the body won&rsquo;t recognize a <code>mouseleave</code> event that takes place when you&rsquo;ve dragged something from outside the browser.</p>
+
+<p>The answer ended up being what takes place after that: the <code>mouseenter</code> event. Once they&rsquo;ve dragged something back to the desktop the mouse has to re-enter the body again if it wants to do anything on the page and it will be without the dragged item, so voila!</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nx">page</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;mouseenter&quot;</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="c1">// Whatever actions you want to stop doing when a drag ends</span>
+  
+<span class="p">}</span></code></pre></div>
+
+<p>It&rsquo;s not an ideal solution of course because you&rsquo;ll have a lot of unnecessary events triggering if the user just happens to keep waving their mouse in and out of the browser, but it works and is better than the alternative of your users no longer being able to use the drop zone areas because they&rsquo;re blocked by new CSS items or overlays, etc.</p>
+
+<p>And finally a working example for you&mdash;try dragging a file in from your desktop and performing the scenarios mentioned above.</p>
+
+<div id="dropzone" style="width:200px;height:200px;border:3px dashed #CCC;margin:0 auto 10px;text-align:center;"><p style="font-size:24px;font-weight:bold;color:red;margin-top:20px;display:none;">Drop Here!</p></div>
+
+<p>I&rsquo;d love to hear any better ideas people have come up with for mimicking the drag start and end events; feel free to comment!</p>
+
+      </div>
+
+      
+        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> JavaScript, Drag and Drop, and Tricks</span>
+      
+
+      
+      <div class="share-buttons">
+        <div class="share-icon twitter-share">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a>
+        </div>
+        <div class="share-icon">
+          <div class="fb-share-button" data-type="button_count" style="vertical-align: none"></div>
+        </div>
+        <div class="share-icon">
+          <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+        </div>
+        <div class="share-icon">
+          <a href="http://www.tumblr.com/share/link?url=http://amy-mac.com/blog/2014/03/drag-from-desktop/&name=Drag from Desktop Tricks" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+        </div>
+        <div class="share-icon">
+          <script type="IN/Share" data-counter="right"></script>
+        </div>
+      </div>
+      
+
+      
+      <hr />
+        <section id="disqus_thread"></section>
+      
+    </article>
+
+  </div>
+
+  <div class="large-3 medium-3 pull-9 columns">
+    <aside>
+    <p><img class="img-round u-photo" src="http://amy-mac.com/images/amymac2.jpg" alt="Amy MacKinnon"></p>
+
+    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
+
+    <h3>Everywhere Else</h3>
+    <a href="http://www.behance.net/amy_mac" class="webicon behance u-url">Behance</a>
+    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
+    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
+    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
+    <a href="http://www.rdio.com/people/amy_mackinnon/" class="webicon rdio u-url">Rdio</a>
+    <a href="http://amysloan.tumblr.com/" class="webicon tumblr u-url">Tumblr</a>
+    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
+    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
+    </aside>
+  </div>
+
+</div>
+
+
+  <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© 2010&ndash;2014 Amy MacKinnon. Powered by
+            <a class="u-url" href="http://jekyllrb.com">Jekyll.</a></p>
+          </div>
+          <div class="large-6 columns">
+            <nav role="navigation">
+              <ul class="inline-list right">
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="theatre.html">Theatre</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://amy-mac.com/assets/js/vendor/jquery.js"></script>
+    
+    <script src="http://amy-mac.com/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18603607-1']);
+  _gaq.push(['_setDomainName', 'amy-mac.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <script type="text/javascript">
+    var disqus_shortname = 'amy-mac';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <!-- Twitter Share Button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Facebook Share Button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=139738486099462";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<script src="http://platform.tumblr.com/v1/share.js"></script>
+<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+    
+      <script src="http://amy-mac.com/assets/js/dragover.js"></script>
+    
+</body>
+</html>

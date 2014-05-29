@@ -1,0 +1,143 @@
+/* Default Amy-Mac Site Styles */
+
+.inline-list .active {
+  border-bottom: 2px solid #72A0C1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+p, ul, ol {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+strong {
+  font-weight: 500;
+}
+
+nav ul {
+  font-weight: normal;
+}
+
+.project {
+  -webkit-box-shadow: 1px 1px 5px #8F8888;
+  -moz-box-shadow: 1px 1px 5px #8F8888;
+  box-shadow: 1px 1px 5px #8F8888;
+  margin-left: 0.6em;
+}
+
+figure {
+  padding: 1% 0.5%;
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 0.9em;
+  padding-top: 10px;
+}
+
+button.tiny, .button.tiny {
+  padding: 0.625rem 1.05rem 0.6875rem 1.05rem;
+  font-size: 0.8875rem;
+}
+
+.clearing-assembled {
+  margin-bottom: 1em;
+}
+
+.image-wrap {
+  padding: 10px;
+}
+
+/* POSTS */
+
+.entry-meta {
+  font-size: 90%;
+  color: #6f6f6f;
+  margin: 0 0 1.25rem 0;
+}
+
+.entry-meta .vcard {
+  border: none;
+  padding: 0;
+}
+
+.entry-meta .vcard .fn {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+.entry-meta .vcard:before {
+  content: " by ";
+}
+
+.entry-meta span[rel=tag]:before {
+  content: " • ";
+}
+
+code {
+  font-weight: normal;
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.post pre {
+  padding: 1em 1.4em;
+  margin-bottom: 0.9em;
+  overflow-x: auto;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  line-height: 1.25em;
+  font-size: 0.9em;
+}
+
+.medium-img {
+  width: 50%;
+}
+/* SHARE BUTTONS */
+
+.share-buttons {
+  margin-top: 2.5em;
+  height: 30px;
+}
+
+div .share-icon {
+  float: left;
+  padding-right: 10px;
+}
+
+div .share-icon.twitter-share {
+  padding-right: 0;
+  margin-right: -18px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 40.063em) {
+
+  h1 {
+    font-size: 2.44444rem;
+  }
+  h2 {
+    font-size: 2.05556rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.27778rem;
+  } 
+}
