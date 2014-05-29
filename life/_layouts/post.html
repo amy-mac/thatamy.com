@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="row">
+
+  <!-- Main Content Section -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-9 medium-9 push-3 columns">
+
+    <article class="hentry post" role="main">
+      <header>
+        <h1 class="entry-title">{{ page.title }}</h1>
+        <div class="entry-meta">
+          <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+          {% if page.categories != 0 %}
+          <span rel="tag">
+            {% for category in page.categories %}
+              {% unless category == page.categories.last %}
+                <a href="{{site.url}}/life/categories/{{category}}/index.html">{{ category }}</a>,
+              {% else %}
+                <a href="{{site.url}}/life/categories/{{category}}/index.html">{{ category }}</a>
+              {% endunless %}
+            {% endfor %}
+          </span>
+          {% else %}
+          <span></span>
+          {% endif %}
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="entry-content">
+        {{ content }}
+      </div>
+
+      {% if page.tags != 0 %}
+        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> {{ page.tags | array_to_sentence_string }}</span>
+      {% endif %}
+
+      {% if page.share %}
+      <div class="share-buttons">
+        <div class="share-icon twitter-share">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a>
+        </div>
+        <div class="share-icon">
+          <div class="fb-share-button" data-type="button_count" style="vertical-align: none"></div>
+        </div>
+        <div class="share-icon">
+          <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+        </div>
+        <div class="share-icon">
+          <a href="http://www.tumblr.com/share/link?url={{ site.url }}{{page.url}}&name={{ page.title }}" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+        </div>
+        <div class="share-icon">
+          <script type="IN/Share" data-counter="right"></script>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.disqus_shortname and page.comments %}
+      <hr />
+        <section id="disqus_thread"></section>
+      {% endif %}
+    </article>
+
+  </div>
+
+  <div class="large-3 medium-3 pull-9 columns">
+    <aside>
+    <p><img class="img-round" src="{{ site.url }}/images/amymac.jpg" alt="Amy MacKinnon" title="Photo by Michael O'Donnell"/></p>
+
+    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
+
+    {% include profile_links.html %}
+
+    </aside>
+  </div>
+
+</div>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{site.url}}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/foundation.min.css" />
+    <link rel="stylesheet" href="{{ site.url }}/images/webicons-master/webicons.css" />
+    <link rel="stylesheet" href="{{ site.url}}/assets/foundation-icons.css" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/overrides.css" />
+    <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
+
+  </head>
+    <body>
+      <!-- Header and Nav -->
+
+      <div class="row header">
+        <div class="large-3 columns">
+          <h1><a href="/index.html"><img src="{{ site.url }}/images/new-logo.png" data-interchange="[{{ site.url }}/images/new-logo-rt.png, (retina)]" /></a></h1>
+        </div>
+        <div class="large-9 columns">
+          <nav role="navigation">
+            <ul class="inline-list right">
+              <li><a href="{{site.url}}/portfolio.html">Projects</a></li>
+              <li><a href="{{site.url}}/resume.html">Resume</a></li>
+              <li><a href="{{site.url}}/theatre.html">Theatre</a></li>
+              <li><a href="{{site.url}}/life">Personal Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      {{ content }}
+
+  <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr />
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© 2010&ndash;2014 Amy MacKinnon. Powered by
+            <a href="http://jekyllrb.com">Jekyll.</a></p>
+          </div>
+          <div class="large-6 columns">
+            <nav role="navigation">
+              <ul class="inline-list right">
+              <li><a href="{{site.url}}/portfolio.html">Projects</a></li>
+              <li><a href="{{site.url}}/resume.html">Resume</a></li>
+              <li><a href="{{site.url}}/theatre.html">Theatre</a></li>
+              <li><a href="{{site.url}}/life">Personal Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{site.url}}/assets/js/vendor/jquery.js"></script>
+    {% if page.url == '/theatre.html' %}
+      <script src="{{site.url}}/assets/js/main.js"></script>
+    {% endif %}
+    <script src="{{site.url}}/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18603607-1']);
+  _gaq.push(['_setDomainName', 'amy-mac.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}
+    {% if page.share %}{% include share-widget.html %}{% endif %}
+</body>
+</html>

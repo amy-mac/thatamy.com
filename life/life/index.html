@@ -1,0 +1,69 @@
+---
+layout: main
+title: Latest Posts
+---
+<h1>Recent Personal Blog Posts</h1>
+
+{% for post in paginator.posts %}
+<article class="hentry post">
+  <header>
+    <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
+      <span rel="tag"><i class="fi-clock"></i> {{ post.content | reading_time }}</span>
+      {% if post.categories %}
+      <span rel="tag">
+        {% for category in post.categories %}
+          {% unless category == post.categories.last %}
+            <a href="/life/categories/{{category}}/index.html">{{ category }}</a>,
+          {% else %}
+            <a href="/life/categories/{{category}}/index.html">{{ category }}</a>
+          {% endunless %}
+        {% endfor %}
+      </span>
+      {% else %}
+      <span></span>
+      {% endif %}
+    </div>
+  </header>
+  <div class="entry-summary">
+    {{ post.excerpt }}
+    <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
+  </div>
+</article>
+  <hr />
+{% endfor %}
+
+<div class="pagination-centered">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li class="arrow"><a href="/life">&laquo;</a></li>
+      {% else %}
+        <li class="arrow"><a href="/life/page{{ paginator.previous_page }}">&laquo;</a></li>
+      {% endif %}
+    {% else %}
+      <li class="arrow unavailable"><a href="">&laquo;</a></li>
+    {% endif %}
+
+    {% if paginator.page == 1 %}
+      <li class="current"><a href="">1</a></li>
+    {% else %}
+      <li><a href="/life">1</a></li>
+    {% endif %}
+
+    {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+          <li class="current"><a href="">{{ count }}</a></li>
+        {% else %}
+          <li><a href="/life/page{{ count }}">{{ count }}</a></li>
+        {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <li class="arrow"><a href="/life/page{{ paginator.next_page }}">&raquo;</a></li>
+    {% else %}
+      <li class="arrow unavailable"><a href="">&raquo;</a></li>
+    {% endif %}
+  </ul>
+
+</div>
