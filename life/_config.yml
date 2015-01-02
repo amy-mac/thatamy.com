@@ -18,7 +18,7 @@ markdown: redcarpet
 redcarpet:
   extensions:
     - smart
-pygments: true
+highlighter: pygments
 
 paginate_path: "/life/page:num"
 paginate: 10
