@@ -120,7 +120,7 @@
 
 <p>After the initial Exceptions lecture, we worked on a <a href="https://gist.github.com/amy-mac/ebaf2e60f0c185e809ce">lab project</a> and this was where I got really frustrated. I spent about 30 minutes just beating my head against a wall, not able to figure out how to get things to work. One instructor tried to help, but I don&rsquo;t think she understood me when I explained what I was having trouble with. I continued to beat my head against a wall, and thought that I just wasn&rsquo;t getting the Exceptions stuff at all. It turned out that the Exceptions stuff wasn&rsquo;t my problem. A simple loop that wasn&rsquo;t performing correctly was my problem. I couldn&rsquo;t figure out why this simple loop wasn&rsquo;t working:</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">allergy_test</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">allergy_test</span>
 <span class="lineno">2</span>   <span class="vi">@stomach</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">food</span><span class="o">|</span>
 <span class="lineno">3</span>     <span class="k">if</span> <span class="n">food</span> <span class="o">==</span> <span class="vi">@allergies</span>
 <span class="lineno">4</span>       <span class="vi">@stomach</span> <span class="o">=</span> <span class="o">[]</span>

@@ -72,11 +72,11 @@
 
 <p>I was nervous about the first day, not knowing what to expect, and worrying that I&rsquo;d be lost. This wasn&rsquo;t the case, and I was actually bored most of the day. I think I would have actually preferred the former, but the instructors have assured us that day 2 is going to move at a much faster pace. I was mainly concerned because everything they went over on Day 1 was easy stuff from the pre-work that everyone already knew, and yet the Camel class was way ahead of us.</p>
 
-<p>What I did learn, however, was how to finally fork something on Github and submit a pull request. I&rsquo;ve been using Github to track my own repos for the last 6 months, but I was a little intimated by trying to interact with other people&rsquo;s repos, so had never tried forking and pulling before. I also learned some useful commands for text editors that I didn&rsquo;t previously know, like using &lsquo;command-/&rsquo; to comment out a bunch of text (or uncomment). I also learned the command to go to the end of the line &lsquo;ctrl-e&rsquo; which is going to make my workflow so much faster. I should have looked up these shortcuts way sooner. Minor things, but at least the day wasn&rsquo;t a complete loss.</p>
+<p>What I did learn, however, was how to finally fork something on Github and submit a pull request. I&rsquo;ve been using Github to track my own repos for the last 6 months, but I was a little intimated by trying to interact with other people&rsquo;s repos, so had never tried forking and pulling before. I also learned some useful commands for text editors that I didn&rsquo;t previously know, like using &lsquo;command-/&rsquo; to comment out a bunch of text (or uncomment). I also learned the command to go to the end of the line &#39;ctrl-e&rsquo; which is going to make my workflow so much faster. I should have looked up these shortcuts way sooner. Minor things, but at least the day wasn&rsquo;t a complete loss.</p>
 
 <p>We were assigned homework, and the majority of it was so easy that I had it done before class even ended, but there were 2 problems that ended up taking me 3 hours to do. One of them was the evil prime number function that so many programming languages test you on. I know it&rsquo;s a common test, but I&rsquo;ve always had trouble with it. Now of course, the dirt simple way to find all the primes from 1 - 100 in Ruby (which was the question) is to simply do this:</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="nb">require</span> <span class="s1">&#39;Prime&#39;</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;Prime&#39;</span>
     
 <span class="no">Prime</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">x</span>
@@ -103,7 +103,7 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
 
 <p><strong>My solution:</strong></p>
 
-<div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="n">input</span> <span class="o">=</span> <span class="s2">&quot;AAASSSDDDDRDDSASSDDDSSSAD&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="n">input</span> <span class="o">=</span> <span class="s2">&quot;AAASSSDDDDRDDSASSDDDSSSAD&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span>
 <span class="lineno"> 2</span> <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="lineno"> 3</span> <span class="n">char</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="lineno"> 4</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
