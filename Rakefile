@@ -5,7 +5,7 @@
 # require 'yaml'
 # require 'tmpdir'
 # require 'jekyll'
-# 
+#
 # desc "Generate blog files"
 # task :generate do
 #   Jekyll::Site.new(Jekyll.configuration({
@@ -13,8 +13,8 @@
 #     "destination" => "_site"
 #   })).process
 # end
-# 
-# 
+#
+#
 # desc "Generate and publish blog to master"
 # task :publish => [:generate] do
 #   Dir.mktmpdir do |tmp|
@@ -87,12 +87,12 @@ namespace :build do
   #     spawn("sass --sourcemap --watch assets/scss/styles.scss:assets/css/styles.css"),
   #     spawn("jekyll serve -w")
   #   ]
-  # 
+  #
   #   trap "INT" do
   #     Process.kill "INT", *pids
   #     exit 1
   #   end
-  # 
+  #
   #   loop do
   #     sleep 1
   #   end
@@ -119,7 +119,7 @@ task :commit do
   status = system("git add -A")
   puts status ? "Success" : "Failed"
   puts "\n## Committing a site build at #{Time.now.utc}"
-  message = "Build site at #{Time.now.utc}"
+  message = "Updated site at #{Time.now.utc}"
   status = system("git commit -m \"#{message}\"")
   puts status ? "Success" : "Failed"
   puts "\n## Pushing commits to remote"
