@@ -119,11 +119,6 @@ div .share-icon {
   padding-right: 10px;
 }
 
-div .share-icon.twitter-share {
-  padding-right: 0;
-  margin-right: -18px;
-}
-
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 40.063em) {
