@@ -29,7 +29,7 @@ Lately I've been seeing quite a few friends post on Facebook their favorite movi
   <li>1994 &mdash; <em>Pulp Fiction</em></li>
   <li>1995 &mdash; <em>Tank Girl</em>
   <ul class="no-bullet">
-    <li>Tied runner-ups: <em>Empire Record</em> &bullet; <em>Hackers</em> &bullet; <em>Mallrats</em></li>
+    <li>Tied runner-ups: <em>Empire Records</em> &bullet; <em>Hackers</em> &bullet; <em>Mallrats</em></li>
   </ul>
   </li>
   <li>1996 &mdash; <em>Scream</em></li>
@@ -53,7 +53,7 @@ Lately I've been seeing quite a few friends post on Facebook their favorite movi
   <li>2010 &mdash; <em>From Paris with Love</em> &bullet; <em>Inception</em></li>
   <li>2011 &mdash; <em>Captain America</em></li>
   <li>2012 &mdash; <em>The Avengers</em></li>
-  <li>2013 &mdash; <em>Pacific Rim</em> &bullet; <em>12 Years a Slave</em></li>
+  <li>2013 &mdash; <em>Snowpiercer</em></li>
   <li>2014 &mdash; <em>X-Men: Days of Future Past</em></li>
   <li>2015 &mdash; <em>Star Wars: The Force Awakens</em></li>
   <li>2016 &mdash; <em>Star Trek Beyond</em></li>
