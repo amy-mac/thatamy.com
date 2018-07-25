@@ -21,20 +21,17 @@ $button-tny: 0.625rem 1.05rem 0.6875rem 1.05rem;
 $button-sml: 0.975rem 1.65rem 0.9375rem 1.65rem;
 $button-lrg: rem-calc(16);
 
+// Foundation overrides
+.sub-nav dd {
+  margin-left: 0.8rem;
+}
+
 // MIXINS
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
           border-radius: $radius;
 }
 
 @mixin box-shadow($shadow) {
-  -webkit-box-shadow: $shadow;
-     -moz-box-shadow: $shadow;
-      -ms-box-shadow: $shadow;
-       -o-box-shadow: $shadow;
           box-shadow: $shadow;
 }
 
