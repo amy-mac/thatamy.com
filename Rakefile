@@ -113,6 +113,13 @@ namespace :build do
   end
 end
 
+desc "Copy life blog"
+task :copy_life do
+  puts "\n## Copying life directory to new _site directory"
+  status = system("cp -R life/_site/life _site/")
+  puts status ? "Success" :"Failed"
+end
+
 desc "Commit _site/"
 task :commit do
   puts "\n## Staging modified files"
@@ -147,5 +154,5 @@ task :deploy do
 end
 
 desc "Commit and deploy _site/"
-task :commit_deploy => [:commit, :deploy] do
+task :commit_deploy => [:copy_life, :commit, :deploy] do
 end
