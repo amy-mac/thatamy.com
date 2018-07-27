@@ -40,9 +40,12 @@ $button-lrg: rem-calc(16);
   display: inline-block;
   margin: 0;
   padding: 0.625rem 0.75rem 0.625rem 0;
-  li {
+  li & {
     margin: 0;
     display: block; 
+  }
+  > li {
+    margin: 0;
   }
   .p-name {
     font-weight: 400;

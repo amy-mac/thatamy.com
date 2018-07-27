@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>A Sort of Love Letter to HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/overrides.css">
+    <script src="http://amy-mac.com/assets/js/vendor/modernizr.js"></script>
+
+  </head>
+    <body>
+      <!-- Header and Nav -->
+
+      <div class="row header">
+        <div class="large-3 columns">
+          <h1><a href="/index.html"><img class="u-logo" src="http://amy-mac.com/images/new-logo.png" data-interchange="[http://amy-mac.com/images/new-logo-rt.png, (retina)]"></a></h1>
+        </div>
+        <div class="large-9 columns">
+          <nav role="navigation">
+            <ul class="inline-list right">
+              <li><a href="/portfolio.html">Projects</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/theatre.html">Theatre</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+
+  <!-- Main Content Section -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-9 medium-9 push-3 columns">
+
+    <article class="h-entry post" role="main">
+      <header>
+        <h1 class="p-name">A Sort of Love Letter to HTML</h1>
+        <div class="entry-meta">
+          <time class="dt-published" datetime="2018-01-01T09:00:00-08:00">2018 January 01 at 09:00 AM</time>
+          
+          <span rel="tag">
+            
+              
+                <a class="p-category"  href="http://amy-mac.com/blog/categories/technology/index.html">technology</a>
+              
+            
+          </span>
+          
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="e-content">
+        <p><img src="https://imgs.xkcd.com/comics/tags.png" alt="XKCD Comic" title="&lt;A&gt;: Like &lt;/a&gt;this.&amp;nbsp;"></p>
+
+<p>I’ve been studying HTML since 1999, and like everything else it has grown and advanced over time, and I’m still learning new things you can do with it all the time. Unfortunately it tends to be one of the under-appreciated parts of web development, especially for those coming from a background of backend development. I want to explain some of the major points about why it is worth all developers time to fully understand it in order to have a more effective front-end.</p>
+
+<h2>Performance</h2>
+
+<p>We can all agree that we want our websites to be fast, right? One of the ways you can do that is by simply reducing the amount of DOM nodes on a page, or in other words, using less HTML elements. But wait, didn’t I just say, “Yay! HTML is the best! HTML for life!” Truth, but less is more. You want to use HTML <em>effectively</em>, and just like we don’t want a bunch of messy spaghetti JavaScript around, we need to respect the structure of the page and be strident about using the best tool for the job as you build the foundation of each page.</p>
+
+<p>Here’s why:</p>
+
+<ul>
+<li>The more DOM nodes you have, the longer it takes to download that page from the server. HTML usually isn’t responsible for the major chunk of page load time, that award tends to go to images and scripts, but every little bit counts!</li>
+<li>CSS has to parse the entire DOM to figure out where it needs to apply the styles, and of course CSS performance in itself is a huge topic we won’t get into. The point is that the less unnecessary HTML elements on the page, the less work the stylesheets have to do, which results in better performance.</li>
+<li>Likewise, when you are querying the DOM in JavaScript or jQuery, the more DOM nodes you have, the harder it has to work to find the element you want. This is why developers tend to save the queried element into a variable when they&rsquo;re working with it, because it takes precious milliseconds to query it again and again. But why not make that initial search as fast as possible as well?</li>
+</ul>
+
+<p>Every time I am working heavily on the HTML of a particular page for the first time, the first thing I&rsquo;ll do is go through and rip out all the superfluous elements. I clean house, so to speak. So now you&rsquo;re probably asking, &ldquo;What are all these superfluous elements you keep talking about?&rdquo; Basically, I&rsquo;m talking about any element that does not need to be there for the look of the webpage to remain the same. The biggest offenders are pretty easy to spot.</p>
+
+<p>Here&rsquo;s what to keep an eye out for:</p>
+
+<h3><code>&lt;div&gt;</code>&rsquo;s and <code>&lt;span&gt;</code>&rsquo;s that have no classes, IDs, or attributes</h3>
+
+<p>There might be a good reason that you have a <code>&lt;div&gt;</code> as a container for a collection of elements because of its inherent block properties, or maybe you have the styling on the parent element that targets all of its children, but more often than not if I see a bunch of plain <code>&lt;div&gt;</code>&rsquo;s being nested, they are serving absolutely no purpose whatsoever. Along the same lines, those plain <code>&lt;span&gt;</code>s are usually a red flag. The entire purpose of a <code>&lt;span&gt;</code> is to be able to target something small that you want to style differently than everything else around it. </p>
+
+<p>Like this <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">span page from MDN</a> says, &ldquo;<em>It should be used only when no other semantic element is appropriate</em>,&rdquo; and if you look at that page, you&rsquo;ll see that both examples show it being added unnecessarily. The first, because it is unstyled and does absolutely nothing. The second example is unnecessary because the background-color can be put on the <code>&lt;li&gt;</code> element. A much better example of a proper use case is:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;blueText&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span> is my favorite color<span class="nt">&lt;/p&gt;</span> 
+</code></pre></div>
+<p>Where there would be a class that makes that one word Blue, and the rest of the text in the paragraph is a different color.</p>
+
+<p>Another thing to look out for is multiple <code>&lt;br/&gt;</code> tags in a row. This is usually a sign that the element correct element.There are other elements that might be hanging out for no reason, too, but I&rsquo;m focusing on these because they&rsquo;re the two biggest offenders that I have come across.</p>
+
+<h3>Empty Elements</h3>
+
+<p>I tend to spend a lot of time in the browser&rsquo;s inspector, and sometimes I&rsquo;ll see multiple elements that contain nothing. Not elements like the ones in the previous section, but elements that look like they should actually be doing something, because they have IDs, classes, and/or attributes.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;importantThing blueVelvet&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<p>So I immediately wonder why it&rsquo;s there and go look up the code, and it&rsquo;s almost always the result of some conditional.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;importantThing blueVelvet&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="sx">% if </span><span class="n">user</span><span class="o">.</span><span class="n">city</span> <span class="sx">%&gt;</span>
+<span class="sx">    &lt;%= user.city %&gt;</span>
+  <span class="o">&lt;</span><span class="sx">% end %&gt;</span>
+<span class="sx">&lt;/div&gt;</span>
+</code></pre></div>
+<p>Or what I tend to see in React code is that there won&rsquo;t even be the conditional, but it&rsquo;ll have a variable value there that happens to be blank, so you see nothing on the page, but these nodes still are clogging up the DOM for no reason. Now as with anything, there are perfectly good use cases for having placeholder elements in the DOM, like if you know you&rsquo;re going to be loading something there dynamically, for example. But if that&rsquo;s not the case then I encourage you to place the HTML elements <strong>within</strong> the conditional and if there is no conditional, add one!</p>
+
+<h3>Using the right tool for the job</h3>
+
+<p>Sometimes you can reduce the amount of nodes by simply using the proper HTML element, which is why it&rsquo;s important to be familiar with them and what they do. Every HTML element has inherent properties and semantic value: there are block level elements, inline elements, elements that have more meaning than others (semantics). The elements behave in different ways and if you aren&rsquo;t using them for what they were meant for, you might have to have extra elements, and you might have to add more styling than would have been necessary. A really extreme example would be putting a <code>&lt;div&gt;</code> on a page with some text that you want to click on in order to visit another page by adding an <code>onClick</code> handler to that <code>&lt;div&gt;</code> and then making an AJAX call or calling <code>window.location(&quot;/link.html&quot;)</code>. You&rsquo;re probably not going to do that right? Why go to all that work, when you can simply use a normal <code>&lt;a&gt;</code> tag for your link that has all that functionality built into it?</p>
+
+<p>Some less extreme, but common examples are cases like the multiple <code>&lt;br/&gt;</code> tags I mentioned above. If you are trying to put extra space between two blocks of text, then you probably aren&rsquo;t using paragraph tags and should be. If you are separating out chunks of text within a single paragraph tag, then you aren&rsquo;t using enough paragraph tags. Paragraph tags are block level elements that inherently have spacing above and below them.</p>
+
+<p>Another example would be changing a <code>&lt;span&gt;</code> through CSS to be a block-level element instead of just using a <code>&lt;div&gt;</code>, or adding a bunch of CSS/JS to make a <code>&lt;div&gt;</code> act like a button instead of just using the <code>&lt;button&gt;</code> tag. You get a lot of functionality for free when you use the proper element. Buttons are inherently tabbable, they can use the <code>disabled</code> attribute, and they also have many special HTML5 attributes that can do lots of things.</p>
+
+<p>In general, I encourage you to explore all that different attributes that can be used on a particular element, because that&rsquo;s how you learn just how powerful HTML can be, which brings me to the next special mention: HTML5.</p>
+
+<h4>You might not need CSS/JavaScript</h4>
+
+<p>You&rsquo;ve probably seen <a href="http://youmightnotneedjquery.com/">&ldquo;You Might Not Need jQuery&rdquo;</a> and <a href="http://youmightnotneedjs.com/">&ldquo;You Might Not Need JS&rdquo;</a>, but I&rsquo;m here to tell you that <em>you might not need anything but HTML</em>. If you&rsquo;re an old school developer, you might not be as familiar with all the fantastic things you can do with plain old HTML elements, and I&rsquo;m always surprised that HTML5 isn&rsquo;t used more being that it&rsquo;s pretty old now. One of the areas it really shines is with forms.</p>
+
+<p>You have an input field and you only want the user to be able to enter numbers, so you have a backend validation to ensure that the value is numeric when it hits the server. Backend validations are important; they are the last line of defense before it hits the database, but why waste that time traveling all the way to the server initially? So you decide to implement some client-side validations to catch it without making a server call, and that&rsquo;s pretty easy to do using <code>isNaN(value)</code> or <code>$.isNumeric(value)</code>, but if you&rsquo;re doing that, then you&rsquo;re working way too hard. All you have to do is tell your field what type it should be: <code>&lt;input type=&quot;number&quot;&gt;</code> and it won&rsquo;t even <strong>allow</strong> the user to enter anything but numbers. &ldquo;But what if I want to make sure they only enter positive numbers? Or limit it?&rdquo; you might ask. You still don&rsquo;t need JS. Other attributes you can use on that field are <code>min</code> and <code>max</code>.</p>
+
+<p>This is just one example, but there are many other special input types that can be used in forms that almost completely eliminate the need to use JavaScript for validations or to restrict input. Some of them even do fancy things that previously developers would have used a special plugin for. You want the user to input a date and want them to be able to choose from a pop-up calendar? <code>&lt;input type=&quot;date&quot;&gt;</code> will do this in every browser but Safari and Internet Explorer (sadly it falls back to a normal text input field), so plugins aren&rsquo;t completely obsolete in that case, but it can fit a lot of use cases. Another fun one is <code>&lt;input type=&quot;color&quot;&gt;</code> for letting users pick a color from a pop-up palette. I encourage you to explore all the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">different input types and their attributes</a>.</p>
+
+<h2>Accessibility (A11y)</h2>
+
+<p>Another very important reason to understand HTML and its proper uses? Accessibility is important. I won&rsquo;t elaborate all the reasons why because there are <a href="https://www.google.com/search?ei=beFKWozBNcj10wLhqarADw&amp;q=why+web+accessibility+is+important&amp;oq=why+web+accessibility+is+important&amp;gs_l=psy-ab.3..0j0i8i30k1l2.17319.28996.0.29228.25.24.1.0.0.0.148.2417.14j10.24.0....0...1c.1.64.psy-ab..1.24.2315...0i22i30k1j0i67k1j0i22i10i30k1j33i160k1j0i7i30k1j0i8i7i30k1.0.2c5tAmYU_zI">countless articles</a> and books that will do that much better, but I will sum it up by saying that your website being accessible <strong>enhances the user experience for everyone</strong>. I&rsquo;m also not going to talk about all the techniques to make your site accessible because that&rsquo;s a huge topic all its own. What I want to focus on, in the spirit of this article, is how using proper HTML elements (the right tool for the job, again) will already make your webpage much more accessible than it would be otherwise.</p>
+
+<h3><a href="https://www.thoughtco.com/why-use-semantic-html-3468271">Semantic HTML</a></h3>
+
+<p>I suppose having also studied print design and typography, that my love of clean layouts and meaningful structure has also carried over to web development. So I was pretty excited about the increase of semantic tags when HTML5 came around. Providing more meaning to the elements not only helps accessibility but is an all-around win, in my opinion. Long gone are the days where <code>&lt;div&gt;</code>s ruled the lands. Now we have <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and so on. Even before HTML5 though, there were a large amount of tags that weren&rsquo;t being used when they should be.</p>
+
+<p>Let&rsquo;s take tables for example. Tables no longer rule the web either, but they still have a good purposes and lots of associated tags that go with them. Yet somehow I&rsquo;ll see table after table only make use of <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, and <code>td</code>, oftentimes with the first table row trying to act as headers. If a table has headers, it should at the very least be using <code>&lt;th&gt;</code> for the header cells, but ideally using <code>&lt;thead&gt;</code> as well. The browser will treat these differently than just another table row, and semantically it means something.</p>
+
+<p>I still see <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> used more often than <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code>, probably because old habits die hard. The former still have uses, but the latter should always be used when you&rsquo;re trying to place actual emphasis on something; not for styling reasons, but because of the meaning it conveys.</p>
+
+<h3>How proper HTML helps keyboard accessibility</h3>
+
+<p>All sites should be fully accessible by keyboard, and there are certain keys that users expect to be able to use to do this, because it&rsquo;s the standard. Most people know they can tab through form elements and tend to do it without thinking about it. This is another case where you want to use the right tool for the job, because the exact kinds of things on the page that the user would want to navigate to are tabbable by default, without you having to do anything. This is why structure is important, and this is why the right element is important. Links, buttons, and input fields all have that functionality built in. This is why you don&rsquo;t want to use a <code>&lt;div&gt;</code> in place of a <code>&lt;button&gt;</code>, or a link that doesn&rsquo;t actually use an <code>&lt;a&gt;</code> tag. It is also why the order of elements matter, because tabbing follows DOM structure, and not the visual structure on the page. So if you&rsquo;re floating <code>&lt;button&gt;</code>s and they appear in a different order on the page because of it, that&rsquo;s going to confuse the user when the element they expect to be selected does not actually get selected.</p>
+
+<p>Sometimes that&rsquo;s not going to cut it. You might have a link menu hidden as a dropdown, and then you&rsquo;re going to have to make that parent element open and close when tabbed to, but by being mindful of using the right elements for the job, you&rsquo;re still halfway there.</p>
+
+<p>Links also accept the &ldquo;Enter&rdquo; key by default. So if you are focused on a link and hit enter, it will go to that link. In forms, if you are focused on any input field within a form and hit enter, unless there is underlying code telling it to not behave like normal (<a href="https://www.tjvantoll.com/2013/01/01/enter-should-submit-forms-stop-messing-with-that/">here&rsquo;s a nice article about why you should rarely suppress this</a>), it will automatically submit the form.</p>
+
+<h3>How proper HTML helps screen-readers</h3>
+
+<p>There are a large amount of people in the world who have visibility issues, so they make use of screen-readers, and there is no feature that you as a developer turn on for this to work. A screenreader can read what&rsquo;s on any website, but how much of that is coherent <em>does</em> depend on what you as a developer have put there. This is why the aforementioned semantics are important, but there are also some basic HTML attributes that aid screen-readers. One that most people know about is the <code>alt</code> attribute on images (alternative text), and yet it is so neglected. It&rsquo;s often left blank when it shouldn&rsquo;t be, filled in when it shouldn&rsquo;t be, or the information doesn&rsquo;t describe the image at all, rendering it useless. Let me hit on each of those points:</p>
+
+<ul>
+<li>If it is important that a particular image is conveyed to the user (a graph, a visual representation of something being described, etc) then you absolutely want an <code>alt</code> attribute.</li>
+<li>If the image is completely unimportant, like a visual flourish, or an icon to represent text that comes immediately before or after it, then you <em>do not want an <code>alt</code> attribute</em>. Why? You&rsquo;re not only throwing a mess of unimportant information at the user, but in many cases you&rsquo;re just making it repeat the same word twice, which is confusing. This is also where ARIA roles come into play, but the most basic thing you can do in this situation is to intentionally identify a blank <code>alt=&quot;&quot;</code> attribute. If you don&rsquo;t put in any <code>alt</code> attribute at all, the screenreader/browser will just guess it by reading the file name or <code>title</code>.</li>
+<li>If you have an image of the user and your <code>alt</code> text is &ldquo;User&rdquo;, or it&rsquo;s the logo of your company and it just says &ldquo;Logo&rdquo; or &ldquo;Company Name&rdquo;, you are not helping anyone. At the very least be a little more descriptive: &ldquo;Your profile picture&rdquo;, &ldquo;Company Name&rsquo;s logo&rdquo;, but even better, be really descriptive if it&rsquo;s an important visual. &ldquo;Image of a brown horse with black hair&rdquo; helps you imagine something much more than &ldquo;Pic of horse&rdquo;.</li>
+</ul>
+
+<p>Another common misuse of HTML I come across is not labeling input fields. All input fields should have an associated label element and this is not accomplished by just having text near an input field. It may look fine to you visually and you might be able to deduce that they go together, but screen-readers won&rsquo;t. Screen-readers expect that any input field that is selected should be able to tell them what that input field is for. There are two main ways to make sure your fields are labeled properly. The first is to simply wrap your input field in the <code>&lt;label&gt;</code> element like this:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label&gt;</span>
+  Your name
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre></div>
+<p>I know some developers might not like to use that method because they have special styling on all <code>&lt;label&gt;</code>s that they don&rsquo;t want on the <code>&lt;input&gt;</code> field and that&rsquo;s fair enough, you just have to get explicit, and this is where I see the HTML fall way short.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+<p>The above does not associate the label with the input field. Proximity does not equal association. This is where the <code>for</code> attribute comes in.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;userName&quot;</span><span class="nt">&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="na">id=</span><span class="s">&quot;userName&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
+<p>The above associates the fields by matching up the <code>for</code> attribute with the <code>id</code> of the field. If your <code>for</code> attribute and <code>id</code> attribute don&rsquo;t match up, then it does not work (I see this happen a lot). Sometimes you might not want the label there visually, or have an extra field associated with that same label. No problem, you can either hide the label, or add an ARIA attribute to the input field that specifies the labeling, but never just leave a field label-less. Screen-readers don&rsquo;t read placeholders. I should also note that if you want your form elements to be fully accessible for all screen-readers then it&rsquo;s best to cover your bases and have both the <code>for</code> attribute AND nest your <code>input</code> inside the <code>label</code>.</p>
+
+<p>An added benefit of labeling inputs properly: they&rsquo;re easier to select and click, which makes them more accessible! Especially checkboxes and radio buttons, which have a very small click area. This is because it allows you to be able to click on the label text to select the element. Also note that for radio buttons, you should use the <code>&lt;fieldset&gt;</code> tag to group the radio inputs together, where the <code>&lt;legend&gt;</code> serves as the parent label while each input still has its own.</p>
+
+<p>These are things that should be considered the basics of HTML, making use of the built in attributes and structure to better serve a diverse user base.</p>
+
+<h2>You don&rsquo;t have to work as hard</h2>
+
+<p>If anything else, understanding HTML should be encouraged because it makes your work easier. It can reduce the need for both styling and scripting, and makes the world wide web a happier place.</p>
+
+<hr>
+
+<p><strong>Abbreviations</strong></p>
+
+<ul>
+<li>HTML: HyperText Markup Language</li>
+<li>DOM: Document Object Model</li>
+<li>ARIA: Accessible Rich Internet Applications</li>
+</ul>
+
+      </div>
+
+      
+        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> HTML</span>
+      
+
+      
+      <div class="share-buttons">
+        <div class="share-icon">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAmyMac" data-lang="en">Tweet</a>
+        </div>
+        <div class="share-icon">
+          <div class="fb-share-button" data-type="button_count" style="vertical-align: none"></div>
+        </div>
+        <div class="share-icon">
+          <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+        </div>
+        <div class="share-icon">
+          <a href="http://www.tumblr.com/share/link?url=http://amy-mac.com/blog/2018/01/HTML-is-the-bomb/&name=A Sort of Love Letter to HTML" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+        </div>
+        <div class="share-icon">
+          <script type="IN/Share" data-counter="right"></script>
+        </div>
+      </div>
+      
+
+      
+      <hr />
+        <section id="disqus_thread"></section>
+      
+    </article>
+
+  </div>
+
+  <div class="large-3 medium-3 pull-9 columns">
+    <aside>
+    <p><img class="img-round u-photo" src="http://amy-mac.com/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
+
+    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
+
+    <h3>Everywhere Else</h3>
+    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
+    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
+    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
+    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
+    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
+    </aside>
+  </div>
+
+</div>
+
+
+  <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© 2010&ndash;2018 Amy MacKinnon. Currently powered by
+            <a class="u-url" href="http://jekyllrb.com">Jekyll.</a></p>
+          </div>
+          <div class="large-6 columns">
+            <nav role="navigation">
+              <ul class="inline-list right">
+                <li><a href="/portfolio.html">Projects</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/theatre.html">Theatre</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://amy-mac.com/assets/js/vendor/jquery.js"></script>
+    
+    <script src="http://amy-mac.com/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18603607-1']);
+  _gaq.push(['_setDomainName', 'amy-mac.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <script type="text/javascript">
+    var disqus_shortname = 'amy-mac';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <!-- Twitter Share Button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Facebook Share Button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=139738486099462";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+    
+</body>
+</html>
