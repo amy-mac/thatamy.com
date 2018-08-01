@@ -33,9 +33,9 @@ There might be a good reason that you have a `<div>` as a container for a collec
 
 Like this [span page from MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) says, "_It should be used only when no other semantic element is appropriate_," and if you look at that page, you'll see that both examples show it being added unnecessarily. The first, because it is unstyled and does absolutely nothing. The second example is unnecessary because the background-color can be put on the `<li>` element. A much better example of a proper use case is:
 
-```html
-<p><span class="blueText">Blue</span> is my favorite color</p> 
-```
+{% highlight html %}
+<p><span class="blueText">Blue</span> is my favorite color</p>
+{% endhighlight %}
 
 Where there would be a class that makes that one word Blue, and the rest of the text in the paragraph is a different color.
 
@@ -44,20 +44,20 @@ Another thing to look out for is multiple `<br/>` tags in a row. This is usually
 ### Empty Elements 
 I tend to spend a lot of time in the browser's inspector, and sometimes I'll see multiple elements that contain nothing. Not elements like the ones in the previous section, but elements that look like they should actually be doing something, because they have IDs, classes, and/or attributes.
 
-```html 
+{% highlight html %}
 <div class="importantThing blueVelvet">
 </div>
-```
+{% endhighlight %}
 
 So I immediately wonder why it's there and go look up the code, and it's almost always the result of some conditional.
 
-```ruby
+{% highlight ruby %}
 <div class="importantThing blueVelvet">
   <% if user.city %>
     <%= user.city %>
   <% end %>
 </div>
-```
+{% endhighlight %}
 
 Or what I tend to see in React code is that there won't even be the conditional, but it'll have a variable value there that happens to be blank, so you see nothing on the page, but these nodes still are clogging up the DOM for no reason. Now as with anything, there are perfectly good use cases for having placeholder elements in the DOM, like if you know you're going to be loading something there dynamically, for example. But if that's not the case then I encourage you to place the HTML elements **within** the conditional and if there is no conditional, add one!
 
@@ -103,26 +103,26 @@ There are a large amount of people in the world who have visibility issues, so t
 
 Another common misuse of HTML I come across is not labeling input fields. All input fields should have an associated label element and this is not accomplished by just having text near an input field. It may look fine to you visually and you might be able to deduce that they go together, but screen-readers won't. Screen-readers expect that any input field that is selected should be able to tell them what that input field is for. There are two main ways to make sure your fields are labeled properly. The first is to simply wrap your input field in the `<label>` element like this:
 
-```html 
+{% highlight html %}
 <label>
   Your name
   <input type="text" name="name"/>
 </label>
-```
+{% endhighlight %}
 
 I know some developers might not like to use that method because they have special styling on all `<label>`s that they don't want on the `<input>` field and that's fair enough, you just have to get explicit, and this is where I see the HTML fall way short.
 
-```html 
+{% highlight html %}
 <label>Your name</label>
 <input type="text" name="name"/>
-```
+{% endhighlight %}
 
 The above does not associate the label with the input field. Proximity does not equal association. This is where the `for` attribute comes in.
 
-```html 
+{% highlight html %}
 <label for="userName">Your name</label>
 <input type="text" name="name" id="userName"/>
-```
+{% endhighlight %}
 
 The above associates the fields by matching up the `for` attribute with the `id` of the field. If your `for` attribute and `id` attribute don't match up, then it does not work (I see this happen a lot). Sometimes you might not want the label there visually, or have an extra field associated with that same label. No problem, you can either hide the label, or add an ARIA attribute to the input field that specifies the labeling, but never just leave a field label-less. Screen-readers don't read placeholders. I should also note that if you want your form elements to be fully accessible for all screen-readers then it's best to cover your bases and have both the `for` attribute AND nest your `input` inside the `label`.
 

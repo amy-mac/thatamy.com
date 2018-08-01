@@ -89,8 +89,9 @@
 <p>There might be a good reason that you have a <code>&lt;div&gt;</code> as a container for a collection of elements because of its inherent block properties, or maybe you have the styling on the parent element that targets all of its children, but more often than not if I see a bunch of plain <code>&lt;div&gt;</code>&rsquo;s being nested, they are serving absolutely no purpose whatsoever. Along the same lines, those plain <code>&lt;span&gt;</code>s are usually a red flag. The entire purpose of a <code>&lt;span&gt;</code> is to be able to target something small that you want to style differently than everything else around it. </p>
 
 <p>Like this <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">span page from MDN</a> says, &ldquo;<em>It should be used only when no other semantic element is appropriate</em>,&rdquo; and if you look at that page, you&rsquo;ll see that both examples show it being added unnecessarily. The first, because it is unstyled and does absolutely nothing. The second example is unnecessary because the background-color can be put on the <code>&lt;li&gt;</code> element. A much better example of a proper use case is:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;blueText&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span> is my favorite color<span class="nt">&lt;/p&gt;</span> 
-</code></pre></div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;blueText&quot;</span><span class="nt">&gt;</span>Blue<span class="nt">&lt;/span&gt;</span> is my favorite color<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
 <p>Where there would be a class that makes that one word Blue, and the rest of the text in the paragraph is a different color.</p>
 
 <p>Another thing to look out for is multiple <code>&lt;br/&gt;</code> tags in a row. This is usually a sign that the element correct element.There are other elements that might be hanging out for no reason, too, but I&rsquo;m focusing on these because they&rsquo;re the two biggest offenders that I have come across.</p>
@@ -98,16 +99,18 @@
 <h3>Empty Elements</h3>
 
 <p>I tend to spend a lot of time in the browser&rsquo;s inspector, and sometimes I&rsquo;ll see multiple elements that contain nothing. Not elements like the ones in the previous section, but elements that look like they should actually be doing something, because they have IDs, classes, and/or attributes.</p>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;importantThing blueVelvet&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
 <p>So I immediately wonder why it&rsquo;s there and go look up the code, and it&rsquo;s almost always the result of some conditional.</p>
+
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;importantThing blueVelvet&quot;</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="sx">% if </span><span class="n">user</span><span class="o">.</span><span class="n">city</span> <span class="sx">%&gt;</span>
 <span class="sx">    &lt;%= user.city %&gt;</span>
   <span class="o">&lt;</span><span class="sx">% end %&gt;</span>
-<span class="sx">&lt;/div&gt;</span>
-</code></pre></div>
+<span class="sx">&lt;/div&gt;</span></code></pre></div>
+
 <p>Or what I tend to see in React code is that there won&rsquo;t even be the conditional, but it&rsquo;ll have a variable value there that happens to be blank, so you see nothing on the page, but these nodes still are clogging up the DOM for no reason. Now as with anything, there are perfectly good use cases for having placeholder elements in the DOM, like if you know you&rsquo;re going to be loading something there dynamically, for example. But if that&rsquo;s not the case then I encourage you to place the HTML elements <strong>within</strong> the conditional and if there is no conditional, add one!</p>
 
 <h3>Using the right tool for the job</h3>
@@ -159,19 +162,22 @@
 </ul>
 
 <p>Another common misuse of HTML I come across is not labeling input fields. All input fields should have an associated label element and this is not accomplished by just having text near an input field. It may look fine to you visually and you might be able to deduce that they go together, but screen-readers won&rsquo;t. Screen-readers expect that any input field that is selected should be able to tell them what that input field is for. There are two main ways to make sure your fields are labeled properly. The first is to simply wrap your input field in the <code>&lt;label&gt;</code> element like this:</p>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label&gt;</span>
   Your name
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/label&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;/label&gt;</span></code></pre></div>
+
 <p>I know some developers might not like to use that method because they have special styling on all <code>&lt;label&gt;</code>s that they don&rsquo;t want on the <code>&lt;input&gt;</code> field and that&rsquo;s fair enough, you just have to get explicit, and this is where I see the HTML fall way short.</p>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+
 <p>The above does not associate the label with the input field. Proximity does not equal association. This is where the <code>for</code> attribute comes in.</p>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;userName&quot;</span><span class="nt">&gt;</span>Your name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="na">id=</span><span class="s">&quot;userName&quot;</span><span class="nt">/&gt;</span>
-</code></pre></div>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="na">id=</span><span class="s">&quot;userName&quot;</span><span class="nt">/&gt;</span></code></pre></div>
+
 <p>The above associates the fields by matching up the <code>for</code> attribute with the <code>id</code> of the field. If your <code>for</code> attribute and <code>id</code> attribute don&rsquo;t match up, then it does not work (I see this happen a lot). Sometimes you might not want the label there visually, or have an extra field associated with that same label. No problem, you can either hide the label, or add an ARIA attribute to the input field that specifies the labeling, but never just leave a field label-less. Screen-readers don&rsquo;t read placeholders. I should also note that if you want your form elements to be fully accessible for all screen-readers then it&rsquo;s best to cover your bases and have both the <code>for</code> attribute AND nest your <code>input</code> inside the <code>label</code>.</p>
 
 <p>An added benefit of labeling inputs properly: they&rsquo;re easier to select and click, which makes them more accessible! Especially checkboxes and radio buttons, which have a very small click area. This is because it allows you to be able to click on the label text to select the element. Also note that for radio buttons, you should use the <code>&lt;fieldset&gt;</code> tag to group the radio inputs together, where the <code>&lt;legend&gt;</code> serves as the parent label while each input still has its own.</p>
