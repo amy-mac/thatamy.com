@@ -30,6 +30,8 @@ GEM
     jekyll-category-pages (1.0.0)
       jekyll (~> 3.5)
       jekyll-paginate (~> 1.1, >= 1.0.0)
+    jekyll-feed (0.10.0)
+      jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -63,6 +65,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-category-pages
+  jekyll-feed (~> 0.6)
   jekyll-paginate
 
 BUNDLED WITH

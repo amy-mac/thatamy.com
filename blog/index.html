@@ -5,32 +5,40 @@ title: Latest Posts
 <h1>Recent Blog Posts</h1>
 
 {% for post in paginator.posts %}
-<article class="hentry post">
-  <header>
-    <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time></span>
-      <span rel="tag"><i class="fi-clock"></i> {{ post.content | reading_time }}</span>
-      {% if post.categories %}
-      <span rel="tag">
-        {% for category in post.categories %}
-          {% unless category == post.categories.last %}
-            <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
-          {% else %}
-            <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
-          {% endunless %}
-        {% endfor %}
-      </span>
-      {% else %}
-      <span></span>
-      {% endif %}
+  <article class="hentry post">
+    <header>
+      <h2 class="entry-title">
+        <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
+
+      <div class="entry-meta">
+        <span class="entry-date date published updated">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
+        </span>
+        <span rel="tag"><i class="fi-clock"></i> {{ post.content | reading_time }}</span>
+
+        {% if post.categories %}
+          <span rel="tag">
+            {% for category in post.categories %}
+              {% unless category == post.categories.last %}
+                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
+              {% else %}
+                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
+              {% endunless %}
+            {% endfor %}
+          </span>
+        {% else %}
+          <span></span>
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="entry-summary">
+      {{ post.excerpt }}
+      <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
     </div>
-  </header>
-  <div class="entry-summary">
-    {{ post.excerpt }}
-    <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
-  </div>
-</article>
+  </article>
+
   <hr />
 {% endfor %}
 
@@ -65,5 +73,8 @@ title: Latest Posts
       <li class="arrow unavailable"><a href="">&raquo;</a></li>
     {% endif %}
   </ul>
-
 </div>
+
+<p class="rss-subscribe text-right">
+  <i class="fi-rss"></i>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+</p>

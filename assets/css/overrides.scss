@@ -308,3 +308,10 @@ div .share-icon {
   padding-right: 10px;
 }
 
+.rss-subscribe {
+  margin-bottom: 0;
+  .fi-rss {
+    margin-right: 6px;
+    color: $lt-orange;
+  }
+}
