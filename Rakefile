@@ -33,21 +33,7 @@
 
 # task :default => :publish
 
-require "reduce"
-
-desc "Delete _site/"
-task :delete do
-  puts "\## Deleting _site/"
-  status = system("rm -r _site")
-  puts status ? "Success" : "Failed"
-end
-
-desc "Preview _site/"
-task :preview do
-  puts "\n## Opening _site/ in browser"
-  status = system("open http://0.0.0.0:4000/")
-  puts status ? "Success" : "Failed"
-end
+#require "reduce"
 
 # Courtesy of https://github.com/pacbard/blog/blob/master/_rake/minify.rake
 # desc "Minify _site/"
