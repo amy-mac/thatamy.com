@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>WDI Day One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
-    <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
-    <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/foundation-icons.css">
 
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="http://amy-mac.com/assets/css/syntax.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/syntax.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="http://amy-mac.com/assets/css/overrides.css">
-    <script src="http://amy-mac.com/assets/js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/overrides.css">
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
 
   </head>
     <body>
@@ -24,14 +24,14 @@
 
       <div class="row header">
         <div class="large-3 columns">
-          <h1><a href="/index.html"><img class="u-logo" src="http://amy-mac.com/images/new-logo.png" data-interchange="[http://amy-mac.com/images/new-logo-rt.png, (retina)]"></a></h1>
+          <h1><a href="/index.html"><img class="u-logo" src="http://localhost:4000/images/new-logo.png" data-interchange="[http://localhost:4000/images/new-logo-rt.png, (retina)]"></a></h1>
         </div>
         <div class="large-9 columns">
           <nav role="navigation">
             <ul class="inline-list right">
-              <li><a href="/portfolio.html">Projects</a></li>
-              <li><a href="/resume.html">Resume</a></li>
-              <li><a href="/theatre.html">Theatre</a></li>
+              <li><a href="/portfolio">Projects</a></li>
+              <li><a href="/resume">Resume</a></li>
+              <li><a href="/theatre">Theatre</a></li>
               <li><a href="/blog">Blog</a></li>
             </ul>
           </nav>
@@ -53,11 +53,11 @@
           <span rel="tag">
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/education/index.html">education</a>,
+                <a class="p-category" href="http://localhost:4000/blog/categories/Education/index.html">Education</a>,
               
             
               
-                <a class="p-category"  href="http://amy-mac.com/blog/categories/technology/index.html">technology</a>
+                <a class="p-category"  href="http://localhost:4000/blog/categories/Technology/index.html">Technology</a>
               
             
           </span>
@@ -68,61 +68,87 @@
       <hr />
 
       <div class="e-content">
-        <p>Yesterday was the first day of class. I arrived out of breath and sweaty from my exertions of trying not be late on the first day. Normally this would not be an issue but for some reason all three public transit methods from Alameda were backed up today. It&rsquo;s the first time ever that I&rsquo;ve seen the parking lot at the ferry terminal in Alameda completely full.</p>
+        <p>Yesterday was the first day of class. I arrived out of breath and sweaty from my exertions of trying not be late on the first day. Normally this would not be an issue but for some reason all three public transit methods from Alameda were backed up today. It’s the first time ever that I’ve seen the parking lot at the ferry terminal in Alameda completely full.</p>
 
-<p>I was nervous about the first day, not knowing what to expect, and worrying that I&rsquo;d be lost. This wasn&rsquo;t the case, and I was actually bored most of the day. I think I would have actually preferred the former, but the instructors have assured us that day 2 is going to move at a much faster pace. I was mainly concerned because everything they went over on Day 1 was easy stuff from the pre-work that everyone already knew, and yet the Camel class was way ahead of us.</p>
+<p>I was nervous about the first day, not knowing what to expect, and worrying that I’d be lost. This wasn’t the case, and I was actually bored most of the day. I think I would have actually preferred the former, but the instructors have assured us that day 2 is going to move at a much faster pace. I was mainly concerned because everything they went over on Day 1 was easy stuff from the pre-work that everyone already knew, and yet the Camel class was way ahead of us.</p>
 
-<p>What I did learn, however, was how to finally fork something on Github and submit a pull request. I&rsquo;ve been using Github to track my own repos for the last 6 months, but I was a little intimated by trying to interact with other people&rsquo;s repos, so had never tried forking and pulling before. I also learned some useful commands for text editors that I didn&rsquo;t previously know, like using &lsquo;command-/&rsquo; to comment out a bunch of text (or uncomment). I also learned the command to go to the end of the line &#39;ctrl-e&rsquo; which is going to make my workflow so much faster. I should have looked up these shortcuts way sooner. Minor things, but at least the day wasn&rsquo;t a complete loss.</p>
+<p>What I did learn, however, was how to finally fork something on Github and submit a pull request. I’ve been using Github to track my own repos for the last 6 months, but I was a little intimated by trying to interact with other people’s repos, so had never tried forking and pulling before. I also learned some useful commands for text editors that I didn’t previously know, like using ‘command-/’ to comment out a bunch of text (or uncomment). I also learned the command to go to the end of the line ‘ctrl-e’ which is going to make my workflow so much faster. I should have looked up these shortcuts way sooner. Minor things, but at least the day wasn’t a complete loss.</p>
 
-<p>We were assigned homework, and the majority of it was so easy that I had it done before class even ended, but there were 2 problems that ended up taking me 3 hours to do. One of them was the evil prime number function that so many programming languages test you on. I know it&rsquo;s a common test, but I&rsquo;ve always had trouble with it. Now of course, the dirt simple way to find all the primes from 1 - 100 in Ruby (which was the question) is to simply do this:</p>
+<p>We were assigned homework, and the majority of it was so easy that I had it done before class even ended, but there were 2 problems that ended up taking me 3 hours to do. One of them was the evil prime number function that so many programming languages test you on. I know it’s a common test, but I’ve always had trouble with it. Now of course, the dirt simple way to find all the primes from 1 - 100 in Ruby (which was the question) is to simply do this:</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;Prime&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'Prime'</span>
     
-<span class="no">Prime</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span>
+<span class="no">Prime</span><span class="p">(</span><span class="mi">100</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="n">x</span>
-<span class="k">end</span></code></pre></div>
+<span class="k">end</span></code></pre></figure>
 
-<p>Done. There you go. But I&rsquo;m pretty sure they wanted us to do things the manual way and I struggled with it. I know what primes are, of course, but I ended up reading so much documentation on prime numbers and the different algorithms that mathematicians have come up with to find them, and I even looked up examples of what other people do to find prime numbers in Ruby (without the Prime class), but I still couldn&rsquo;t get their examples to work. In the end I ended up doing a really sloppy function that worked but I know is not ideal.</p>
+<p>Done. There you go. But I’m pretty sure they wanted us to do things the manual way and I struggled with it. I know what primes are, of course, but I ended up reading so much documentation on prime numbers and the different algorithms that mathematicians have come up with to find them, and I even looked up examples of what other people do to find prime numbers in Ruby (without the Prime class), but I still couldn’t get their examples to work. In the end I ended up doing a really sloppy function that worked but I know is not ideal.</p>
 
-<p>The last problem on the homework was something that one of our instructors said he actually got during an interview. We all struggled with it and were talking about it on HipChat late into the night. It took me an hour to solve it, and it works, but isn&rsquo;t the cleanest solution. I&rsquo;ll probably refactor it to make it better.</p>
+<p>The last problem on the homework was something that one of our instructors said he actually got during an interview. We all struggled with it and were talking about it on HipChat late into the night. It took me an hour to solve it, and it works, but isn’t the cleanest solution. I’ll probably refactor it to make it better.</p>
 
 <p><strong>The problem:</strong></p>
 
 <blockquote>
-<ol>
-<li>Use a pattern and consolidate the amount of characters into a simplified string.</li>
-</ol>
+  <ol>
+    <li>Use a pattern and consolidate the amount of characters into a simplified string.</li>
+  </ol>
+</blockquote>
 
-<p>input pattern = &ldquo;AAASSSDDDDRDDSASSDDDSSSAD&rdquo;
+<blockquote>
+  <p>input pattern = “AAASSSDDDDRDDSASSDDDSSSAD”
 output pattern = 3A3S4DR2DSA2S3D3SAD</p>
+</blockquote>
 
-<p>If a character is represented more than once, append the number of occurrences in front of it. If a character is only represented once, just put that letter.</p>
+<blockquote>
+  <p>If a character is represented more than once, append the number of occurrences in front of it. If a character is only represented once, just put that letter.</p>
+</blockquote>
 
-<p>Hint: Use a loop to iterate over a string. You can reference characters in a string similar to an array.</p>
+<blockquote>
+  <p>Hint: Use a loop to iterate over a string. You can reference characters in a string similar to an array.</p>
 </blockquote>
 
 <p><strong>My solution:</strong></p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="n">input</span> <span class="o">=</span> <span class="s2">&quot;AAASSSDDDDRDDSASSDDDSSSAD&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span>
-<span class="lineno"> 2</span> <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="lineno"> 3</span> <span class="n">char</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="lineno"> 4</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno"> 5</span> 
-<span class="lineno"> 6</span> <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="n">input</span><span class="o">.</span><span class="n">length</span>
-<span class="lineno"> 7</span>   <span class="n">input</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
-<span class="lineno"> 8</span>     <span class="k">if</span> <span class="n">input</span><span class="o">[</span><span class="n">counter</span><span class="o">]</span> <span class="o">==</span> <span class="n">input</span><span class="o">[</span><span class="n">counter</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span>
-<span class="lineno"> 9</span>       <span class="n">char</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="lineno">10</span>     <span class="k">else</span>
-<span class="lineno">11</span>       <span class="n">output</span> <span class="o">&lt;&lt;</span> <span class="n">char</span><span class="o">.</span><span class="n">to_s</span>
-<span class="lineno">12</span>       <span class="n">output</span> <span class="o">&lt;&lt;</span> <span class="n">num</span>
-<span class="lineno">13</span>       <span class="n">char</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="lineno">14</span>     <span class="k">end</span>
-<span class="lineno">15</span>     <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="lineno">16</span>   <span class="k">end</span>
-<span class="lineno">17</span>   <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">delete</span> <span class="s1">&#39;1&#39;</span>
-<span class="lineno">18</span> <span class="k">end</span>
-<span class="lineno">19</span> 
-<span class="lineno">20</span> <span class="nb">puts</span> <span class="n">output</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="code"><pre><span class="n">input</span> <span class="o">=</span> <span class="s2">"AAASSSDDDDRDDSASSDDDSSSAD"</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">char</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="n">input</span><span class="p">.</span><span class="nf">length</span>
+  <span class="n">input</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
+    <span class="k">if</span> <span class="n">input</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">==</span> <span class="n">input</span><span class="p">[</span><span class="n">counter</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+      <span class="n">char</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span>
+      <span class="n">output</span> <span class="o">&lt;&lt;</span> <span class="n">char</span><span class="p">.</span><span class="nf">to_s</span>
+      <span class="n">output</span> <span class="o">&lt;&lt;</span> <span class="n">num</span>
+      <span class="n">char</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">end</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">end</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'1'</span>
+<span class="k">end</span>
+
+<span class="nb">puts</span> <span class="n">output</span></pre></td></tr></tbody></table></code></pre></figure>
 
       </div>
 
@@ -142,7 +168,7 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
           <div class="g-plus" data-action="share" data-annotation="bubble"></div>
         </div>
         <div class="share-icon">
-          <a href="http://www.tumblr.com/share/link?url=http://amy-mac.com/blog/2013/09/wdi-day-one/&name=WDI Day One" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+          <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/blog/2013/09/wdi-day-one/&name=WDI Day One" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; padding: 0 10px; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
         </div>
         <div class="share-icon">
           <script type="IN/Share" data-counter="right"></script>
@@ -160,7 +186,7 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
 
   <div class="large-3 medium-3 pull-9 columns">
     <aside>
-    <p><img class="img-round u-photo" src="http://amy-mac.com/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
+    <p><img class="img-round u-photo" src="http://localhost:4000/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
 
     <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
 
@@ -189,9 +215,9 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
           <div class="large-6 columns">
             <nav role="navigation">
               <ul class="inline-list right">
-                <li><a href="/portfolio.html">Projects</a></li>
-                <li><a href="/resume.html">Resume</a></li>
-                <li><a href="/theatre.html">Theatre</a></li>
+                <li><a href="/portfolio">Projects</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/theatre">Theatre</a></li>
                 <li><a href="/blog">Blog</a></li>
               </ul>
             </nav>
@@ -200,9 +226,9 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
       </div>
     </footer>
 
-    <script src="http://amy-mac.com/assets/js/vendor/jquery.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/jquery.js"></script>
     
-    <script src="http://amy-mac.com/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
