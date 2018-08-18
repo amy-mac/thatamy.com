@@ -22,7 +22,7 @@ I live on the island of Alameda in the San Francisco Bay area. We are bordered o
   <figcaption>Map showing Alameda and its surroundings</figcaption>
 </figure>
 
-In short, we're used to hearing noises, and I usually turn to my husband and say, "Must be sportsball" and shrug. But a week and a half ago and we were hearing all kinds of fireworks, my husband said, "I wish there was just a site I could go to in order to verify why I'm hearing fireworks." (It was the A's winning a game.) Which in turn made me think of the site "Is Oakland on Fire?" and thought it'd be fun to make something simple like that.
+In short, we're used to hearing noises, and I usually turn to my husband and say, "Must be sportsball" and shrug. But a week and a half ago as we were hearing all kinds of fireworks, my husband said, "I wish there was just a site I could go to in order to verify why I'm hearing fireworks." (It was the A's winning a game.) Which in turn made me think of the site "Is Oakland on Fire?" and thought it'd be fun to make something simple like that.
 
 So this week I decided to quickly bang something out and got really excited to actually be working on a personal coding project for once, since I tend to not have a lot of time for my own.
 
@@ -127,4 +127,4 @@ It's a bit of a frivilous project, but it was fun. Here are some of the variatio
   <img src="{{site.url}}/images/alameda_exploding3.jpg" alt="The Giants are playing tonight and just won">
 </figure>
 
-In the future I will probably add some checks for whether it's Fleet Week, and other such loud disturbances to expand it. Hope the Alamedans enjoy it! You can check out the <a href="http://isalamedaexploding">live site</a> or view the <a href="https://github.com/amy-mac/alameda_exploding">project on Github</a>.
+In the future I will probably add some checks for whether it's Fleet Week, and other such loud disturbances to expand it. Hope the Alamedans enjoy it! You can check out the <a href="http://isalamedaexploding.com">live site</a> or view the <a href="https://github.com/amy-mac/alameda_exploding">project on Github</a>.
