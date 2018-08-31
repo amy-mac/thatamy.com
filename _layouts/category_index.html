@@ -14,9 +14,9 @@ layout: main
         <span rel="tag">
           {% for cat in post.categories %}
             {% unless cat == post.categories.last %}
-              <a class="p-category" href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>,
+              <a class="p-category" href="{{site.url}}/blog/categories/{{cat | downcase}}/index.html">{{ cat}}</a>,
             {% else %}
-              <a class="p-category" href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>
+              <a class="p-category" href="{{site.url}}/blog/categories/{{cat | downcase}}/index.html">{{ cat}}</a>
             {% endunless %}
           {% endfor %}
         </span>

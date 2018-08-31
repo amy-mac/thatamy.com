@@ -21,9 +21,9 @@ title: Latest Posts
           <span rel="tag">
             {% for category in post.categories %}
               {% unless category == post.categories.last %}
-                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
+                <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>,
               {% else %}
-                <a href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
+                <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>
               {% endunless %}
             {% endfor %}
           </span>

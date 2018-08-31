@@ -16,9 +16,9 @@ layout: default
           <span rel="tag">
             {% for category in page.categories %}
               {% unless category == page.categories.last %}
-                <a class="p-category" href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>,
+                <a class="p-category" href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>,
               {% else %}
-                <a class="p-category"  href="{{site.url}}/blog/categories/{{category}}/index.html">{{ category }}</a>
+                <a class="p-category" href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>
               {% endunless %}
             {% endfor %}
           </span>
