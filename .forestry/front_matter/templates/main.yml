@@ -1,0 +1,42 @@
+---
+label: Main
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: author
+  label: Author
+  config:
+    required: true
+  default: amy@amy-mac.com
+- type: boolean
+  name: comments
+  label: Allow Comments
+  default: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: layout
+  label: Layout
+  config:
+    required: true
+  default: post
+- type: boolean
+  label: Share
+  name: share
+  default: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    date_format: YYYY-MM-DD
+    required: true
+- type: tag_list
+  name: categories
+  label: Categories
+- type: tag_list
+  name: tags
+  label: Tags
