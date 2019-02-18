@@ -1,14 +1,12 @@
 ---
 author: amy@amy-mac.com
 comments: true
-date: 2019-02-17 08:57:11-07:00
+date: 2019-02-17 08:57:11-08:00
 layout: post
 title: Hi Friends
 categories:
 - Personal
 - Parenting
-tags:
-- privilege
 share: true
 ---
 
