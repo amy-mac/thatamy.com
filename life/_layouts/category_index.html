@@ -5,7 +5,7 @@ layout: main
 <h1>Posts in {{ category }}</h1>
 
 {% for post in site.categories[category] %}
-  <article class="hentry post">
+  <article class="h-entry post">
     <header>
       <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
       <div class="entry-meta">
@@ -14,9 +14,9 @@ layout: main
         <span rel="tag">
           {% for cat in post.categories %}
             {% unless cat == post.categories.last %}
-              <a href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>,
+              <a class="p-category" href="{{site.url}}/life/categories/{{cat | downcase}}/index.html">{{ cat}}</a>,
             {% else %}
-              <a href="{{site.url}}/blog/categories/{{cat}}/index.html">{{ cat }}</a>
+              <a class="p-category" href="{{site.url}}/life/categories/{{cat | downcase}}/index.html">{{ cat}}</a>
             {% endunless %}
           {% endfor %}
         </span>

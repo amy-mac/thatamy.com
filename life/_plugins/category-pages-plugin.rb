@@ -12,7 +12,7 @@ module Jekyll
       self.data['category'] = category
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
-      self.data['title'] = "#{category_title_prefix}#{category}"
+      self.data['title'] = "#{category_title_prefix}#{category.capitalize}"
     end
   end
 
@@ -23,7 +23,7 @@ module Jekyll
       if site.layouts.key? 'category_index'
         dir = site.config['category_dir'] || 'categories'
         site.categories.keys.each do |category|
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
+          site.pages << CategoryPage.new(site, site.source, File.join(dir, category.downcase), category)
         end
       end
     end
