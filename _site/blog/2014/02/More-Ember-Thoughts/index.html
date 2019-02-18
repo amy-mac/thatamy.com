@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>More Ember Thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/overrides.css">
+    
+      <link rel="stylesheet" href="http://amy-mac.com/assets/css/share-bar.css">
+    
+    <script src="http://amy-mac.com/assets/js/vendor/modernizr.js"></script>
+
+  </head>
+    <body>
+      <!-- Header and Nav -->
+
+      <div class="row header">
+        <div class="large-3 columns">
+          <h1><a href="/index.html"><img class="u-logo" src="http://amy-mac.com/images/new-logo.png" data-interchange="[http://amy-mac.com/images/new-logo-rt.png, (retina)]"></a></h1>
+        </div>
+        <div class="large-9 columns">
+          <nav role="navigation">
+            <ul class="inline-list right">
+              <li><a href="/portfolio">Projects</a></li>
+              <li><a href="/resume">Resume</a></li>
+              <li><a href="/theatre">Theatre</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+
+  <!-- Main Content Section -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-9 medium-9 push-3 columns">
+
+    <article class="h-entry post" role="main">
+      <header>
+        <h1 class="p-name">More Ember Thoughts</h1>
+        <div class="entry-meta">
+          <time class="dt-published" datetime="2014-02-02T02:26:00-08:00">2014 February 02 at 02:26 AM</time>
+          
+          <span rel="tag">
+            
+              
+                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">Technology</a>
+              
+            
+          </span>
+          
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="e-content">
+        <p>After 4 days of working with Ember, these are my thoughts about it.</p>
+
+<p>##Things I Don’t Like About Ember</p>
+
+<p>###Input Helpers</p>
+
+<p>They don’t let you use all the same options you’d be able to use in a normal input element, like <code>required=true</code>. You can just use a normal input element, but then you don’t have the luxury of the value binding to a property in the controller.</p>
+
+<p>###Automated magic</p>
+
+<p>Ember makes a lot of things easier on you by doing some “magic” behind the scenes, but when those things don’t perform the way they’re supposed to, it’s hard to tell why. That’s the advantage of having to spell everything out yourself–it makes it much easier to fix things when they don’t perform the way they ought to.</p>
+
+<p>###Handlebars Helpers</p>
+
+<p>Sometimes they’d work and sometimes they wouldn’t and I could never tell what the deciding factor was.</p>
+
+<p>###Model Relationships</p>
+
+<p>I expected these to work the same way they do in Rails with the <code>belongsTo</code> and <code>hasMany</code>, etc. But you can’t reference them the same way you would in Rails and I became very frustrated when trying to display the comments for a post.</p>
+
+<p>###The Guides</p>
+
+<p>I felt like the guide on the website was really lacking, at least compared to Backbone’s guides. They read more like a tutorial instead of explaining thoroughly how you use each feature. They do have the API section, which I think is more similar to what I wanted, but it is overwhelming at a glance.</p>
+
+<p>##Things I Do Like About Ember</p>
+
+<p>###Automated magic</p>
+
+<p>When you’re doing the basic setup for the site, it is really quick and easy. I’m also impressed with the way it updates values that are changed instantly across the site, without you explicitly having to tell it to re-render those items.</p>
+
+<p>###The structure</p>
+
+<p>Ember reminds me a lot of Rails, not just because of the MVC aspect but the way they do their routes and models. I like that it reminds me of Rails.</p>
+
+<p>###The routing</p>
+
+<p>Speaking of the way Ember does routes, I found it so much more straightforward and easy compared to the built in routing feature of Backbone.js that I ended up not even using, in favor of Page.js. The octothorpe in the url is annoying but I’m certain that could be gotten around the same way you can in Backbone. In the same vein, I like how easy they make it to transition to another “page” with something like this: <code>this.transitionTo('page');</code></p>
+
+<p>###The Chrome extension</p>
+
+<p>There is a <a href="https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en">chrome devtools extension for Ember</a> and it’s incredibly useful and awesome. I wish Backbone had an extension like that (maybe some day I should build one?)</p>
+
+<p>##Final Thoughts</p>
+
+<p>I am intrigued enough to continuing playing around with Ember. One of the things that was frustrating me would not even be an issue if I was using a RESTful API to serve information to Ember instead of using LocalStorage and relying on Ember’s built in model relationships. I also know that a part of getting used to any technology is learning its quirks and how to work around that. So far I think Ember would be better for more simplistic apps, but I would have to build out a site more with it to be certain of that opinion.</p>
+
+      </div>
+
+      
+        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> Ember.js and JavaScript</span>
+      
+
+      
+        <aside id="share-bar">
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/&t=More Ember Thoughts"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Facebook" >
+      <i class="fi-social-facebook share-button"></i>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?text=More Ember Thoughts&via=ThatAmyMac&url=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+      <i class="fi-social-twitter share-button"></i>
+    </a>
+
+    <a href="https://plus.google.com/share?url=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Google+" >
+      <i class="fi-social-google-plus share-button"></i>
+    </a>
+
+    <a href="http://www.tumblr.com/share/link?url=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Tumblr" >
+      <i class="fi-social-tumblr share-button"></i>
+    </a>
+
+    <a href="http://www.reddit.com/submit?url=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Reddit" >
+      <i class="fi-social-reddit share-button"></i>
+    </a>
+
+    <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/&title=More Ember Thoughts&summary=&source=My Blog" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+      <i class="fi-social-linkedin share-button"></i>
+    </a>
+
+    <a href="mailto:?subject=More Ember Thoughts&amp;body=Check out this site http://amy-mac.com/blog/2014/02/More-Ember-Thoughts/"
+      title="Share via Email" >
+      <i class="fi-mail share-button"></i>
+    </a>
+  </div>
+</aside>
+
+      
+
+      
+      <hr />
+        <section id="disqus_thread"></section>
+      
+    </article>
+
+  </div>
+
+  <div class="large-3 medium-3 pull-9 columns">
+    <aside>
+    <p><img class="img-round u-photo" src="http://amy-mac.com/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
+
+    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
+
+    <h3>Everywhere Else</h3>
+    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
+    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
+    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
+    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
+    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
+    </aside>
+  </div>
+
+</div>
+
+
+  <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© 2010&ndash;2019 Amy MacKinnon. Currently powered by
+            <a class="u-url" href="http://jekyllrb.com">Jekyll.</a></p>
+          </div>
+          <div class="large-6 columns">
+            <nav role="navigation">
+              <ul class="inline-list right">
+                <li><a href="/portfolio">Projects</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/theatre">Theatre</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://amy-mac.com/assets/js/vendor/jquery.js"></script>
+    
+    <script src="http://amy-mac.com/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18603607-1']);
+  _gaq.push(['_setDomainName', 'amy-mac.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <script type="text/javascript">
+    var disqus_shortname = 'amy-mac';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</body>
+</html>
