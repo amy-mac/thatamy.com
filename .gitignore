@@ -2,3 +2,4 @@
 .sass-cache
 _drafts
 *.swp
+node_modules

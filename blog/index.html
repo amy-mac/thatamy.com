@@ -1,26 +1,32 @@
 ---
 layout: main
 title: Latest Posts
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+permalink: "blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 ---
 <h1>Recent Blog Posts</h1>
 
-{% for post in paginator.posts %}
+{% for post in posts %}
   <article class="hentry post">
     <header>
       <h2 class="entry-title">
-        <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
+        <a href="{{ post.url | url }}" rel="bookmark" title="{{ post.data.title }}">{{ post.data.title }}</a>
       </h2>
 
       <div class="entry-meta">
         <span class="entry-date date published updated">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
         </span>
-        <span rel="tag"><i class="fi-clock"></i> {{ post.content | reading_time }}</span>
+        <span rel="tag"><i class="fi-clock"></i> {{ post.data.templateContent | reading_time }}</span>
 
-        {% if post.categories %}
+        {% if post.data.categories %}
           <span rel="tag">
-            {% for category in post.categories %}
-              {% unless category == post.categories.last %}
+            {% for category in post.data.categories %}
+              {% unless category == post.data.categories.last %}
                 <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>,
               {% else %}
                 <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>
@@ -34,46 +40,37 @@ title: Latest Posts
     </header>
 
     <div class="entry-summary">
-      {{ post.excerpt }}
-      <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
+      {% excerpt post %}
+      <a href="{{ post.url | url }}" rel="bookmark" title="{{ post.data.title }}">Read More &raquo;</a>
     </div>
   </article>
 
   <hr />
 {% endfor %}
 
-<div class="pagination-centered">
+<nav class="pagination-centered">
   <ul class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li class="arrow"><a href="{{ site.url }}/blog/">&laquo;</a></li>
+    {% if pagination.href.previous %}
+      <li class="arrow"><a href="{{ pagination.href.previous }}">&laquo;</a></li>
+    {% else %}
+      <li class="arrow unavailable">&laquo;</li>
+    {% endif %}
+
+    {% for pageEntry in pagination.hrefs %}
+      {% if page.url == pageEntry %}
+        <li class="current"><a aria-current="page" href="{{ pageEntry }}">{{ forloop.index }}</a></li>
       {% else %}
-        <li class="arrow"><a href="{{ site.url }}/blog/page{{ paginator.previous_page }}">&laquo;</a></li>
+        <li><a href="{{ pageEntry }}">{{ forloop.index }}</a></li>
       {% endif %}
-    {% else %}
-      <li class="arrow unavailable"><a href="">&laquo;</a></li>
-    {% endif %}
-
-    {% if paginator.page == 1 %}
-      <li class="current"><a href="">1</a></li>
-    {% else %}
-      <li><a href="{{ site.url }}/blog/">1</a></li>
-    {% endif %}
-
-    {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <li class="current"><a href="">{{ count }}</a></li>
-        {% else %}
-          <li><a href="{{ site.url }}/blog/page{{ count }}">{{ count }}</a></li>
-        {% endif %}
     {% endfor %}
-    {% if paginator.next_page %}
-      <li class="arrow"><a href="{{ site.url }}/blog/page{{ paginator.next_page }}">&raquo;</a></li>
+
+    {% if pagination.href.next %}
+      <li class="arrow"><a href="{{ pagination.href.next }}">&raquo;</a></li>
     {% else %}
-      <li class="arrow unavailable"><a href="">&raquo;</a></li>
+      <li class="arrow unavailable">&raquo;</li>
     {% endif %}
   </ul>
-</div>
+</nav>
 
 <p class="rss-subscribe text-right">
   <i class="fi-rss"></i>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>

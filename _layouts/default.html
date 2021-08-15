@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="{{ site.url}}/assets/foundation-icons.css">
 
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/overrides.css">
-    {% if page.share %}
+    {% if share %}
       <link rel="stylesheet" href="{{ site.url }}/assets/css/share-bar.css">
     {% endif %}
     <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
@@ -90,8 +90,8 @@
 
 </script>
 
-    {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}
-    {% if page.title == "Drag from Desktop Tricks" %}
+    {% if site.disqus_shortname and comments %}{% include disqus_comments.html %}{% endif %}
+    {% if title == "Drag from Desktop Tricks" %}
       <script src="{{site.url}}/assets/js/dragover.js"></script>
     {% endif %}
 </body>

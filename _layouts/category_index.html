@@ -1,19 +1,21 @@
 ---
 layout: main
+permalink: "blog/{{ tag }}/index.html"
 ---
-{% assign category = page.category %}
-<h1>Posts in {{ category }}</h1>
+---
+{% assign category = collections[ tag ] %}
+<h1>Posts in "{{ category }}"</h1>
 
-{% for post in site.categories[category] %}
+{% for post in category | reverse %}
   <article class="h-entry post">
     <header>
-      <h2 class="p-name entry-title"><a class="u-url" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <h2 class="p-name entry-title"><a class="u-url" href="{{ post.data.url }}" rel="bookmark" title="{{ post.data.title }}">{{ post.data.title }}</a></h2>
       <div class="entry-meta">
-        <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
-        {% if post.categories %}
+        <time class="dt-published" datetime="{{ post.data.date | date_to_xmlschema }}">{{ post.data.date | date: "%Y %B %d at %I:%M %p" }}</time>
+        {% if post.data.tags %}
         <span rel="tag">
-          {% for cat in post.categories %}
-            {% unless cat == post.categories.last %}
+          {% for cat in post.data.tags %}
+            {% unless cat == post.data.tags.last %}
               <a class="p-category" href="{{site.url}}/blog/categories/{{cat | downcase}}/index.html">{{ cat}}</a>,
             {% else %}
               <a class="p-category" href="{{site.url}}/blog/categories/{{cat | downcase}}/index.html">{{ cat}}</a>
@@ -26,11 +28,11 @@ layout: main
       </div>
     </header>
     <div class="p-summary entry-summary">
-      {{ post.excerpt }}
-      <a class="u-url" href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">Read More &raquo;</a>
+      {{ post.data.page.excerpt }}
+      <a class="u-url" href="{{ post.data.url }}" rel="bookmark" title="{{ post.data.title }}">Read More &raquo;</a>
     </div>
   </article>
-  {% unless post == site.categories[category].last %}
+  {% unless post == collections[tag].last %}
     <hr>
   {% endunless %}
 {% endfor %}

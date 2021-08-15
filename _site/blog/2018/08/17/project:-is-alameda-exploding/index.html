@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Project: Is Alameda Exploding?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
+
+    <!-- syntax highlighting CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/overrides.css">
+    
+      <link rel="stylesheet" href="http://amy-mac.com/assets/css/share-bar.css">
+    
+    <script src="http://amy-mac.com/assets/js/vendor/modernizr.js"></script>
+
+  </head>
+    <body>
+      <!-- Header and Nav -->
+
+      <div class="row header">
+        <div class="large-3 columns">
+          <h1><a href="/index.html"><img class="u-logo" src="http://amy-mac.com/images/new-logo.png" data-interchange="[http://amy-mac.com/images/new-logo-rt.png, (retina)]"></a></h1>
+        </div>
+        <div class="large-9 columns">
+          <nav role="navigation">
+            <ul class="inline-list right">
+              <li><a href="/portfolio">Projects</a></li>
+              <li><a href="/resume">Resume</a></li>
+              <li><a href="/theatre">Theatre</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">  <!-- Main Content Section -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-9 medium-9 push-3 columns">
+
+    <article class="h-entry post" role="main">
+      <header>
+        <h1 class="p-name">Project: Is Alameda Exploding?</h1>
+        <div class="entry-meta">
+          <time class="dt-published" datetime="Fri Aug 17 2018 13:55:00 GMT-0700 (Pacific Daylight Time)">2018 August 17 at 01:55 PM</time>
+          
+          <span rel="tag">
+            
+              
+                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">Technology</a>,
+              
+            
+              
+                <a class="p-category" href="http://amy-mac.com/blog/categories/projects/index.html">Projects</a>,
+              
+            
+          </span>
+          
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="e-content">
+        <p>I live on the island of Alameda in the San Francisco Bay area. We are bordered on our east side by the Oakland Coliseum and our west side by AT&amp;T Park just directly across the water 3 miles away. When there are fireworks in either of these places we can hear them, and sometimes see them. On holidays we hear all the surrounding fireworks. We also get Blue Angels flying over and so on.<figure>
+<a class="th" href="http://amy-mac.com/images/alameda-island.jpg" title="Larger image of map of Alameda">
+<img src="http://amy-mac.com/images/alameda-island.jpg" alt="Map of Alameda" />
+</a></p>
+  <figcaption>Map showing Alameda and its surroundings</figcaption>
+</figure>
+<p>In short, we’re used to hearing noises, and I usually turn to my husband and say, “Must be sportsball” and shrug. But a week and a half ago as we were hearing all kinds of fireworks, my husband said, “I wish there was just a site I could go to in order to verify why I’m hearing fireworks.” (It was the A’s winning a game.) Which in turn made me think of the site “Is Oakland on Fire?” and thought it’d be fun to make something simple like that.</p>
+<p>So this week I decided to quickly bang something out and got really excited to actually be working on a personal coding project for once, since I tend to not have a lot of time for my own.</p>
+<h2>Holidays</h2>
+<p>I figured Sinatra would be perfect to quickly get something up and running since it’s only a one page site, and then started out by looking into any plugins or API’s that would easily give me a list of holidays. Since I really only care about the ones that have fireworks, I could have hard coded the information but really wanted the site to be as automated and easily maintainable as possible. I ended up finding <a href="https://github.com/holidays/holidays" target="_blank">this Holidays Ruby gem</a> which was perfect for what I needed. It makes it easy to also check if there are any fireworks holidays that week, since for Independence Day we tend to hear things in the days before and after, even though they’re technically illegal.</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token constant">FIREWORK_HOLIDAYS</span> <span class="token operator">=</span> <span class="token punctuation">[</span><br>  <span class="token string">"Independence Day"</span><span class="token punctuation">,</span><br>  <span class="token string">"New Year's Eve"</span><span class="token punctuation">,</span><br>  <span class="token string">"Lunar New Year's Day"</span><span class="token punctuation">,</span><br>  <span class="token string">"The second day of Lunar New Year"</span><span class="token punctuation">,</span><br>  <span class="token string">"The third day of Lunar New Year"</span><br><span class="token punctuation">]</span><span class="token punctuation">.</span>freeze<br><br><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">check_holidays</span></span><br>  logger<span class="token punctuation">.</span>info <span class="token string">"Checking Holidays"</span><br>  today <span class="token operator">=</span> <span class="token constant">Date</span><span class="token punctuation">.</span>today<br>  holidays <span class="token operator">=</span> <span class="token constant">Holidays</span><span class="token punctuation">.</span>on<span class="token punctuation">(</span>today<span class="token punctuation">,</span> <span class="token symbol">:us</span><span class="token punctuation">,</span> <span class="token symbol">:hk</span><span class="token punctuation">)</span><br><br>  <span class="token comment"># Might be the week of Independence Day, etc</span><br>  <span class="token keyword">if</span> holidays<span class="token punctuation">.</span>empty<span class="token operator">?</span> <span class="token operator">&amp;&amp;</span> <span class="token constant">Holidays</span><span class="token punctuation">.</span>any_holidays_during_work_week<span class="token operator">?</span><span class="token punctuation">(</span>today<span class="token punctuation">)</span><br>    holidays <span class="token operator">=</span> <span class="token constant">Holidays</span><span class="token punctuation">.</span>next_holidays<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token symbol">:us</span><span class="token punctuation">,</span> <span class="token symbol">:hk</span><span class="token punctuation">]</span><span class="token punctuation">)</span><br>  <span class="token keyword">end</span><br><br>  <span class="token comment"># We only care about the holidays that might have explosions</span><br>  holidays<span class="token punctuation">.</span>map <span class="token punctuation">{</span> <span class="token operator">|</span>holiday<span class="token operator">|</span> holiday<span class="token punctuation">[</span><span class="token symbol">:name</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">.</span>detect <span class="token punctuation">{</span> <span class="token operator">|</span>hol<span class="token operator">|</span> <span class="token constant">FIREWORK_HOLIDAYS</span><span class="token punctuation">.</span><span class="token keyword">include</span><span class="token operator">?</span><span class="token punctuation">(</span>hol<span class="token punctuation">)</span> <span class="token punctuation">}</span><br><span class="token keyword">end</span></code></pre>
+<p>There might be some additional holidays to add, but I’m going to wait to expand it. Also since holidays don’t regularly change, I will be adding caching soon.</p>
+<h2>Sports</h2>
+<p>Then I figured the most heavy duty part was going to be finding the information about the sports games. I assumed I was going to need to use web scraping to get the information and started setting up <a href="http://www.nokogiri.org/" target="_blank">Nokogiri</a> and <a href="https://github.com/jnunemaker/httparty" target="_blank">HTTParty</a>. I quickly realized, however, that all the websites I wanted information from use JavaScript to load the information in after the initial page load. I haven’t done much web scraping before and did some research about how to address this and quickly came across <a href="https://gohighbrow.com/scraping-javascript-heavy-websites/" target="_blank">this page</a> that mentions just accessing the urls that are bringing in the information, since JavaScript is usually accessing JSON anyway before manipulating it on the front-end. Of course I read this and went, “Oh duh, that’s way more straightforward.”</p>
+<p>So I found the behind the scenes URL’s on all the sports sites and ditched Nokogiri, since it was completely unnecessary, and just started looking through all the JSON being returned to find the information that I needed for my purposes.</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token keyword">class</span> <span class="token class-name">Scraper</span><br>  attr_accessor <span class="token symbol">:check_for_games</span><br><br>  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">grab_page_info</span></span><span class="token punctuation">(</span>team<span class="token punctuation">)</span><br>    <span class="token keyword">case</span> team<br>    <span class="token keyword">when</span> <span class="token string">"Athletics"</span><br>      <span class="token constant">HTTParty</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span>baseball_url<span class="token punctuation">(</span><span class="token string">"531221"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br>    <span class="token keyword">when</span> <span class="token string">"Giants"</span><br>      <span class="token constant">HTTParty</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span>baseball_url<span class="token punctuation">(</span><span class="token string">"531220"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br>    <span class="token keyword">when</span> <span class="token string">"Warriors"</span><br>      <span class="token constant">HTTParty</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span>basketball_url<span class="token punctuation">)</span><br>    <span class="token keyword">end</span><br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">winning_baseball_game</span></span><span class="token operator">?</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><br>    response <span class="token operator">=</span> response<span class="token punctuation">[</span><span class="token string">"dates"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>first<br><br>    home_game <span class="token operator">=</span> response<span class="token punctuation">[</span><span class="token string">"date"</span><span class="token punctuation">]</span> <span class="token operator">==</span> simple_date <span class="token operator">&amp;&amp;</span> <span class="token constant">VENUE_NAMES</span><span class="token punctuation">.</span><span class="token keyword">include</span><span class="token operator">?</span><span class="token punctuation">(</span>response<span class="token punctuation">[</span><span class="token string">"games"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">"venue"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">"name"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><br><br>    <span class="token keyword">return</span> <span class="token boolean">false</span> <span class="token keyword">unless</span> home_game<br><br>    night_game <span class="token operator">=</span> response<span class="token punctuation">[</span><span class="token string">"games"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>first<span class="token punctuation">[</span><span class="token string">"dayNight"</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"night"</span><br>    is_winner <span class="token operator">=</span> response<span class="token punctuation">[</span><span class="token string">"games"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>first<span class="token punctuation">[</span><span class="token string">"teams"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">"home"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">"isWinner"</span><span class="token punctuation">]</span><br><br>    home_game <span class="token operator">&amp;&amp;</span> night_game <span class="token operator">&amp;&amp;</span> is_winner<br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">check_for_games</span></span><br>    games <span class="token operator">||</span><span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br><br>    <span class="token constant">SPORTS_TEAMS</span><span class="token punctuation">.</span><span class="token keyword">each</span> <span class="token keyword">do</span> <span class="token operator">|</span>team<span class="token operator">|</span><br>      puts <span class="token string">"Checking site for <span class="token interpolation"><span class="token delimiter tag">#{</span>team<span class="token delimiter tag">}</span></span>"</span><br><br>      response <span class="token operator">=</span> grab_page_info<span class="token punctuation">(</span>team<span class="token punctuation">)</span><br>      <span class="token keyword">return</span> <span class="token keyword">unless</span> response<span class="token punctuation">.</span>code <span class="token operator">==</span> <span class="token number">200</span><br><br>      <span class="token keyword">if</span> team <span class="token operator">==</span> <span class="token string">"Warriors"</span><br>        home_game <span class="token operator">=</span> response<span class="token punctuation">[</span><span class="token string">"games"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>detect <span class="token keyword">do</span> <span class="token operator">|</span>game<span class="token operator">|</span><br>          game<span class="token punctuation">[</span><span class="token string">"home"</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token operator">&amp;&amp;</span> game<span class="token punctuation">[</span><span class="token string">"date"</span><span class="token punctuation">]</span> <span class="token operator">==</span> simple_date<br>        <span class="token keyword">end</span><br><br>        games <span class="token operator">&lt;</span><span class="token operator">&lt;</span> team <span class="token keyword">unless</span> home_game<span class="token punctuation">.</span><span class="token keyword">nil</span><span class="token operator">?</span><br>      <span class="token keyword">else</span><br>        games <span class="token operator">&lt;</span><span class="token operator">&lt;</span> team <span class="token keyword">if</span> winning_baseball_game<span class="token operator">?</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><br>      <span class="token keyword">end</span><br>    <span class="token keyword">end</span><br><br>    games<br>  <span class="token keyword">end</span><br><span class="token keyword">end</span></code></pre>
+<p>And that was basically it. I put it up on Heroku and then started fiddling with it to make it faster. I ended up adding IronCache to store the results after the JSON had been retrieved and parsed, which was the biggest bottleneck.</p>
+<h2>Summary</h2>
+<p>It’s a bit of a frivilous project, but it was fun. Here are some of the variations of what you might see.</p>
+<figure>
+  <img src="http://amy-mac.com/images/alameda_exploding1.jpg" alt="No idea, it's either in your head or it could be Armageddon">
+  <img src="http://amy-mac.com/images/alameda_exploding2.jpg" alt="Probably because it's Independence Day">
+  <img src="http://amy-mac.com/images/alameda_exploding3.jpg" alt="The Giants are playing tonight and just won">
+</figure>
+<p>In the future I will probably add some checks for whether it’s Fleet Week, and other such loud disturbances to expand it. Hope the Alamedans enjoy it! You can check out the <a href="http://isalamedaexploding.com">live site</a> or view the <a href="https://github.com/amy-mac/alameda_exploding">project on Github</a>.</p>
+
+      </div>
+
+      
+        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> Sinatra and Ruby</span>
+      
+
+      
+        <aside id="share-bar">
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/&t=Project: Is Alameda Exploding?"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Facebook" >
+      <i class="fi-social-facebook share-button"></i>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?text=Project: Is Alameda Exploding?&via=ThatAmyMac&url=http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+      <i class="fi-social-twitter share-button"></i>
+    </a>
+
+    <a href="http://www.tumblr.com/share/link?url=http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Tumblr" >
+      <i class="fi-social-tumblr share-button"></i>
+    </a>
+
+    <a href="http://www.reddit.com/submit?url=http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+      title="Share on Reddit" >
+      <i class="fi-social-reddit share-button"></i>
+    </a>
+
+    <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/&title=Project: Is Alameda Exploding?&summary=&source=My Blog" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+      <i class="fi-social-linkedin share-button"></i>
+    </a>
+
+    <a href="mailto:?subject=Project: Is Alameda Exploding?&amp;body=Check out this post http://amy-mac.com/blog/2018/08/17/project:-is-alameda-exploding/"
+      title="Share via Email" >
+      <i class="fi-mail share-button"></i>
+    </a>
+  </div>
+</aside>
+
+      
+
+      
+      <hr />
+        <section id="disqus_thread"></section>
+      
+    </article>
+
+  </div>
+
+  <div class="large-3 medium-3 pull-9 columns">
+    <aside>
+    <p><img class="img-round u-photo" src="http://amy-mac.com/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
+
+    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
+
+    <h3>Everywhere Else</h3>
+    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
+    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
+    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
+    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
+    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
+    </aside>
+  </div>
+
+</div>
+
+
+  <!-- Footer -->
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© 2010&ndash;2020 Amy MacKinnon. Currently powered by
+            <a class="u-url" href="http://jekyllrb.com">Jekyll.</a></p>
+          </div>
+          <div class="large-6 columns">
+            <nav role="navigation">
+              <ul class="inline-list right">
+                <li><a href="/portfolio">Projects</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/theatre">Theatre</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://amy-mac.com/assets/js/vendor/jquery.js"></script>
+    
+    <script src="http://amy-mac.com/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18603607-1']);
+  _gaq.push(['_setDomainName', 'amy-mac.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <script type="text/javascript">
+    var disqus_shortname = 'amy-mac';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</body>
+</html>
