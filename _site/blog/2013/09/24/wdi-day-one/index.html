@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>WDI Day One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
     <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
     <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
 
@@ -39,7 +41,9 @@
         </div>
       </div>
 
-      <div class="row">  <!-- Main Content Section -->
+      <div class="row">
+
+  <!-- Main Content Section -->
   <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
   <div class="large-9 medium-9 push-3 columns">
 
@@ -50,13 +54,22 @@
           <time class="dt-published" datetime="Tue Sep 24 2013 16:35:44 GMT-0700 (Pacific Daylight Time)">2013 September 24 at 04:35 PM</time>
           
           <span rel="tag">
+            <i class="fi-price-tag"></i>
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/education/index.html">Education</a>,
+                <a class="p-category" href="/blog/education/">Education</a>,
               
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">Technology</a>,
+                <a class="p-category" href="/blog/technology/">Technology</a>,
+              
+            
+              
+                <a class="p-category" href="/blog/programming/">Programming</a>,
+              
+            
+              
+                <a class="p-category" href="/blog/ruby/">Ruby</a>
               
             
           </span>
@@ -67,7 +80,8 @@
       <hr />
 
       <div class="e-content">
-        <p>Yesterday was the first day of class. I arrived out of breath and sweaty from my exertions of trying not be late on the first day. Normally this would not be an issue but for some reason all three public transit methods from Alameda were backed up today. It’s the first time ever that I’ve seen the parking lot at the ferry terminal in Alameda completely full.I was nervous about the first day, not knowing what to expect, and worrying that I’d be lost. This wasn’t the case, and I was actually bored most of the day. I think I would have actually preferred the former, but the instructors have assured us that day 2 is going to move at a much faster pace. I was mainly concerned because everything they went over on Day 1 was easy stuff from the pre-work that everyone already knew, and yet the Camel class was way ahead of us.</p>
+        <p>Yesterday was the first day of class. I arrived out of breath and sweaty from my exertions of trying not be late on the first day. Normally this would not be an issue but for some reason all three public transit methods from Alameda were backed up today. It’s the first time ever that I’ve seen the parking lot at the ferry terminal in Alameda completely full.</p>
+<p>I was nervous about the first day, not knowing what to expect, and worrying that I’d be lost. This wasn’t the case, and I was actually bored most of the day. I think I would have actually preferred the former, but the instructors have assured us that day 2 is going to move at a much faster pace. I was mainly concerned because everything they went over on Day 1 was easy stuff from the pre-work that everyone already knew, and yet the Camel class was way ahead of us.</p>
 <p>What I did learn, however, was how to finally fork something on Github and submit a pull request. I’ve been using Github to track my own repos for the last 6 months, but I was a little intimated by trying to interact with other people’s repos, so had never tried forking and pulling before. I also learned some useful commands for text editors that I didn’t previously know, like using ‘command-/’ to comment out a bunch of text (or uncomment). I also learned the command to go to the end of the line ‘ctrl-e’ which is going to make my workflow so much faster. I should have looked up these shortcuts way sooner. Minor things, but at least the day wasn’t a complete loss.</p>
 <p>We were assigned homework, and the majority of it was so easy that I had it done before class even ended, but there were 2 problems that ended up taking me 3 hours to do. One of them was the evil prime number function that so many programming languages test you on. I know it’s a common test, but I’ve always had trouble with it. Now of course, the dirt simple way to find all the primes from 1 - 100 in Ruby (which was the question) is to simply do this:</p>
 <pre class="language-ruby"><code class="language-ruby"><span class="token keyword">require</span> <span class="token string">'Prime'</span><br>    <br><span class="token constant">Prime</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">each</span> <span class="token keyword">do</span> <span class="token operator">|</span>x<span class="token operator">|</span><br>  puts x<br><span class="token keyword">end</span></code></pre>
@@ -91,11 +105,8 @@ output pattern = 3A3S4DR2DSA2S3D3SAD</p>
 </blockquote>
 <p><strong>My solution:</strong></p>
 <pre class="language-ruby"><code class="language-ruby"><span class="highlight-line">input <span class="token operator">=</span> <span class="token string">"AAASSSDDDDRDDSASSDDDSSSAD"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token operator">/</span><span class="token operator">/</span><span class="token punctuation">)</span></span><br><span class="highlight-line">output <span class="token operator">=</span> <span class="token string">''</span></span><br><span class="highlight-line">char <span class="token operator">=</span> <span class="token number">1</span></span><br><span class="highlight-line">counter <span class="token operator">=</span> <span class="token number">0</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">while</span> counter <span class="token operator">&lt;</span> input<span class="token punctuation">.</span>length</span><br><span class="highlight-line">  input<span class="token punctuation">.</span><span class="token keyword">each</span> <span class="token keyword">do</span> <span class="token operator">|</span>num<span class="token operator">|</span></span><br><span class="highlight-line">    <span class="token keyword">if</span> input<span class="token punctuation">[</span>counter<span class="token punctuation">]</span> <span class="token operator">==</span> input<span class="token punctuation">[</span>counter<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span></span><br><span class="highlight-line">      char <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">1</span></span><br><span class="highlight-line">    <span class="token keyword">else</span></span><br><span class="highlight-line">      output <span class="token operator">&lt;</span><span class="token operator">&lt;</span> char<span class="token punctuation">.</span>to_s</span><br><span class="highlight-line">      output <span class="token operator">&lt;</span><span class="token operator">&lt;</span> num</span><br><span class="highlight-line">      char <span class="token operator">=</span> <span class="token number">1</span></span><br><span class="highlight-line">    <span class="token keyword">end</span></span><br><span class="highlight-line">    counter <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">1</span></span><br><span class="highlight-line">  <span class="token keyword">end</span></span><br><span class="highlight-line">  output <span class="token operator">=</span> output<span class="token punctuation">.</span>delete <span class="token string">'1'</span></span><br><span class="highlight-line"><span class="token keyword">end</span></span><br><span class="highlight-line"></span><br><span class="highlight-line">puts output</span></code></pre>
-      </div>
 
-      
-        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> General Assembly, programming, and ruby</span>
-      
+      </div>
 
       
         <aside id="share-bar">

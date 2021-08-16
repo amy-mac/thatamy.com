@@ -6,13 +6,11 @@ layout: post
 slug: wdi-day-one
 title: WDI Day One
 wordpress_id: 1475
-categories:
+tags:
 - Education
 - Technology
-tags:
-- General Assembly
-- programming
-- ruby
+- Programming
+- Ruby
 share: true
 ---
 

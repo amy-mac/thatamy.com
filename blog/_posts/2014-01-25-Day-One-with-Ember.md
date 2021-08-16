@@ -5,10 +5,9 @@ date: 2014-01-25 20:26:00+00:00
 share: true
 layout: post
 title: Day One with Ember
-categories:
-- Technology
 tags:
-- Ember.js
+- Technology
+- Ember
 ---
 
 I recently started giving myself a crash course in [Ember.js](http://emberjs.com "Ember.js") to do a quick example app for a job interview. I was pretty sure I could pick it up quickly since once thing I definitely learned in the bootcamp was how to learn fast and work quickly. This certainly isn't ideal for most real world situations because you want to produce high quality sites and apps which require proper planning, testing, and attention to detail. But it's nice to know what I am capable of doing in a pinch.

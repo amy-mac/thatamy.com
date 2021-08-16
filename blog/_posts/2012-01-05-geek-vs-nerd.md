@@ -6,13 +6,8 @@ layout: post
 slug: geek-vs-nerd
 title: Geek VS. Nerd
 wordpress_id: 536
-categories:
 post_format:
 - Image
-tags:
-- geek
-- infographic
-- nerd
 share: true
 ---
 

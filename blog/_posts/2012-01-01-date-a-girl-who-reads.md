@@ -6,14 +6,11 @@ layout: post
 slug: date-a-girl-who-reads
 title: Date a Girl Who Reads
 wordpress_id: 546
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- books
-- quote
-- reading
 share: true
 ---
 

@@ -6,13 +6,11 @@ layout: post
 slug: of-all-the-words-of-tongue
 title: Of All the Words
 wordpress_id: 832
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- poems
-- quotes
 share: true
 ---
 

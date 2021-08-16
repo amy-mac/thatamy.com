@@ -2,14 +2,12 @@
 date: 2019-08-18 16:38:00-07:00
 layout: post
 title: Dynamic Imports of JSON
-categories:
-- Technology
 tags:
+- Programming
 - JavaScript
 - Webpack
 - React
 - JSON
-- perfmatters
 ---
 ## TL:DR
 If you want to do a dynamic import of JSON with Webpack be sure to account for a JSON file not having a default export when you're trying to extract the value and call `default` on the returned module to return the whole JSON object.

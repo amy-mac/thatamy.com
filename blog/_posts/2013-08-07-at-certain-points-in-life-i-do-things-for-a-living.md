@@ -6,15 +6,10 @@ layout: post
 slug: at-certain-points-in-life-i-do-things-for-a-living
 title: '&ldquo;...at certain points in life I do things for a living.&rdquo;'
 wordpress_id: 1011
-categories:
+tags:
 - Dreams &amp; Goals
 post_format:
 - Video
-tags:
-- live theatre
-- Performing
-- theatre
-- video
 share: true
 ---
 
@@ -23,5 +18,3 @@ I'm starting to find that my life's journey of starting out as a hobbyist front-
 Also...I have many skills.
 
 I find myself reminded of this monologue from Working the musical. It's always really resonated for me. Jobs are not big enough for people.
-
-

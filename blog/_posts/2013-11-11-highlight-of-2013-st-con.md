@@ -6,14 +6,12 @@ layout: post
 slug: highlight-of-2013-st-con
 title: Highlight of the 2013 Star Trek Con
 wordpress_id: 1640
-categories:
+tags:
 - Experiences
 - Personal
+- Star Trek
 post_format:
 - Image
-tags:
-- Jonathan Frakes
-- star trek
 share: true
 ---
 

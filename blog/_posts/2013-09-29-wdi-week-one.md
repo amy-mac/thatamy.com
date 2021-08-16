@@ -6,13 +6,11 @@ layout: post
 slug: wdi-week-one
 title: WDI Week One
 wordpress_id: 1482
-categories:
+tags:
 - Education
 - Technology
-tags:
-- General Assembly
-- programming
-- ruby
+- Programming
+- Ruby
 share: true
 ---
 

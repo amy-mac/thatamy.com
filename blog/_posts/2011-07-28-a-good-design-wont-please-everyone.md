@@ -6,10 +6,8 @@ layout: post
 slug: a-good-design-wont-please-everyone
 title: '&ldquo;A good design won''t please everyone.&rdquo;'
 wordpress_id: 178
-categories:
-- Design
 tags:
-- design
+- Design
 share: true
 ---
 

@@ -6,15 +6,12 @@ layout: post
 slug: arbitr-project
 title: Arbitr Project
 wordpress_id: 1659
-categories:
+tags:
 - Projects
 - Technology
-tags:
-- Backbone.js
-- CoffeeScript
-- General Assembly
-- programming
-- Rails
+- Programming
+- Ruby on Rails
+- Backbone
 share: true
 ---
 <figure>

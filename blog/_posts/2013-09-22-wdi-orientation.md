@@ -6,10 +6,8 @@ layout: post
 slug: wdi-orientation
 title: WDI Orientation
 wordpress_id: 1472
-categories:
-- Education
 tags:
-- General Assembly
+- Education
 ---
 
 Tonight we had the orientation and installfest for WDI. It was really great to finally put some faces to the names I've been seeing on the contact sheet for the last couple of weeks. I was especially excited to see our instructors and learn more about them. We were separated into two groups and I was put into the Snakes Brigade (which makes me think of the House of Slytherin). I was a little disappointed because all the people I had already befriended were put into the Camel group, but I'm sure once I get to know everyone in my group, I'll be just as happy. I mean one student in my group had a Totoro decal on her laptop so she's already my new favorite person.

@@ -6,13 +6,9 @@ layout: post
 slug: meetup-group-drama
 title: Meetup Group Drama
 wordpress_id: 1338
-categories:
-- Technology
 tags:
-- discrimination
-- sexism
-- SF Ruby
-- women in tech
+- Technology
+- Sexism
 ---
 
 I am a member of the SF Ruby Meet Up group. Today I checked my email and saw a message thread from the group that made me feel sick to my stomach. A woman had sent a message to the group saying that she was looking for women developers for an internship and those interested should email her. The first couple replies were very reasonable ones from men giving her a heads up that it is illegal to discriminate based on gender, and that they would recommend not listing genders in job postings. These replies weren't attacking her, they were factual, and she immediately sent a reply apologizing for the mistake and welcomed those of all genders to apply. Everything's cool then, right?

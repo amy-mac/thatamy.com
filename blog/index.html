@@ -6,11 +6,11 @@ pagination:
   size: 10
   alias: posts
   reverse: true
-permalink: "blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 ---
 <h1>Recent Blog Posts</h1>
 
-{% for post in posts %}
+{%- for post in posts -%}
   <article class="hentry post">
     <header>
       <h2 class="entry-title">
@@ -23,19 +23,19 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
         </span>
         <span rel="tag"><i class="fi-clock"></i> {{ post.data.templateContent | reading_time }}</span>
 
-        {% if post.data.categories %}
+        {%- if post.data.tags -%}
           <span rel="tag">
-            {% for category in post.data.categories %}
-              {% unless category == post.data.categories.last %}
-                <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>,
-              {% else %}
-                <a href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>
-              {% endunless %}
-            {% endfor %}
+            {%- for tag in post.data.tags -%}
+              {%- unless forloop.last == true -%}
+                <a href="/blog/{{tag | slug}}/">{{ tag }}</a>,&nbsp;
+              {%- else -%}
+                <a href="/blog/{{tag | slug}}/">{{ tag }}</a>
+              {%- endunless -%}
+            {%- endfor -%}
           </span>
-        {% else %}
+        {%- else -%}
           <span></span>
-        {% endif %}
+        {%- endif -%}
       </div>
     </header>
 
@@ -46,29 +46,29 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
   </article>
 
   <hr />
-{% endfor %}
+{%- endfor -%}
 
 <nav class="pagination-centered">
   <ul class="pagination">
-    {% if pagination.href.previous %}
+    {%- if pagination.href.previous -%}
       <li class="arrow"><a href="{{ pagination.href.previous }}">&laquo;</a></li>
-    {% else %}
+    {%- else -%}
       <li class="arrow unavailable">&laquo;</li>
-    {% endif %}
+    {%- endif -%}
 
-    {% for pageEntry in pagination.hrefs %}
-      {% if page.url == pageEntry %}
+    {%- for pageEntry in pagination.hrefs -%}
+      {%- if page.url == pageEntry -%}
         <li class="current"><a aria-current="page" href="{{ pageEntry }}">{{ forloop.index }}</a></li>
-      {% else %}
+      {%- else -%}
         <li><a href="{{ pageEntry }}">{{ forloop.index }}</a></li>
-      {% endif %}
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
 
-    {% if pagination.href.next %}
+    {%- if pagination.href.next -%}
       <li class="arrow"><a href="{{ pagination.href.next }}">&raquo;</a></li>
-    {% else %}
+    {%- else -%}
       <li class="arrow unavailable">&raquo;</li>
-    {% endif %}
+    {%- endif -%}
   </ul>
 </nav>
 

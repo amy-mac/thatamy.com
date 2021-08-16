@@ -6,18 +6,15 @@ layout: post
 slug: failure-teaches-us-that-life
 title: Failure Teaches Us
 wordpress_id: 816
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- movies
-- quotes
 share: true
 ---
 
 <blockquote>Failure teaches us that life is but a draft, a long rehearsal for a show that will never play.
-
 
 <cite>Hipolito, “Amelie”, 2001</cite>
 </blockquote>

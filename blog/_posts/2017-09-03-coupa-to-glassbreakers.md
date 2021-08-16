@@ -4,12 +4,9 @@ comments: true
 date: 2017-09-03 21:09:18+00:00
 layout: post
 title: From Coupa to Glassbreakers
-categories:
+tags:
 - Technology
 - Work
-tags:
-- Glassbreakers
-- Coupa
 share: true
 ---
 

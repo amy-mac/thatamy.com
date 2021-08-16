@@ -6,11 +6,9 @@ layout: post
 slug: not-failure-but-low-aim-is-sin
 title: Not Failure, but Low Aim is Sin
 wordpress_id: 173
-categories:
+tags:
 - Inspirational
 - Personal
-tags:
-- articles
 share: true
 ---
 

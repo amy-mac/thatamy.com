@@ -6,13 +6,9 @@ layout: post
 slug: stuck-between-the-analog-and-the-digital
 title: Stuck between the analog and the digital
 wordpress_id: 207
-categories:
+tags:
 - Personal
 - Technology
-tags:
-- employment
-- geeks
-- tech
 ---
 
 One of the things that I value in the workplace is efficiency. At every company I've worked for I've delighted in discovering and implementing more efficient methods of carrying out tasks. Being that I'm often the most tech savvy person at a lot of the companies I've worked for, I've strived to help them adopt newer technologies and methods of running more efficiently, whenever I'm in a position to do so. The managing teams are often very enthusiastic about this, sometimes I'm even part of the managing team, but I've sometimes found it very hard to get employees to accept and adopt newer technologies and/or newer methods. This serves as a great frustration for me; when I've spent a lot of time and effort trying to make things better for other people and they just dismiss it.

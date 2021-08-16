@@ -6,12 +6,11 @@ layout: post
 slug: you-must-not-for-one-instant
 title: You Must Not For One Instant...
 wordpress_id: 833
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- quotes
 share: true
 ---
 

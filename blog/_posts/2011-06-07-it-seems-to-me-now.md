@@ -6,13 +6,11 @@ layout: post
 slug: it-seems-to-me-now
 title: It Seems to Me Now...
 wordpress_id: 763
-categories:
-- Experiences
+tags:
+- Quotes
+- Inspirational
 post_format:
 - Quote
-tags:
-- love
-- quotes
 share: true
 ---
 

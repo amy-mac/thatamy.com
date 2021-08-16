@@ -5,11 +5,10 @@ date: 2014-02-02 10:26:00+00:00
 share: true
 layout: post
 title: More Ember Thoughts
-categories:
-- Technology
 tags:
-- Ember.js
+- Technology
 - JavaScript
+- Ember
 ---
 
 After 4 days of working with Ember, these are my thoughts about it.

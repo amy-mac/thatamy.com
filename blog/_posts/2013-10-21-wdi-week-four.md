@@ -6,13 +6,11 @@ layout: post
 slug: wdi-week-four
 title: WDI Week Four
 wordpress_id: 1581
-categories:
+tags:
 - Education
 - Technology
-tags:
-- General Assembly
-- programming
-- Rails
+- Programming
+- Ruby on Rails
 share: true
 ---
 

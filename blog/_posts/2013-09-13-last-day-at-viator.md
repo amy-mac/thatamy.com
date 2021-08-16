@@ -6,12 +6,8 @@ layout: post
 slug: last-day-at-viator
 title: Last Day at Viator
 wordpress_id: 1383
-categories:
-- Work
 tags:
-- travel
-- traveling
-- viator
+- Work
 share: true
 ---
 

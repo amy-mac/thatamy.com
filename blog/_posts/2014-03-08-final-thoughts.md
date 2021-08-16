@@ -5,15 +5,12 @@ date: 2014-03-08 9:55:00+00:00
 share: true
 layout: post
 title: Final Thoughts on General Assembly
-categories:
+tags:
 - Education
 - Technology
-tags:
-- bootcamps
 - Ruby
 - Ruby on Rails
-- programming
-- General Assembly
+- Programming
 ---
 
 I've been promising to write a wrap-up post about General Assembly and have continued to receive requests asking about what my experience was like and if I think it's worth it. Now that it's been almost 3 months since the program ended, I feel I can do a better job of wrapping it all up.

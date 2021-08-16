@@ -2,7 +2,7 @@
 author: amy@amy-mac.com
 layout: default
 comments: true
-permalink: "blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
+permalink: "blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/"
 share: true
 ---
 <div class="row">
@@ -16,13 +16,14 @@ share: true
         <h1 class="p-name">{{ title }}</h1>
         <div class="entry-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time>
-          {% if categories != 0 %}
+          {% if tags != 0 %}
           <span rel="tag">
-            {% for category in categories %}
-              {% unless category == categories.last %}
-                <a class="p-category" href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>,
+            <i class="fi-price-tag"></i>
+            {% for tag in tags %}
+              {% unless forloop.last == true %}
+                <a class="p-category" href="/blog/{{tag | slug}}/">{{ tag }}</a>,
               {% else %}
-                <a class="p-category" href="{{site.url}}/blog/categories/{{category | downcase}}/index.html">{{ category }}</a>
+                <a class="p-category" href="/blog/{{tag | slug}}/">{{ tag }}</a>
               {% endunless %}
             {% endfor %}
           </span>
@@ -37,10 +38,6 @@ share: true
       <div class="e-content">
         {{ content }}
       </div>
-
-      {% if tags %}
-        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> {{ tags | array_to_sentence_string }}</span>
-      {% endif %}
 
       {% if share %}
         {% include share-bar.html %}

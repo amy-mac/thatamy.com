@@ -8,6 +8,8 @@ title: Why working at home is both awesome and horrible
 wordpress_id: 859
 post_format:
 - Link
+tags:
+- Work
 share: true
 ---
 

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Day One with Ember</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
     <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
     <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
 
@@ -39,7 +41,9 @@
         </div>
       </div>
 
-      <div class="row">  <!-- Main Content Section -->
+      <div class="row">
+
+  <!-- Main Content Section -->
   <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
   <div class="large-9 medium-9 push-3 columns">
 
@@ -50,9 +54,14 @@
           <time class="dt-published" datetime="Sat Jan 25 2014 12:26:00 GMT-0800 (Pacific Standard Time)">2014 January 25 at 12:26 PM</time>
           
           <span rel="tag">
+            <i class="fi-price-tag"></i>
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">Technology</a>,
+                <a class="p-category" href="/blog/technology/">Technology</a>,
+              
+            
+              
+                <a class="p-category" href="/blog/ember/">Ember</a>
               
             
           </span>
@@ -63,7 +72,8 @@
       <hr />
 
       <div class="e-content">
-        <p>I recently started giving myself a crash course in <a href="http://emberjs.com" title="Ember.js">Ember.js</a> to do a quick example app for a job interview. I was pretty sure I could pick it up quickly since once thing I definitely learned in the bootcamp was how to learn fast and work quickly. This certainly isn’t ideal for most real world situations because you want to produce high quality sites and apps which require proper planning, testing, and attention to detail. But it’s nice to know what I am capable of doing in a pinch.One of the things that is really starting to amaze me is that the more I learn about all these different technologies the less scary everything looks, as a whole. When I look at new languages, they don’t look like Greek and I can generally get the gist of what they’re doing. It’s also the same with JavaScript frameworks, though I’m really only on my 2nd right now. After about 8 hours of working with Ember.js it reminds me so much of Rails with its naming conventions and automated “magic.” I can see how Backbone.js gives you so much more liberty, which is nice, but Ember.js makes specific things quicker and easier because of the conventions. An example is when you’re looping over a collection in its template, you don’t have to specify the variables for what you’re looping over because it knows that you’re probably going to want to loop over the collection of objects that are associated with that template and controller.</p>
+        <p>I recently started giving myself a crash course in <a href="http://emberjs.com" title="Ember.js">Ember.js</a> to do a quick example app for a job interview. I was pretty sure I could pick it up quickly since once thing I definitely learned in the bootcamp was how to learn fast and work quickly. This certainly isn’t ideal for most real world situations because you want to produce high quality sites and apps which require proper planning, testing, and attention to detail. But it’s nice to know what I am capable of doing in a pinch.</p>
+<p>One of the things that is really starting to amaze me is that the more I learn about all these different technologies the less scary everything looks, as a whole. When I look at new languages, they don’t look like Greek and I can generally get the gist of what they’re doing. It’s also the same with JavaScript frameworks, though I’m really only on my 2nd right now. After about 8 hours of working with Ember.js it reminds me so much of Rails with its naming conventions and automated “magic.” I can see how Backbone.js gives you so much more liberty, which is nice, but Ember.js makes specific things quicker and easier because of the conventions. An example is when you’re looping over a collection in its template, you don’t have to specify the variables for what you’re looping over because it knows that you’re probably going to want to loop over the collection of objects that are associated with that template and controller.</p>
 <p>You could write this:</p>
 <pre class="language-erb"><code class="language-erb">{% raw %}<br>  {{#each user in users}}<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>{{user.name}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  {{/each}}<br>{% endraw %}</code></pre>
 <p>But Ember will let you write this instead:</p>
@@ -71,10 +81,6 @@
 <p>Convenient, right? So I’m feeling pretty comfortable with Ember so far, since it reminds me of Rails but written in JavaScript, and the Handlebars templating was super easy to get used to since it’s the same syntax I’ve started using with liquid tempting in my Jekyll blog. I still have a lot more to learn in Ember as I continue over the next couple days, but I’m becoming very intrigued with some of its object modeling features that I was reading up on, since again, it’s the same things I’m used to seeing in Rails, with the model relationships, and designating what the attribute types are going to be, even without dealing with a traditional database. I’m really excited to continue playing with it, and wonder if (or how) I’ll decide that one is better than the other—Backbone or Ember?</p>
 
       </div>
-
-      
-        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> Ember.js</span>
-      
 
       
         <aside id="share-bar">

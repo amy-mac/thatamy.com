@@ -6,11 +6,9 @@ layout: post
 slug: wdi-week-six
 title: WDI Week Six
 wordpress_id: 1617
-categories:
-- Education
 tags:
-- General Assembly
-- programming
+- Education
+- Programming
 share: false
 ---
 

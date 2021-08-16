@@ -5,11 +5,8 @@ date: 2018-07-24 22:09:18-07:00
 layout: post
 title: A Mental Checklist When I Do Code Reviews
 categories:
-- Technology
+- Programming
 - Work
-tags:
-- Code Reviews
-- Methodology
 share: true
 ---
 

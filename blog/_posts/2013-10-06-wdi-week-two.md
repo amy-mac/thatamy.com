@@ -6,18 +6,13 @@ layout: post
 slug: wdi-week-two
 title: WDI Week Two
 wordpress_id: 1497
-categories:
+tags:
 - Education
 - Technology
-tags:
 - CSS
-- General Assembly
-- impostor syndrome
 - JavaScript
-- programming
-- Rspec
-- ruby
-- Sinatra
+- Programming
+- Ruby
 share: true
 ---
 

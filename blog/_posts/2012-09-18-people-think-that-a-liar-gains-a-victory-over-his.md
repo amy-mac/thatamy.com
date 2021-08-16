@@ -6,14 +6,11 @@ layout: post
 slug: people-think-that-a-liar
 title: On Lying
 wordpress_id: 407
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- books
-- lying
-- quotes
 share: true
 ---
 

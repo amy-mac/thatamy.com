@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Drag from Desktop Tricks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="http://amy-mac.com/assets/css/foundation.min.css">
     <link rel="stylesheet" href="http://amy-mac.com/images/webicons-master/webicons.css">
     <link rel="stylesheet" href="http://amy-mac.com/assets/foundation-icons.css">
 
@@ -39,7 +41,9 @@
         </div>
       </div>
 
-      <div class="row">  <!-- Main Content Section -->
+      <div class="row">
+
+  <!-- Main Content Section -->
   <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
   <div class="large-9 medium-9 push-3 columns">
 
@@ -50,13 +54,18 @@
           <time class="dt-published" datetime="Wed Mar 26 2014 14:09:18 GMT-0700 (Pacific Daylight Time)">2014 March 26 at 02:09 PM</time>
           
           <span rel="tag">
+            <i class="fi-price-tag"></i>
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/technology/index.html">Technology</a>,
+                <a class="p-category" href="/blog/programming/">Programming</a>,
               
             
               
-                <a class="p-category" href="http://amy-mac.com/blog/categories/tutorial/index.html">Tutorial</a>,
+                <a class="p-category" href="/blog/tutorial/">Tutorial</a>,
+              
+            
+              
+                <a class="p-category" href="/blog/javascript/">JavaScript</a>
               
             
           </span>
@@ -67,7 +76,8 @@
       <hr />
 
       <div class="e-content">
-        <p>Lately I’ve been reading a whole lot about drag and drop while I’ve tried to implement a ‘drag from desktop to upload’ feature. While some of these features have been around for a very long time, others are new and therefore finicky.One of the annoying things about dragging files from the desktop is that there are only 3 events that the browser will recognize for this target: <code>dragenter</code>, <code>dragover</code>, and <code>drop</code>; whereas when you drag items that are already in the browser you also have <code>dragstart</code>, <code>drag</code>, and <code>dragend</code>. I read a lot of articles telling you that you <strong>can’t</strong> do these things, but I wasn’t satisfied with that. I knew there had to be a way to cheat. There are in fact a couple ways that you can fake the drag start and drag end events. Here are the tricks:</p>
+        <p>Lately I’ve been reading a whole lot about drag and drop while I’ve tried to implement a ‘drag from desktop to upload’ feature. While some of these features have been around for a very long time, others are new and therefore finicky.</p>
+<p>One of the annoying things about dragging files from the desktop is that there are only 3 events that the browser will recognize for this target: <code>dragenter</code>, <code>dragover</code>, and <code>drop</code>; whereas when you drag items that are already in the browser you also have <code>dragstart</code>, <code>drag</code>, and <code>dragend</code>. I read a lot of articles telling you that you <strong>can’t</strong> do these things, but I wasn’t satisfied with that. I knew there had to be a way to cheat. There are in fact a couple ways that you can fake the drag start and drag end events. Here are the tricks:</p>
 <h2>On Drag Start</h2>
 <p>If there’s nothing that you want to happen when an item starts being dragged then you’re a lucky person, because you won’t care that you can’t initiate anything at the beginning of a drag. But what if you want a drop zone to become apparent when an item starts being dragged, or some other kind of notice or action that helps the user? There might be multiple ways to get around this, but the best way I’ve found so far is to simply attach an event listener to the <code>body</code> tag for <code>dragover</code> like so:</p>
 <pre class="language-js"><code class="language-js"><span class="token keyword">var</span> page <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>page<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"dragenter"</span><span class="token punctuation">,</span> doSomething<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">function</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <br>  <span class="token comment">// Whatever action you want performed when the drag starts</span><br>  <br>  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
@@ -85,10 +95,6 @@
 <p>I’d love to hear any better ideas people have come up with for mimicking the drag start and end events; feel free to comment!</p>
 
       </div>
-
-      
-        <span class="entry-meta" rel="tag"><i class="fi-price-tag"></i> JavaScript, Drag and Drop, and Tricks</span>
-      
 
       
         <aside id="share-bar">

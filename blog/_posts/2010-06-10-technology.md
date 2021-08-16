@@ -6,7 +6,7 @@ layout: post
 slug: technology
 title: Technology
 wordpress_id: 14
-categories:
+tags:
 - Technology
 ---
 

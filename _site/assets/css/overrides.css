@@ -226,6 +226,10 @@ code[class] {
   font-size: 0.9em;
 }
 
+.fi-price-tag {
+  margin-right: 0.5ch;
+}
+
 .post pre {
   margin-bottom: 0.9em;
 }

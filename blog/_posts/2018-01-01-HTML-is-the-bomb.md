@@ -4,9 +4,8 @@ comments: true
 date: 2018-01-01 10:00:00-07:00
 layout: post
 title: A Sort of Love Letter to HTML
-categories:
-- Technology
 tags:
+- Programming
 - HTML
 share: true
 ---

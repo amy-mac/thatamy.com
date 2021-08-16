@@ -6,14 +6,12 @@ layout: post
 slug: javascript-merge-sort
 title: 'Computer Science in JavaScript: Merge Sort'
 wordpress_id: 1513
-categories:
+tags:
 - Technology
+- JavaScript
+- Programming
 post_format:
 - Link
-tags:
-- algorithms
-- JavaScript
-- programming
 share: true
 ---
 

@@ -6,13 +6,11 @@ layout: post
 slug: would-you-tell-me-please
 title: Would You Tell Me Please...
 wordpress_id: 718
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- alice in wonderland
-- quotes
 share: true
 ---
 

@@ -6,15 +6,11 @@ layout: post
 slug: heres-to-the-crazy-ones
 title: RIP Steve Jobs
 wordpress_id: 623
-categories:
+tags:
 - Technology
+- Inspirational
 post_format:
 - Quote
-tags:
-- apple
-- genius
-- quotes
-- steve jobs
 share: true
 ---
 

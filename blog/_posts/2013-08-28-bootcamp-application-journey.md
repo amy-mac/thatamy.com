@@ -6,17 +6,10 @@ layout: post
 slug: bootcamp-application-journey
 title: My Bootcamp Application Journey
 wordpress_id: 1306
-categories:
+tags:
 - Dreams &amp; Goals
 - Technology
-tags:
-- App Academy
-- Devbootcamp
-- General Assembly
-- Hack Reactor
-- Hackbright Academy
-- programming
-- web development
+- Programming
 share: true
 ---
 

@@ -4,13 +4,10 @@ comments: true
 date: 2014-03-26 21:09:18+00:00
 layout: post
 title: Drag from Desktop Tricks
-categories:
-- Technology
-- Tutorial
 tags:
+- Programming
+- Tutorial
 - JavaScript
-- Drag and Drop
-- Tricks
 share: true
 ---
 

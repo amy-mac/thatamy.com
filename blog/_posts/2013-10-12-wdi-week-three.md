@@ -6,17 +6,12 @@ layout: post
 slug: wdi-week-three
 title: WDI Week Three
 wordpress_id: 1555
-categories:
+tags:
 - Education
 - Technology
-tags:
-- AJAX
-- General Assembly
 - JavaScript
-- jQuery
-- programming
-- Rails
-- SQL
+- Programming
+- Ruby on Rails
 share: true
 ---
 

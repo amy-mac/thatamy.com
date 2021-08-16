@@ -6,13 +6,11 @@ layout: post
 slug: so-avoid-using-the-word
 title: So Avoid Using the Word 'very'
 wordpress_id: 776
-categories:
+tags:
 - Inspirational
+- Quotes
 post_format:
 - Quote
-tags:
-- movies
-- quotes
 share: true
 ---
 

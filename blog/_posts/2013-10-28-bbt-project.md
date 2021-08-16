@@ -6,13 +6,10 @@ layout: post
 slug: bbt-project
 title: BestBeachToday Project
 wordpress_id: 1590
-categories:
+tags:
 - Projects
 - Technology
-tags:
-- General Assembly
-- programming
-- Rails
+- Programming
 excerpt: <p>The app that I first set out to create, and the one that I presented on Demo Day on Friday are different, because I really had to scale my vision down and just produce the MVP due to lack of time. I'd like to think of what I presented as a working prototype. I plan on making it lots better.</p>
 share: true
 ---

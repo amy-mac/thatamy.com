@@ -2,11 +2,9 @@
 date: 2018-08-17 13:55:00-07:00
 layout: post
 title: "Project: Is Alameda Exploding?"
-categories:
-- Technology
-- Projects
 tags:
-- Sinatra
+- Programming
+- Projects
 - Ruby
 ---
 
