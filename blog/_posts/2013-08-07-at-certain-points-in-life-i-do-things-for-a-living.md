@@ -18,3 +18,5 @@ I'm starting to find that my life's journey of starting out as a hobbyist front-
 Also...I have many skills.
 
 I find myself reminded of this monologue from Working the musical. It's always really resonated for me. Jobs are not big enough for people.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IoQ_mnapKAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
