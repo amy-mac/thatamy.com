@@ -19,6 +19,7 @@ permalink: "/blog/{{ tag | slug }}/"
       <h2 class="p-name entry-title"><a class="u-url" href="{{ post.url | url}}" rel="bookmark" title="{{ post.data.title }}">{{ post.data.title }}</a></h2>
       <div class="entry-meta">
         <time class="dt-published" datetime="{{ post.data.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
+        <span rel="tag"><i class="fi-clock"></i> about {{ post.templateContent | timeToRead }}</span>
       </div>
     </header>
     <div class="p-summary entry-summary">

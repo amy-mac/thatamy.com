@@ -18,7 +18,7 @@ share: true
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time>
           <span rel="tag"><i class="fi-clock"></i> about {{ content | timeToRead }} to read</span>
 
-          {% if tags != 0 %}
+          {% if tags.size > 0 %}
           <span rel="tag">
             <i class="fi-price-tag"></i>
             {% for tag in tags %}

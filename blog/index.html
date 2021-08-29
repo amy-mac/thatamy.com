@@ -23,7 +23,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber
         </span>
         <span rel="tag"><i class="fi-clock"></i> about {{ post.templateContent | timeToRead }}</span>
 
-        {%- if post.data.tags -%}
+        {%- if post.data.tags.size > 0 -%}
           <span rel="tag">
             <i class="fi-price-tag"></i> 
             {%- for tag in post.data.tags -%}
