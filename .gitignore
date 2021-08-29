@@ -3,3 +3,4 @@
 _drafts
 *.swp
 node_modules
+_site
