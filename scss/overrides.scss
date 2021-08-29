@@ -66,6 +66,7 @@ $button-lrg: rem-calc(16);
 .entry-meta {
   margin: 0 0 1.25rem 0;
   font-size: 95%;
+  line-height: normal;
   @extend strong;
   color: $dark-gray;
   .hcard {

@@ -21,7 +21,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber
         <span class="entry-date date published updated">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
         </span>
-        <span rel="tag"><i class="fi-clock"></i> {{ post.data.templateContent | reading_time }}</span>
+        <span rel="tag"><i class="fi-clock"></i> about {{ post.templateContent | timeToRead }}</span>
 
         {%- if post.data.tags -%}
           <span rel="tag">

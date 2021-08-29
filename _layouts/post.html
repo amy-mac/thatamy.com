@@ -16,6 +16,8 @@ share: true
         <h1 class="p-name">{{ title }}</h1>
         <div class="entry-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y %B %d at %I:%M %p" }}</time>
+          <span rel="tag"><i class="fi-clock"></i> about {{ content | timeToRead }} to read</span>
+
           {% if tags != 0 %}
           <span rel="tag">
             <i class="fi-price-tag"></i>

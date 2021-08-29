@@ -36,6 +36,7 @@ li .h-card {
 .entry-meta {
   margin: 0 0 1.25rem 0;
   font-size: 95%;
+  line-height: normal;
   color: #6f6f6f;
 }
 .entry-meta .hcard {

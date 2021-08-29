@@ -3,6 +3,7 @@ const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 const MARKDOWN_OPTIONS = {
   html: true,
@@ -25,6 +26,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.setBrowserSyncConfig({
     files: "./_site/assets/css/*.css",
