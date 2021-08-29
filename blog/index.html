@@ -25,6 +25,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber
 
         {%- if post.data.tags -%}
           <span rel="tag">
+            <i class="fi-price-tag"></i> 
             {%- for tag in post.data.tags -%}
               {%- unless forloop.last == true -%}
                 <a href="/blog/{{tag | slug}}/">{{ tag }}</a>,&nbsp;

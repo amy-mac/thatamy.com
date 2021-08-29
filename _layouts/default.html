@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/foundation.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/images/webicons-master/webicons.css">
-    <link rel="stylesheet" href="{{ site.url}}/assets/foundation-icons.css">
+    <link rel="stylesheet" href="/assets/css/foundation.min.css">
+    <link rel="stylesheet" href="/images/webicons-master/webicons.css">
+    <link rel="stylesheet" href="/assets/foundation-icons.css">
 
     <!-- syntax highlighting CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/overrides.css">
+    <link rel="stylesheet" href="/assets/css/overrides.css">
     {% if share %}
-      <link rel="stylesheet" href="{{ site.url }}/assets/css/share-bar.css">
+      <link rel="stylesheet" href="/assets/css/share-bar.css">
     {% endif %}
-    <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
+    <script src="/assets/js/vendor/modernizr.js"></script>
 
   </head>
     <body>
@@ -27,7 +27,7 @@
 
       <div class="row header">
         <div class="large-3 columns">
-          <h1><a href="/index.html"><img class="u-logo" src="{{ site.url }}/images/new-logo.png" data-interchange="[{{ site.url }}/images/new-logo-rt.png, (retina)]"></a></h1>
+          <h1><a href="/index.html"><img class="u-logo" src="/images/new-logo.png" data-interchange="[/images/new-logo-rt.png, (retina)]"></a></h1>
         </div>
         <div class="large-9 columns">
           <nav role="navigation">
@@ -67,11 +67,11 @@
       </div>
     </footer>
 
-    <script src="{{site.url}}/assets/js/vendor/jquery.js"></script>
+    <script src="/assets/js/vendor/jquery.js"></script>
     {% if page.url == '/theatre/' %}
-      <script src="{{site.url}}/assets/js/main.js"></script>
+      <script src="/assets/js/main.js"></script>
     {% endif %}
-    <script src="{{site.url}}/assets/js/foundation.min.js"></script>
+    <script src="/assets/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
@@ -92,7 +92,7 @@
 
     {% if site.disqus_shortname and comments %}{% include disqus_comments.html %}{% endif %}
     {% if title == "Drag from Desktop Tricks" %}
-      <script src="{{site.url}}/assets/js/dragover.js"></script>
+      <script src="/assets/js/dragover.js"></script>
     {% endif %}
 </body>
 </html>
