@@ -1,9 +1,10 @@
 const excerpt = require("eleventy-plugin-excerpt");
+const fs = require("fs");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const timeToRead = require('eleventy-plugin-time-to-read');
+const timeToRead = require("eleventy-plugin-time-to-read");
 
 const MARKDOWN_OPTIONS = {
   html: true,
@@ -30,6 +31,18 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.setBrowserSyncConfig({
     files: "./_site/assets/css/*.css",
+    callbacks: {
+      ready: function (err, bs) {
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync("_site/404.html");
+          // Add 404 http status code in request header.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
   });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
