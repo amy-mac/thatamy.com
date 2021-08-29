@@ -16,7 +16,7 @@ tags:
 share: true
 ---
 
-![Props Board]({{site.url}}/images/2013/IMG_4605.jpg) I made it onto the props board!
+![Props Board](/images/2013/IMG_4605.jpg) I made it onto the props board!
 
 ## Monday
 
@@ -44,8 +44,8 @@ We did some HTML and CSS review, and did a lab where we had to make a one-page p
 We worked with Sinatra some more, and HTML forms, and actually started using Sinatra in a more natural way, so I liked it a lot more than on Monday. We got deeper into what REST is, worked on some more Sinatra labs. Then for homework we started working with our first API! That was also really exciting. We used the yahoo finance gem, and the assignment was to create a Sinatra app that had two pages: one with a search bar where you'd enter a stock symbol and then the page that shows the result. Here's what the front-end of mine looked like:
 
 <ul class="small-block-grid-2">
-  <li><img class="th" src="{{site.url}}/images/2013/StockApp1.jpg" /></li>
-  <li><img class="th" src="{{site.url}}/images/2013/StockApp2.jpg" /></li>
+  <li><img class="th" src="/images/2013/StockApp1.jpg" /></li>
+  <li><img class="th" src="/images/2013/StockApp2.jpg" /></li>
 </ul>
 
 Simple app, but we have to start somewhere! I also did very minimal CSS on it, because it was Jesse's birthday and I was taking him to see *1776* at A.C.T. so I only had an hour in between school and the show to try to get the homework done. I got a pretty good start on it before I had to leave, and then I was frantically trying to finish when we were on the BART home. By the time we got home I had all the functionality working but hadn't added in the styling yet, so I just threw in some quick CSS when we got home, and went to bed.
@@ -62,7 +62,7 @@ We also went over recursion, which I mistakenly thought that I understood before
 
 Homework was to use JavaScript to create a bank page where you could deposit money into a checking and savings account and also withdrawal it from those accounts, and there was all this other criteria we had to complete, ending with: there had to be overdraft protection. I worked on it step by step, and got it all working. The html had already been provided for us, and we just had to do the JavaScript for it, but I ended up changing up the default CSS quite a bit because it was pretty ugly. This was the result:
 
-![Webpage screenshot]({{site.url}}/images/2013/badtz-maru-bank.jpg)
+![Webpage screenshot](/images/2013/badtz-maru-bank.jpg)
 
 
 ## Thursday
@@ -74,7 +74,7 @@ For the first one I had simply forgotten the first way we were using Sinatra, wi
 
 Finally an instructor came and took a look at my JS and it turned out that I had written `document.getElementByID` instead of `document.getElementById`. That single uppercase letter caused me a 2 hour headache. I couldn't believe it. The bright side is, that my solution to creating a disclosure widget was correct and worked immediately once I fixed that. I was rather excited, because I've been wanting to do disclosure widgets for years, and so far hadn't gotten any to work with just CSS. I deployed my [movie-search app](http://secure-cove-7665.herokuapp.com/) to Heroku, to show to a couple of people, but the images won't work on it, so here's a screenshot of what it looks like when I run it locally:
 
-[![Screenshot of Web App]({{site.url}}/images/2013/movie-search.jpg)]({{site.url}}/images/2013/movie-search.jpg) Movie Search Details Page
+[![Screenshot of Web App](/images/2013/movie-search.jpg)](/images/2013/movie-search.jpg) Movie Search Details Page
 
 Jesse says he likes the UI better than IMDb, so I'm thinking about finding a better API to access IMDb with and create a movie search app just for my husband to use, because I love him.
 

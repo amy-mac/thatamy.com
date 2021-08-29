@@ -11,8 +11,8 @@ tags:
 I live on the island of Alameda in the San Francisco Bay area. We are bordered on our east side by the Oakland Coliseum and our west side by AT&T Park just directly across the water 3 miles away. When there are fireworks in either of these places we can hear them, and sometimes see them. On holidays we hear all the surrounding fireworks. We also get Blue Angels flying over and so on.
 
 <figure>
-  <a class="th" href="{{site.url}}/images/alameda-island.jpg" title="Larger image of map of Alameda">
-    <img src="{{site.url}}/images/alameda-island.jpg" alt="Map of Alameda" />
+  <a class="th" href="/images/alameda-island.jpg" title="Larger image of map of Alameda">
+    <img src="/images/alameda-island.jpg" alt="Map of Alameda" />
   </a>
   <figcaption>Map showing Alameda and its surroundings</figcaption>
 </figure>
@@ -117,9 +117,9 @@ And that was basically it. I put it up on Heroku and then started fiddling with 
 It's a bit of a frivilous project, but it was fun. Here are some of the variations of what you might see.
 
 <figure>
-  <img src="{{site.url}}/images/alameda_exploding1.jpg" alt="No idea, it's either in your head or it could be Armageddon">
-  <img src="{{site.url}}/images/alameda_exploding2.jpg" alt="Probably because it's Independence Day">
-  <img src="{{site.url}}/images/alameda_exploding3.jpg" alt="The Giants are playing tonight and just won">
+  <img src="/images/alameda_exploding1.jpg" alt="No idea, it's either in your head or it could be Armageddon">
+  <img src="/images/alameda_exploding2.jpg" alt="Probably because it's Independence Day">
+  <img src="/images/alameda_exploding3.jpg" alt="The Giants are playing tonight and just won">
 </figure>
 
 In the future I will probably add some checks for whether it's Fleet Week, and other such loud disturbances to expand it. Hope the Alamedans enjoy it! You can check out the <a href="http://isalamedaexploding.com">live site</a> or view the <a href="https://github.com/amy-mac/alameda_exploding">project on Github</a>.

@@ -16,7 +16,7 @@ share: true
 
 <div class="text-center">
 
-  <img src="{{site.url}}/images/2013/Voila_Capture56-612x370.jpg" alt="Index of BestBeachToday">
+  <img src="/images/2013/Voila_Capture56-612x370.jpg" alt="Index of BestBeachToday">
 
   <p>Splash Page</p>
 
@@ -97,10 +97,10 @@ I wish I could provide the link to actually share the project with all of this b
 
 
 <ul class="small-block-grid-2">
-  <li><a class="th" href="{{site.url}}/images/2013/Voila_Capture55.jpg">
-  <img src="{{site.url}}/images/2013/Voila_Capture55.jpg" alt="Show Page">
+  <li><a class="th" href="/images/2013/Voila_Capture55.jpg">
+  <img src="/images/2013/Voila_Capture55.jpg" alt="Show Page">
 </a></li>
-  <li><a class="th" href="{{site.url}}/images/2013/Voila_Capture57.jpg">
-  <img src="{{site.url}}/images/2013/Voila_Capture57.jpg" alt="Results Page">
+  <li><a class="th" href="/images/2013/Voila_Capture57.jpg">
+  <img src="/images/2013/Voila_Capture57.jpg" alt="Results Page">
 </a></li>
 </ul>

@@ -20,7 +20,7 @@ We've started our first projects, so this will be a shorter summary than usual. 
 
 We went over the movie search rails app, and I showed mine off. Everyone liked the jQuery plugin I used for the star radio buttons:
 
-<a class="th" href="{{site.url}}/images/2013/Voila_Capture49.jpg"><img src="{{ site.url }}/images/2013/Voila_Capture49-th.jpg" alt="Screenshot of Movie App"></a>
+<a class="th" href="/images/2013/Voila_Capture49.jpg"><img src="{{ site.url }}/images/2013/Voila_Capture49-th.jpg" alt="Screenshot of Movie App"></a>
 
 We had a substitute teacher working with us all day, who teaches at the LA General Assembly, because 2 of our instructors were going to be out for a couple days. I wasn't happy with the substitute and felt like Tuesday was a lost day due to us spending 3 hours just watching him get error after error and not actually teaching us how to do anything. It also didn't help that he made a sexist remark towards me off the bat and I felt uncomfortable the rest of the day.
 

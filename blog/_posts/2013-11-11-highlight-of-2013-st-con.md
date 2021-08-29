@@ -19,7 +19,7 @@ So THIS happened.
 
 <div class="text-center">
 <a href="http://www.flickr.com/photos/amy_sloan/10804712076/#">
-  <img src="{{site.url}}/images/jonathan_frakes.jpg" title="Picture with Jonathan Frakes" alt="Me with Jonathan Frakes" class="th"></a>
+  <img src="/images/jonathan_frakes.jpg" title="Picture with Jonathan Frakes" alt="Me with Jonathan Frakes" class="th"></a>
 
 <p>Us with Jonathan Frakes</p>
 

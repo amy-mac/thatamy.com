@@ -12,7 +12,7 @@ tags:
 share: false
 ---
 
-![Drawing of concepts]({{site.url}}/images/IMG_4801-1024x768.jpg)
+![Drawing of concepts](/images/IMG_4801-1024x768.jpg)
 What we've "learned" in 6 weeks
 
 We are now half way through the WDI program, which I have mixed feelings about. I definitely have been experiencing a slump and some depression after finishing Project 1.

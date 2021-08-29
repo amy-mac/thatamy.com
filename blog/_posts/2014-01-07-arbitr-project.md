@@ -16,7 +16,7 @@ share: true
 ---
 <figure>
   <a class="th" href="http://usearbitr.com" title="Arbitr">
-  <img src="{{site.url}}/images/2014/Voila_Capture86.jpg" alt="Arbitr Splash page
+  <img src="/images/2014/Voila_Capture86.jpg" alt="Arbitr Splash page
 " />
   </a>
   <figcaption>Arbitr Splash page</figcaption>
@@ -25,8 +25,8 @@ share: true
 <p>The final project that I created in WDI was an app that had been on my mind for quite a few months because it was an app that my husband, Jesse, had been wanting someone to build since February 2013. He is an assistant debate coach and spends most of his weekends during the school year at Debate Tournaments. There is a particular way that both the judges and the teams track debate rounds and they are referred to as flows. A textbook shows an example of a flow as this:</p>
 
 <figure>
-  <a class="th" href="{{site.url}}/images/2014/Flow_Note_Sample.jpg" title="An example of a flow">
-    <img src="{{site.url}}/images/2014/Flow_Note_Sample.jpg" alt="an example of a flow"/>
+  <a class="th" href="/images/2014/Flow_Note_Sample.jpg" title="An example of a flow">
+    <img src="/images/2014/Flow_Note_Sample.jpg" alt="an example of a flow"/>
   </a>
   <figcaption>An example of a flow</figcaption>
 </figure>
@@ -34,8 +34,8 @@ share: true
 When in reality they end up looking more like this in the heat of the round:
 
 <figure>
-  <a class="th" href="{{site.url}}/images/2014/IMG_5063-e1388441427372-1024x789.jpg">
-    <img src="{{site.url}}/images/2014/IMG_5063-e1388441427372-1024x789.jpg" alt="a handwritten example flow" />
+  <a class="th" href="/images/2014/IMG_5063-e1388441427372-1024x789.jpg">
+    <img src="/images/2014/IMG_5063-e1388441427372-1024x789.jpg" alt="a handwritten example flow" />
   </a>
   <figcaption>A handwritten example flow</figcaption>
 </figure>
@@ -55,7 +55,7 @@ I also was initially conflicted on what I was going to use as the back-end. Of c
 During the weekend of planning, I hit a huge bump with the data modeling. After discussing with Jesse more of the details surround the Debate events and what kind of interactions the site would need, I spent an entire day just working through how to do the database schema and object models, and at one point worried I would have to abandon the project because it'd be too complicated. After many pages of writing as I worked through it I realized I had been thinking about it the wrong way and came out with something much simpler than I thought it'd be.
 
 <figure>
-  <img src="{{site.url}}/images/2014/Voila_Capture87.jpg" alt="data modeling" />
+  <img src="/images/2014/Voila_Capture87.jpg" alt="data modeling" />
   <figcaption>Data Modeling</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ After the first two days of actual coding all I had was the back-end set up for 
 
 I had 3 main parts I needed to create and each one went one level deeper under the other so I started at the top level, working on setting up Tournaments in Backbone, which was one of the easier parts: allow people to add a tournament and it would display in a list.
 
-![Tournament Index]({{site.url}}/images/2014/Voila_Capture88.jpg)
+![Tournament Index](/images/2014/Voila_Capture88.jpg)
 
 The biggest challenge I ran into on this part was getting the tournament list to sort by tournament date instead of tournament id. This is something that would normally be very easy if you're just doing it in Ruby, but since Backbone has its own collections that it refreshes on a regular basis, it's a little trickier...or so I thought. I kept trying to use .sortBy after the collection is fetched but was having no luck getting it to reflect the way I wanted it to sort. It turns out that Backbone actually has a built in property that makes it easy peazy to automatically sort a collection by whatever field you specify: the comparator property, which is ideal because whenever you add a new item to a collection it already knows that it needs to be sorted that way and inserts the item into the correct spot in the list.
 
@@ -83,7 +83,7 @@ class DebateJudge.Collections.Tournaments extends Backbone.Collection
 
 The next part to work on was Rounds to go beneath each of the Tournaments and that ended up taking up the last couple days of the week. The Rounds index underneath each of the tournaments included event categories: Lincoln Douglas, Parli, Public Forum, and Policy, and any time a round was created it needed to go under the correct event, so there were lots of collections involved.
 
-![Rounds Index]({{site.url}}/images/2014/Voila_Capture89.jpg)
+![Rounds Index](/images/2014/Voila_Capture89.jpg)
 
 One of the huge hurdles I crossed concerning rounds was problems with loading and refreshing data since it was doing it asynchronously. The DOM wouldn't be loaded yet and my Backbone views would be trying to append data and HTML elements to other elements that didn't exist yet. The real life saver with this was telling the Backbone views to specifically append to "this" view element that was going to be loaded. So it would append to that view's element before it tried to load that view on that page. An example:
 
@@ -104,7 +104,7 @@ Since the `#tournaments` element refers to an element that lives inside the temp
 The next part that I needed to work on was really the most important part and the beef of what the site was all about: the Round page where all the action would be taking place. Before I even started working on the contentions that would be within each Round, I had to create the view for a Round and the workspace that the contentions would eventually be in. I spend an entire day just working on the CSS that would be this page. I knew from before I even started working on the project what I had in mind for the Round workspace. I have not yet mastered drawing with my huge stylus on my iPad mini, so this was my original messy sketch:
 
 
-![Round Page Wireframe]({{site.url}}/images/2014/photo_1.png)
+![Round Page Wireframe](/images/2014/photo_1.png)
 
 All the events have a different amount of columns and at first I thought I was going to have to create a different template for each of the event categories, but luckily I realized before I started coding it that that would be too much duplicate work and was able to create just one view template that would be able to generate the different layouts for each of the events. Where the difficulty with the CSS came in is that I knew I needed a page that was going to be able to scroll horizontally to be able to accommodate a varying amount of columns, and that it couldn't just wrap because the columns themselves would be varying heights and the user would need to be able to always compare one column with the next one. So I needed the page to scroll horizontally, and I needed each column to be a somewhat set height and have its own scroll bar so you wouldn't have to worry about the page getting so long that the user would have to scroll up and down.
 
@@ -131,7 +131,7 @@ applyMarkdown: (value) ->
 
 From there on out it was all bug-fixing and styling and showing it to Jesse when I got home that evening and then doing a ton more styling changes after getting his feedback. There was so much more that I wanted to do with it but the MVP to present to my class the next day was finished. I did my final push to Heroku and refused to let myself pick at it the next morning as we were waiting for presentations to start.
 
-<img class="th" src="{{site.url}}/images/2014/arbitr_lg.jpg" alt="round page example" />
+<img class="th" src="/images/2014/arbitr_lg.jpg" alt="round page example" />
 
 I spent my entire presentation time giving a tour of the app and talking about what it does, as well as explaining all the Debate stuff, and then ran out of time so I didn't get to show any of my code to my classmates. The feedback was overwhelmingly positive, however, and I was surprised by it. I figured that this project would be the one that was least interesting because it's such a niche thing, but it was my only project that people came up to tell me they liked, and I discovered a few people who used to be debaters in high school and/or college. It was a great way to end to the bootcamp.
 

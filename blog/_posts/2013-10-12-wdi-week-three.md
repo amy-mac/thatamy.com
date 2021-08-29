@@ -39,7 +39,7 @@ The night prior I was reading my [jQuery Compressed](http://www.amazon.com/jQuer
 
 <div class="flex-video">
   <video width="1136" height="722" controls>
-    <source src="{{site.url}}/images/Voila_Capture39.mp4" type="video/mp4">
+    <source src="/images/Voila_Capture39.mp4" type="video/mp4">
     <source src="{site.url}}/images/Voila_Capture39.ogg" type="video/ogg">
   Your browser does not support the video tag.
   </video>
@@ -49,7 +49,7 @@ In the afternoon we had the option of doing the Ruby review or starting on a lab
 
 Unfortunately I couldn't do anything else on the checklist until this problem was solved, so after about 45 minutes of frustration and getting worn out I said, "I give up," and put my head down.  But of course I wasn't able to actually give up. My mind just won't let things rest until I can figure it out. I looked at some examples of other jQuery code involving checkboxes and tried moving my event function to be within another function, instead of on its own, and magically it started working just the way it was supposed to. I'm not completely sure as to the why. Definitely a moment illustrated perfect in this picture:
 
-![Code meme]({{site.url}}/images/2013/code_meme.jpg)
+![Code meme](/images/2013/code_meme.jpg)
 
 After that it was smooth sailing. Here is what mine looked like: [To-Do Project](http://bl.ocks.org/amy-mac/raw/0a2d009e08906ffcea2d/).
 
@@ -63,7 +63,7 @@ When they told us Wednesday morning that we were going to learn SQL I think I cl
 
 For homework, we had to create a Sinatra app called "Book Haikus" that uses a sqlite3 database. I ended up going to the USS Loma Prieta meeting that night, which I hadn't initially planned on attending, due to homework etc, but my husband lured me to the Mission with Irish food, and it made sense to just head over to the Captain's house for the meeting. I worked on the homework the entire time I was there but it was slightly slow-going due to the distractions. I managed to get all the functionality working by the end up the meeting (9pm) but still needed to style it. The requirements for the homework stated that we either had to incorporate the Google Books API or make the page super styling, so on the BART ride home I got to work on the CSS. I ended up staying up until 11:30pm trying to get it looking nice but wasn't completely happy with it, and it was too late to try out the Google Books API, so I went to bed. I didn't get the CSS decent enough until the next morning. Here was the final outcome:
 
-[![Book Haikus webpage]({{site.url}}/images/2013/Voila_Capture44.jpg)]({{site.url}}/images/2013/Voila_Capture44.jpg)
+[![Book Haikus webpage](/images/2013/Voila_Capture44.jpg)](/images/2013/Voila_Capture44.jpg)
 
 
 ## Thursday — Rails
@@ -87,7 +87,7 @@ The first hour or so of class was a "fireside" chat—complete with virtual fire
 
 First they went over how to add things to the database from a form, in a Rails app, which I had already done the prior afternoon so I got started on the lab early. It was actually a very basic assignment, with a set list of instructions, so it's not like we were just free to create anything we wanted. We were supposed to create something like [bit.ly](https://bitly.com/) called rit.ly. We had to take the link inputted, store it in the database along with a hash code we created, and then display the code to them and have their new rit.ly link redirect to the original website when they'd click on it, etc. I had the entire functionality of it working by lunch time. So then after work I concentrated on the CSS and making it all look nice. I added in error handling, and then was kind of bored, so I added in iframe previews of the websites just for the hell of it:
 
-[![Rit.ly webpage]({{site.url}}/images/2013/Voila_Capture46.jpg)]({{site.url}}/images/2013/Voila_Capture46.jpg)
+[![Rit.ly webpage](/images/2013/Voila_Capture46.jpg)](/images/2013/Voila_Capture46.jpg)
 
 After that I really wasn't sure what to do next, with the limitations of the lab instructions, so I put on my headphones and continued watching Rails for Zombies tutorials. We had a brief break to meet Brooke, the staff member in charge of what happens after we graduate WDI. She's going to talk more about the resources available to us when we get a little further into the course. Class ended a little early because we all had to be out of there by 5pm, since General Assembly was hosting a [Geek Girl Dinner](http://bayareagirlgeekdinners.com/) that night. So happy hour was taking place at Zeke's, a bar across the street, and I went over with the rest of the group to socialize and drink some beer.
 

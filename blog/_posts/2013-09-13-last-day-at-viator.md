@@ -11,7 +11,7 @@ tags:
 share: true
 ---
 
-![Employees at Viator]({{site.url}}/images/2013/Viator-Election-Day.jpg) Those at Viator who voted in the 2012 election showing off the stickers
+![Employees at Viator](/images/2013/Viator-Election-Day.jpg) Those at Viator who voted in the 2012 election showing off the stickers
 
 Today was my last day at [Viator, Inc](http://www.viator.com). It's a travel company that helps people research and purchase tours & activities in hundreds of travel destinations all over the world for the lowest price, guaranteed. I worked there for a year and a half and thought I'd go over some of the highlights of my time there:
 
