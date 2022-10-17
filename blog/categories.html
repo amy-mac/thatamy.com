@@ -6,6 +6,7 @@ pagination:
   alias: tag
   filter:
     - all
+    - personalPosts
 eleventyComputed:
   title: Category {{ tag }}
 permalink: "/blog/{{ tag | slug }}/"

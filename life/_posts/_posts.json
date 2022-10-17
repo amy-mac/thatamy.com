@@ -1,0 +1,5 @@
+{
+  "permalink": "life/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "blogUrl": "/life",
+  "blogTitle": "Personal Blog"
+}

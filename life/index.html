@@ -1,0 +1,52 @@
+---
+layout: main
+title: Latest Posts
+pagination:
+  data: collections.personalPosts
+  size: 10
+  alias: posts
+  reverse: true
+permalink: "/life/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+---
+<h1>Recent Personal Blog Posts</h1>
+
+{%- for post in posts -%}
+  <article class="hentry post">
+    <header>
+      <h2 class="entry-title">
+        <a href="{{ post.url | url }}" rel="bookmark" title="{{ post.data.title }}">{{ post.data.title }}</a>
+      </h2>
+
+      <div class="entry-meta">
+        <span class="entry-date date published updated">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y %B %d at %I:%M %p" }}</time>
+        </span>
+        <span rel="tag"><i class="fi-clock"></i> about {{ post.templateContent | timeToRead }}</span>
+
+        {%- if post.data.tags.size > 0 -%}
+          <span rel="tag">
+            <i class="fi-price-tag"></i> 
+            {%- for tag in post.data.tags -%}
+              {%- unless forloop.last == true -%}
+                <a href="/life/{{tag | slug}}/">{{ tag }}</a>,&nbsp;
+              {%- else -%}
+                <a href="/life/{{tag | slug}}/">{{ tag }}</a>
+              {%- endunless -%}
+            {%- endfor -%}
+          </span>
+        {%- else -%}
+          <span></span>
+        {%- endif -%}
+      </div>
+    </header>
+
+    <div class="entry-summary">
+      {% excerpt post %}
+      <a href="{{ post.url | url }}" rel="bookmark" title="{{ post.data.title }}">Read More &raquo;</a>
+    </div>
+  </article>
+
+  <hr />
+{%- endfor -%}
+
+{%- include pagination.html -%}

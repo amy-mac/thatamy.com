@@ -49,6 +49,10 @@ module.exports = (eleventyConfig) => {
     return collectionApi.getFilteredByGlob("blog/_posts/*.md");
   });
 
+  eleventyConfig.addCollection("personalPosts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("life/_posts/*.md");
+  });
+
   eleventyConfig.addLiquidFilter("array_to_sentence_string", function (list) {
     if (list.length === 1) {
       return list[0];

@@ -2,7 +2,6 @@
 author: amy@amy-mac.com
 layout: default
 comments: true
-permalink: "blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/"
 share: true
 ---
 <div class="row">
@@ -23,9 +22,9 @@ share: true
             <i class="fi-price-tag"></i>
             {% for tag in tags %}
               {% unless forloop.last == true %}
-                <a class="p-category" href="/blog/{{tag | slug}}/">{{ tag }}</a>,
+                <a class="p-category" href="{{site.blogUrl}}/{{tag | slug}}/">{{ tag }}</a>,
               {% else %}
-                <a class="p-category" href="/blog/{{tag | slug}}/">{{ tag }}</a>
+                <a class="p-category" href="{{site.blogUrl}}/{{tag | slug}}/">{{ tag }}</a>
               {% endunless %}
             {% endfor %}
           </span>
@@ -53,19 +52,5 @@ share: true
 
   </div>
 
-  <div class="large-3 medium-3 pull-9 columns">
-    <aside>
-    <p><img class="img-round u-photo" src="/images/amy_2016.jpg" alt="Amy MacKinnon"></p>
-
-    <blockquote>Art is never finished, only abandoned.<cite>Leonardo Da Vinci</cite></blockquote>
-
-    <h3>Everywhere Else</h3>
-    <a href="http://www.flickr.com/photos/amy_sloan/" class="webicon flickr u-url">Flickr</a>
-    <a href="https://github.com/amy-mac" class="webicon github u-url" rel="me">Github</a>
-    <a href="http://www.linkedin.com/in/amymsloan" class="webicon linkedin u-url">Linked In</a>
-    <a href="https://twitter.com/thatamymac" class="webicon twitter u-url" rel="me">Twitter</a>
-    <a href="http://www.youtube.com/user/morriganjett" class="webicon youtube u-url">Youtube</a>
-    </aside>
-  </div>
-
+  {%- include sidebar.html -%}
 </div>
