@@ -35,7 +35,13 @@
               <li><a href="/portfolio">Projects</a></li>
               <li><a href="/resume">Resume</a></li>
               <li><a href="/theatre">Theatre</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li>
+                  {% if blogUrl %}
+                    <a href="{{blogUrl}}">{{blogTitle}}</a></li>
+                  {% else %}
+                    <a href="{{site.blogUrl}}">{{site.blogTitle}}</a></li>
+                  {% endif %}
+              </li>
             </ul>
           </nav>
         </div>
@@ -50,7 +56,7 @@
         <hr>
         <div class="row">
           <div class="large-6 columns">
-            <p>© 2010&ndash;2021 Amy MacKinnon. Currently built with
+            <p>© 2010&ndash;2022 Amy MacKinnon. Currently built with
             <a class="u-url" href="https://www.11ty.io">11ty.</a></p>
           </div>
           <div class="large-6 columns">
@@ -59,7 +65,12 @@
                 <li><a href="/portfolio">Projects</a></li>
                 <li><a href="/resume">Resume</a></li>
                 <li><a href="/theatre">Theatre</a></li>
-                <li><a href="/blog">Blog</a></li>
+                <li>
+                  {% if blogUrl %}
+                    <a href="{{blogUrl}}">{{blogTitle}}</a></li>
+                  {% else %}
+                    <a href="{{site.blogUrl}}">{{site.blogTitle}}</a></li>
+                  {% endif %}
               </ul>
             </nav>
           </div>

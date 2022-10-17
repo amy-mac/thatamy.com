@@ -22,9 +22,9 @@ share: true
             <i class="fi-price-tag"></i>
             {% for tag in tags %}
               {% unless forloop.last == true %}
-                <a class="p-category" href="{{site.blogUrl}}/{{tag | slug}}/">{{ tag }}</a>,
+                <a class="p-category" href="{{blogUrl}}/{{tag | slug}}/">{{ tag }}</a>,
               {% else %}
-                <a class="p-category" href="{{site.blogUrl}}/{{tag | slug}}/">{{ tag }}</a>
+                <a class="p-category" href="{{blogUrl}}/{{tag | slug}}/">{{ tag }}</a>
               {% endunless %}
             {% endfor %}
           </span>

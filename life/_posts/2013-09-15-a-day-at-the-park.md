@@ -11,7 +11,7 @@ post_format:
 tags:
 - comics
 - Inspirational
-- links
+- Links
 ---
 
 [A Day at the Park - Comics that say something. - Quora](http://comicsthatsaysomething.quora.com/A-Day-at-the-Park?share=1).
