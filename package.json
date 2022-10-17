@@ -24,6 +24,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
     "eleventy-plugin-excerpt": "^1.1.2",
     "eleventy-plugin-time-to-read": "^1.1.0",
-    "sass": "^1.36.0"
+    "sass": "^1.55.0"
   }
 }
