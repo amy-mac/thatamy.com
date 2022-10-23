@@ -44,7 +44,7 @@ to people and we got to hear a few songs, which was really great. Here is one of
 pleasure.
 
 <div class="flex-video">
-  <iframe width="640" height="360" src="//www.youtube.com/embed/UIiVyPhmaJ0?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/UIiVyPhmaJ0?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 After that we left Katie to work on an essay while we went and napped and then we all went out to 

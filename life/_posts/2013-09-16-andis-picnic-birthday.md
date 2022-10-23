@@ -14,7 +14,7 @@ tags:
 
 <figure class="text-center">
   <a href="http://www.flickr.com/photos/termie/9766344364/">
-  <img src="http://farm8.staticflickr.com/7393/9766344364_c0439a6ab2.jpg" alt="Picture of Amy with blue hair">
+  <img src="https://farm8.staticflickr.com/7393/9766344364_c0439a6ab2.jpg" alt="Picture of Amy with blue hair">
   </a>
   <figcaption>a photo by <a href="http://www.flickr.com/photos/termie/">termie</a> on Flickr.</figcaption>
 </figure>

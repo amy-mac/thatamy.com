@@ -19,7 +19,7 @@ There wasn't much discussion of where we'd be going for our Honeymoon. Scotland 
 ## Day 1
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9121721091/" title="IMG_4143 by AMsloan, on Flickr"><img src="http://farm6.staticflickr.com/5546/9121721091_0d85a7f0c8_z.jpg" width="640" height="480" alt="IMG_4143"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9121721091/" title="IMG_4143 by AMsloan, on Flickr"><img src="https://farm6.staticflickr.com/5546/9121721091_0d85a7f0c8_z.jpg" width="640" height="480" alt="IMG_4143"></a>
   <figcaption>On the plane headed towards Scotland</figcaption>
 </figure>
 
@@ -29,14 +29,14 @@ While enthusiastic about arriving in Edinburgh, 48 hours of no sleep had finally
 At 10pm we used our Edinburgh Passes to go on the [Auld Reekie Terror Tour](http://www.auldreekietours.com/tours.html), because nothing says romantic honeymoon like learning about the dark and scary parts of a city's history. Our tour guide was really fantastic. First he took us on a short walk around the Royal Mile to talk about some of the gory and terrible things that happened around there, but the true delight of the evening was him taking us down into Edinburgh's underground vaults. We started out seeing the torture museum, which had torture instruments on display. I was familiar with many of the devices already but there was one that I haven't seen before that I find particularly horrifying—most likely because I find being eaten alive to be horrifying. The device involved a sort of small cage being placed over the abdomen of someone laying down, and on top of the cage were hot coals. A rat or sometimes a cat is placed inside this cage, with no bottom except for the flesh of the person. The person is interrogated while the animal, trying desperately to escape the heat, starts eating their way through the flesh. Cheery, isn't it?
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9123966968/" title="IMG_4173 by AMsloan, on Flickr"><img src="http://farm4.staticflickr.com/3698/9123966968_88ea137f22_z.jpg" width="640" height="480" alt="IMG_4173"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9123966968/" title="IMG_4173 by AMsloan, on Flickr"><img src="https://farm4.staticflickr.com/3698/9123966968_88ea137f22_z.jpg" width="640" height="480" alt="IMG_4173"></a>
   <figcaption>Torture instruments in the torture museum</figcaption>
 </figure>
 
 After the torture museum, we went down into the vaults proper. The vaults have such a fascinating history that I could probably write pages about it. Edinburgh was originally built on these series of bridges that had these rooms in the arches and as the city grew to be somewhat two stories, they had this whole "underground" world that existed in these vaults. After seeing some of the rooms and hearing stories about what took place down there—including a MacKinnon ghost that haunts the place—the tour ended and we headed back to the flat.
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9123974854/" title="IMG_4196 by AMsloan, on Flickr"><img src="http://farm3.staticflickr.com/2872/9123974854_e82bf4dc0a_z.jpg" width="640" height="480" alt="IMG_4196"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9123974854/" title="IMG_4196 by AMsloan, on Flickr"><img src="https://farm3.staticflickr.com/2872/9123974854_e82bf4dc0a_z.jpg" width="640" height="480" alt="IMG_4196"></a>
   <figcaption>This was one of the rooms that had a lot of horrible things happen in it.</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ We lost track of time and had to hightail it to New Town where we had a reservat
 ## Day 3
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9124219682/" title="P1000220 by AMsloan, on Flickr"><img src="http://farm8.staticflickr.com/7450/9124219682_3473916e82_z.jpg" width="640" height="480" alt="P1000220"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9124219682/" title="P1000220 by AMsloan, on Flickr"><img src="https://farm8.staticflickr.com/7450/9124219682_3473916e82_z.jpg" width="640" height="480" alt="P1000220"></a>
   <figcaption>Glamis Castle</figcaption>
 </figure>
 
@@ -99,29 +99,29 @@ We had lunch there at the castle and then headed back to the Highland Games. The
 **A few videos from the games:**
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/IqiBWQfwpUc?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/IqiBWQfwpUc?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/NROl9oI76QU?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/NROl9oI76QU?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/raERZrN7ezc?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/raERZrN7ezc?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/H1-kZx22U0c?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/H1-kZx22U0c?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/lX6yL66enbI?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/lX6yL66enbI?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Day 4
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9158583513/" title="IMG_4233 by AMsloan, on Flickr"><img src="http://farm4.staticflickr.com/3679/9158583513_81d90771cd_z.jpg" width="640" height="480" alt="IMG_4233"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9158583513/" title="IMG_4233 by AMsloan, on Flickr"><img src="https://farm4.staticflickr.com/3679/9158583513_81d90771cd_z.jpg" width="640" height="480" alt="IMG_4233"></a>
   <figcaption>The Elephant House</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ After tea we got to take a free tour of the City Chambers—it was like a palace
 ## Day 5
 
 <figure class="text-center">
-  <a href="http://www.flickr.com/photos/amy_sloan/9160970730/" title="P1000433 by AMsloan, on Flickr"><img src="http://farm6.staticflickr.com/5346/9160970730_71799e3e12_z.jpg" width="640" height="480" alt="P1000433"></a>
+  <a href="http://www.flickr.com/photos/amy_sloan/9160970730/" title="P1000433 by AMsloan, on Flickr"><img src="https://farm6.staticflickr.com/5346/9160970730_71799e3e12_z.jpg" width="640" height="480" alt="P1000433"></a>
   <figcaption>St. Serf's Church had the most gorgeous stained glass windows</figcaption>
 </figure>
 
@@ -226,7 +226,7 @@ I picked some flowers from around the castle to take home as a 2nd wedding bouqu
 ## Day 8
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9227370788/" title="P1000976 by AMsloan, on Flickr"><img src="http://farm8.staticflickr.com/7426/9227370788_66f73fee6d_z.jpg" width="640" height="480" alt="P1000976"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9227370788/" title="P1000976 by AMsloan, on Flickr"><img src="https://farm8.staticflickr.com/7426/9227370788_66f73fee6d_z.jpg" width="640" height="480" alt="P1000976"></a>
   <figcaption>Abbey of Iona from the ferry</figcaption>
 </figure>
 
@@ -261,7 +261,7 @@ The day was pretty uneventful after that, as we were driving most of the day bac
 ## Day 10
 
 <figure class="text-center">
-  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9236218744/" title="P1010138 by AMsloan, on Flickr"><img src="http://farm8.staticflickr.com/7421/9236218744_b6b4b7a26a_z.jpg" width="640" height="480" alt="P1010138"></a>
+  <a class="th" href="http://www.flickr.com/photos/amy_sloan/9236218744/" title="P1010138 by AMsloan, on Flickr"><img src="https://farm8.staticflickr.com/7421/9236218744_b6b4b7a26a_z.jpg" width="640" height="480" alt="P1010138"></a>
   <figcaption>Visiting Edinburgh Castle</figcaption>
 </figure>
 

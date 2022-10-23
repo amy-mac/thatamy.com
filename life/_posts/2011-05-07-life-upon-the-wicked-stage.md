@@ -27,5 +27,5 @@ So again, I find myself being attracted back to a stage where I can experience a
 So can you blame me for wanting to spend time in a place where men get to pretend to be in love with me for a couple hours each night? Who cares if they’re gay 1/2 the time, right? ;-) I haven’t been a mother yet on stage though, and that is something I absolutely long for.
 
 <figure class="text-center">
-  <img class="th" src="http://media.tumblr.com/tumblr_lkstpk2kA11qcdyar.jpg" alt="Amy in Red, Hot, and Cole" />
+  <img class="th" src="https://media.tumblr.com/tumblr_lkstpk2kA11qcdyar.jpg" alt="Amy in Red, Hot, and Cole" />
 </figure>

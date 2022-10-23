@@ -16,7 +16,7 @@ post_format:
 ---
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/Vv57gssfuBU?rel=0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/Vv57gssfuBU?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 “I don’t love you anymore. Goodbye.”

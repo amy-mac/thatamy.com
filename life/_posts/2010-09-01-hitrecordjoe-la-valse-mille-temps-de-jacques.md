@@ -12,7 +12,7 @@ post_format:
 ---
 
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/3otUlQ4wvLY?rel=0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/3otUlQ4wvLY?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 [hitrecordjoe](http://hitrecordjoe.tumblr.com/post/1041510876/la-valse-a-mille-temps-de-jacques-brel-at-the):

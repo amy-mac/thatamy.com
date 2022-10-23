@@ -13,7 +13,7 @@ tags:
 - Cats
 ---
 <div class="flex-video widescreen">
-  <iframe width="853" height="480" src="//www.youtube.com/embed/sYj0MkRQ4N0?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/sYj0MkRQ4N0?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 This is how I entertain myself.
