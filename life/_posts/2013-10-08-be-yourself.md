@@ -7,7 +7,7 @@ layout: post
 slug: be-yourself
 title: Be Yourself
 tags:
-- love
+- Love
 - Relationships
 ---
 

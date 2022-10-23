@@ -6,8 +6,6 @@ layout: post
 title: Leaving the Island
 tags:
 - Oakland
-- Alameda
-- Moving
 share: true
 ---
 

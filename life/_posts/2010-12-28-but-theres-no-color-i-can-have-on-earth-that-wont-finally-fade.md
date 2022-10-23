@@ -7,11 +7,9 @@ layout: post
 slug: but-theres-no-color-i-can-have-on-earth-that-wont-finally-fade
 title: But there's no color I can have on Earth that won't finally fade
 wordpress_id: 1005
-categories:
+tags:
 - Theatre
 - Dreams &amp; Goals
-tags:
-- Pippin
 ---
 
 Earlier this year I posted a Facebook status about how I realized that the source of my discontent was that on any given day I felt like I should be doing something extraordinary. A few people laughed and said, "Didn't you learn anything from Pippin?" For those of you who are unfamiliar with the musical, here is a summary:

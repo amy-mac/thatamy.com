@@ -1,14 +1,13 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-07-01 02:04:10+00:00
 layout: post
 slug: and-so-it-is-the-shorter-story-no-love-no-glory
 title: And so it is the shorter story, no love&mdash;no glory
 wordpress_id: 978
 tags:
-- Goals
+- Dreams &amp; Goals
 - Education
 - Experiences
 - Relationships

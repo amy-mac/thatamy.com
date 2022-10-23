@@ -7,13 +7,10 @@ layout: post
 slug: babies-do-not-need-toys
 title: Babies Do Not Need Toys
 wordpress_id: 722
-categories:
-- Family
 post_format:
 - Video
 tags:
-- Aiden
-- babies
+- Babies
 ---
 
 <div class="flex-video vimeo">

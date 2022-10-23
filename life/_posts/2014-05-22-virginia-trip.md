@@ -6,8 +6,7 @@ layout: post
 title: Virginia Trip
 tags:
 - Experiences
-- vacation
-- history
+- Vacation
 - Virginia
 share: true
 ---

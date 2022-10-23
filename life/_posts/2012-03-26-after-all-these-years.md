@@ -9,8 +9,7 @@ wordpress_id: 476
 post_format:
 - Status
 tags:
-- frustration
-- lyrics
+- Lyrics
 ---
 
 I am _still_ the underestimated and impatient little girl raising her hand.

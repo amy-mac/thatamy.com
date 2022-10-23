@@ -10,7 +10,7 @@ tags:
 - Reviews
 - Theatre
 - Shakespeare
-- vacation
+- Vacation
 ---
 
 The first show we were going to see in Ashland was _Cymbeline_ in the Elizabethan Theater (which is an outdoor theater) but due to the wildfires and thick smoke they canceled the show, for the first time in the festival's history, due to health concerns. They continued to cancel all shows in that theater over the next few days and finally opened it up again just in time for the other show we were seeing in the Elizabethan. I'm glad that we got to enjoy the Elizabethan at all, under the circumstances, but I'm totally bummed that we missed out on _Cymbeline_.

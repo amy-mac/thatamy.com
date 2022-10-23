@@ -6,7 +6,7 @@ layout: post
 slug: she-says-shh-i-know-its-only-in-my-head
 title: She says, "Shh...I know, it's only in my head."
 wordpress_id: 996
-categories:
+tags:
 - Experiences
 ---
 

@@ -7,11 +7,9 @@ layout: post
 slug: ready-steady-go
 title: Ready, steady, go!
 wordpress_id: 140
-categories:
+tags:
 - Experiences
 - Work
-tags:
-- shining stars foundation
 ---
 
 A lot has been going on over the last month. I just got back from a 3 week business trip to Colorado for the [Aspen Winter Games](http://www.shiningstarsfoundation.org/our-programs/aspen-winter-games/). It was once again a big success, and my big project, as usual, was creating the slideshow for the banquet. Every year I am faced with the challenge of creating it on a time crunch with limited resources, but every year I get countless compliments on it, so I suppose I must be doing something right. Once I finish compressing the video I will be posting it online if anyone is interested in it. Past years can be found [here](http://www.shiningstarsfoundation.org/media/winter-games-slideshows/). One thing that really stood out to me was how much I really enjoyed getting a chance to work with video again. It made me long to pursue a career in video editing again, though I know it's not likely or practical. However, this is the first year that I was chosen to edit the entire Winter Games souvenir video that will be sent to all the kids, families, and volunteers, and I'm really excited about the project.

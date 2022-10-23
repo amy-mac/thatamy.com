@@ -6,14 +6,10 @@ layout: post
 slug: recently-i-heard-someone-say-that-they-saw-on-the
 title: Fosse
 wordpress_id: 411
-categories:
-- Inspirational
 tags:
-- Choreography
+- Inspirational
 - Dancing
-- Fosse
-- quote
-- women's rights
+- Quotes
 ---
 
 Recently I heard someone say that they saw on the internet a meme floating around that said, "The only man who should have control over a woman's body is Bob Fosse."

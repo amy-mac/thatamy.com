@@ -6,7 +6,7 @@ layout: post
 slug: if-you-want-better-things-i-want-you-to-have-them
 title: If you want better things I want you to have them
 wordpress_id: 1006
-categories:
+tags:
 - Theatre
 - Experiences
 - Work

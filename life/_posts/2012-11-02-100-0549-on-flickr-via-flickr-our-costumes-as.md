@@ -7,18 +7,11 @@ layout: post
 slug: 100-0549-on-flickr-via-flickr-our-costumes-as
 title: Halloween 2012
 wordpress_id: 372
-categories:
-- Experiences
-- Pictures
 post_format:
 - Gallery
 tags:
-- Amy Sloan
-- Aragorn
-- Arwen
-- Halloween
-- Jesse MacKinnon
-- Lord of the Rings
+- Experiences
+- Pictures
 ---
 
 <figure class="text-center">

@@ -7,9 +7,9 @@ published: false
 slug: and-if-im-flying-solo-at-least-im-flying-free
 title: And if I'm flying solo, at least I'm flying free
 wordpress_id: 999
-categories:
+tags:
 - Experiences
-- Life the Universe and Everything
+- Relationships
 ---
 
 "What's the point in all this screaming? No one's listening anyway."

@@ -6,7 +6,7 @@ layout: post
 slug: that-elusive-ingredient
 title: That Elusive Ingredient
 wordpress_id: 825
-categories:
+tags:
 - Experiences
 ---
 

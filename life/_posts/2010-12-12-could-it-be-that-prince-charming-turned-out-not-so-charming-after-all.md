@@ -7,7 +7,7 @@ published: false
 slug: could-it-be-that-prince-charming-turned-out-not-so-charming-after-all
 title: Could it be that Prince Charming turned out not so charming after all
 wordpress_id: 1003
-categories:
+tags:
 - Experiences
 ---
 

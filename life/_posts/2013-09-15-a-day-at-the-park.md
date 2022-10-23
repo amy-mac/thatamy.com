@@ -9,7 +9,6 @@ title: A Day at the Park
 post_format:
 - Link
 tags:
-- comics
 - Inspirational
 - Links
 ---

@@ -7,7 +7,7 @@ layout: post
 slug: lady-peaceful-lady-happy-thats-what-i-long-to-be
 title: Lady Peaceful, Lady Happy, that's what I long to be
 wordpress_id: 990
-categories:
+tags:
 - Theatre
 - Experiences
 ---

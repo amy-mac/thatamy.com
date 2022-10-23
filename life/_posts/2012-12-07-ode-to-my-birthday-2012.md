@@ -8,7 +8,6 @@ slug: ode-to-my-birthday-2012
 title: Ode to My Birthday 2012
 wordpress_id: 307
 tags:
-- Birthdays
 - Experiences
 ---
 

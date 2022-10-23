@@ -7,11 +7,9 @@ layout: post
 slug: someday-ill-fly-someday-ill-soar
 title: Someday I'll Fly, Someday I'll Soar
 wordpress_id: 142
-categories:
+tags:
 - Experiences
 - Work
-tags:
-- shining stars foundation
 ---
 
 For those who may have not seen the retweet, here is a [link to the video](http://www.facebook.com/video/video.php?v=208574029169408&oid=152315315683&comments) I made for the 2011 Aspen Winter Games Awards Ceremony. It's kind of a wrap-up of the week, and therefore it gets made very quickly at the end, so I'm never fully satisfied with it, but other people are, so maybe I'm just too hard on myself.

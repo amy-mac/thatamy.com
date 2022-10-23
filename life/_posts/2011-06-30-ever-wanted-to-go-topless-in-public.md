@@ -7,17 +7,12 @@ layout: post
 slug: ever-wanted-to-go-topless-in-public
 title: Ever Wanted To Go Topless In Public? We Did. (NSFW) | TheGloss
 wordpress_id: 717
-categories:
-- Links
 post_format:
 - Link
 tags:
-- society
-- nudity
+- Links
 ---
 
 [Ever Wanted To Go Topless In Public? We Did. (NSFW) | TheGloss](http://thegloss.com/beauty/sunday-in-the-park-with-boobs/)
 
 I like this article and hope that American culture does get to a point someday that it realizes our bodies are natural and not dirty or “sinful.”
-
-

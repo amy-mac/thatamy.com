@@ -7,14 +7,12 @@ layout: post
 slug: i-dont-know-if-youve-ever-felt-like-that-that
 title: A Quote
 wordpress_id: 500
-categories:
-- Experiences
 post_format:
 - Quote
 tags:
 - Books
-- quote
-- stephen chbosky
+- Experiences
+- Quotes
 ---
 
 <blockquote>

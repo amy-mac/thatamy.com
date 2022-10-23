@@ -11,7 +11,7 @@ tags:
 - Shakespeare
 - Theatre
 - Reviews
-- vacation
+- Vacation
 ---
 <figure class="text-center">
   <a href="http://www.flickr.com/photos/amy_sloan/7777954356/" title="100_0386 by AMsloan, on Flickr"><img src="http://farm9.staticflickr.com/8298/7777954356_51074cb040_z.jpg" width="640" height="480" alt="100_0386"></a>

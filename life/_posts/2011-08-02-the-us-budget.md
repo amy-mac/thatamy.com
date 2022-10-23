@@ -10,9 +10,7 @@ wordpress_id: 657
 post_format:
 - Quote
 tags:
-- America
 - Quotes
-- Personal
 ---
 
 <blockquote>

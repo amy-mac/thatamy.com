@@ -6,7 +6,7 @@ layout: post
 slug: nursing-in-public
 title: Nursing in Public
 tags:
-- babies
+- Babies
 - Parenting
 - Traveling
 share: true

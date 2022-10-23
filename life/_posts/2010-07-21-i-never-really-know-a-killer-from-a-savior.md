@@ -6,7 +6,7 @@ layout: post
 slug: i-never-really-know-a-killer-from-a-savior
 title: I Never Really Know a Killer from a Savior
 wordpress_id: 981
-categories:
+tags:
 - Dreams &amp; Goals
 - Experiences
 ---

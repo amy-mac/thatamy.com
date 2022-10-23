@@ -7,10 +7,9 @@ layout: post
 slug: tonight-is-unreal
 title: A Good Night
 wordpress_id: 445
-categories:
-- Experiences
 tags:
-- opera
+- Experiences
+- Opera
 ---
 
 Tonight is unreal, and a reminder that once in a while I do catch a break. Sitting at the opera in seats I will never in my lifetime be able to afford, receiving a special backstage tour which was awe-inspiring, and being able to share it with a partner who loves both me and opera = about as good as it can get.

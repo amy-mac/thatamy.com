@@ -6,7 +6,7 @@ layout: post
 slug: all-i-want-for-christmas-is-you
 title: All I Want for Christmas is You
 wordpress_id: 1004
-categories:
+tags:
 - Experiences
 - Work
 ---

@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-07-14 02:45:49+00:00
 layout: post
 slug: today-was-just-a-day-fading-into-another-and-that-cant-be-what-a-life-is-for

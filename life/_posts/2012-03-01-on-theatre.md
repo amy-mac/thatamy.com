@@ -8,8 +8,7 @@ slug: for-a-while-the-excitement-and-passion-had-been
 title: On Theatre
 wordpress_id: 494
 tags:
-- passion
-- performance
+- Performance
 - Theatre
 ---
 

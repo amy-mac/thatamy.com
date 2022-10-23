@@ -9,7 +9,7 @@ title: Ode to My Birthday
 wordpress_id: 1002
 tags:
 - Goals
-- lyrics
+- Lyrics
 - Relationships
 ---
 

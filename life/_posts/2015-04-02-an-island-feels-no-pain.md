@@ -6,7 +6,7 @@ layout: post
 slug: an-island-feels-no-pain
 title: An Island Feels No Pain
 tags:
-- friends
+- Friends
 - Relationships
 share: false
 ---

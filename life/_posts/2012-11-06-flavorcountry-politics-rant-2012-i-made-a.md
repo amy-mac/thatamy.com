@@ -10,7 +10,6 @@ wordpress_id: 363
 post_format:
 - Gallery
 tags:
-- Elections
 - Inspirational
 - Links
 - Politics

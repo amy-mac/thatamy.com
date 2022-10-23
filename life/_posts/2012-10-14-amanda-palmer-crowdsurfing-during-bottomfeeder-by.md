@@ -6,18 +6,11 @@ layout: post
 slug: amanda-palmer-crowdsurfing
 title: Amanda Palmer concert
 wordpress_id: 391
-categories:
-- Experiences
-- Music
 post_format:
 - Video
 tags:
-- amanda palmer
-- crowdsurfing
-- grand theft orchestra
-- live music
-- the fillmore
-- theatre is evil
+- Experiences
+- Music
 ---
 
 <div class="flex-video widescreen">

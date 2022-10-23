@@ -8,7 +8,7 @@ slug: thoughts-on-close-friendships
 title: Thoughts on Close Friendships
 wordpress_id: 464
 tags:
-- friends
+- Friends
 - Relationships
 ---
 

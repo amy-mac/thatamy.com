@@ -6,7 +6,7 @@ layout: post
 slug: random-thought-of-the-day
 title: Random thought of the day
 wordpress_id: 984
-categories:
+tags:
 - Dreams &amp; Goals
 ---
 

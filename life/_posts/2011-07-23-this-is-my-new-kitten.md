@@ -7,15 +7,10 @@ layout: post
 slug: this-is-my-new-kitten
 title: New Kitten
 wordpress_id: 688
-categories:
-- Cats
 post_format:
 - Image
 tags:
-- cat
-- Inara
-- kitten
-- kitty
+- Cats
 ---
 
 <figure class="text-center">

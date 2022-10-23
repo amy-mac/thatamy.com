@@ -10,7 +10,6 @@ wordpress_id: 993
 tags:
 - Experiences
 - Quotes
-- Personal
 post_format:
 - Quote
 ---

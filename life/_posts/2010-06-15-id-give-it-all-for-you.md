@@ -8,7 +8,6 @@ title: I'd Give It All for You
 wordpress_id: 16
 tags:
 - Experiences
-- Personal
 ---
 
 > God knows it's easy to run, easy to run from the people you love and harder to stand and fight for the things you believe...

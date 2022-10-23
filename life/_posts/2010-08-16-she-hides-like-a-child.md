@@ -6,7 +6,7 @@ layout: post
 slug: she-hides-like-a-child
 title: She Hides Like a Child
 wordpress_id: 986
-categories:
+tags:
 - Experiences
 ---
 

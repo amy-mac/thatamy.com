@@ -7,8 +7,8 @@ published: false
 slug: that-never-talking-thing-you-do-its-effective
 title: That never talking thing you do, it's effective
 wordpress_id: 998
-categories:
-- All the world's a stage
+tags:
+- Theatre
 - Experiences
 ---
 

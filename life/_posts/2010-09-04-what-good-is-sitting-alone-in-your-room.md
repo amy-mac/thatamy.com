@@ -7,7 +7,7 @@ layout: post
 slug: what-good-is-sitting-alone-in-your-room
 title: What Good is Sitting Alone in Your Room?
 wordpress_id: 992
-categories:
+tags:
 - Dreams &amp; Goals
 - Links
 ---

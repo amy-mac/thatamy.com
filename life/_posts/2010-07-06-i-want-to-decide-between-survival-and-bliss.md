@@ -6,7 +6,7 @@ layout: post
 slug: i-want-to-decide-between-survival-and-bliss
 title: I want to decide between survival and bliss
 wordpress_id: 979
-categories:
+tags:
 - Experiences
 - Links
 - Work

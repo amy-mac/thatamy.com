@@ -6,7 +6,7 @@ layout: post
 slug: i-thought-i-was-losing-you-funny-how-the-opposite-was-true
 title: I thought I was losing you, funny how the opposite was true
 wordpress_id: 989
-categories:
+tags:
 - Experiences
 ---
 

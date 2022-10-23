@@ -11,7 +11,7 @@ tags:
 - Experiences
 - Relationships
 - Traveling
-- vacation
+- Vacation
 ---
 
 There wasn't much discussion of where we'd be going for our Honeymoon. Scotland was the natural choice. I had never been the UK, and had always wanted to visit it, and Jesse was keen on introducing his new bride to his heritage. So as soon as we got engaged I set out planning and researching for the honeymoon and along the way have grown increasingly fascinated by Scotland's history. Here's a breakdown of our trip:

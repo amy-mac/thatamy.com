@@ -6,7 +6,7 @@ layout: post
 slug: im-not-going-to-live-my-life-one-side-of-an-ampersand
 title: I'm not going to live my life one side of an ampersand
 wordpress_id: 976
-categories:
+tags:
 - Dreams &amp; Goals
 - Work
 ---

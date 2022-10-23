@@ -6,7 +6,7 @@ layout: post
 slug: youll-soon-see-exactly-what-ive-got-instead-of-what-im-not
 title: You'll soon see exactly what I've got instead of what I'm not!
 wordpress_id: 69
-categories:
+tags:
 - Dreams &amp; Goals
 - Theatre
 ---

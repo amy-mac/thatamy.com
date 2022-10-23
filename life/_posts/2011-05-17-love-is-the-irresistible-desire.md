@@ -7,7 +7,7 @@ slug: love-is-the-irresistible-desire
 title: Love is...
 wordpress_id: 800
 tags:
-- love
+- Love
 - Relationships
 - Quotes
 post_format:

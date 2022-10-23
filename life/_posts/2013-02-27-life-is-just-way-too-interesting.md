@@ -6,8 +6,7 @@ layout: post
 slug: life-is-just-way-too-interesting
 title: LIFE IS JUST WAY TOO INTERESTING
 tags:
-- hobbies
-- time management
+- Hobbies
 ---
 
 LIFE IS JUST WAY TOO INTERESTING AND FASCINATING, I JUST CAN'T TAKE IT ANYMORE!

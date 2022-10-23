@@ -5,7 +5,6 @@ date: 2017-08-15 08:56:11+00:00
 layout: post
 title: If You're Not Outraged, You're Not Paying Attention
 tags:
-- Racism
 - Virginia
 - Politics
 - Privilege

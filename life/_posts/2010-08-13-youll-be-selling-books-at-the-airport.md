@@ -7,7 +7,7 @@ layout: post
 slug: youll-be-selling-books-at-the-airport
 title: You'll Be Selling Books at the Airport
 wordpress_id: 985
-categories:
+tags:
 - Dreams &amp; Goals
 - Experiences
 - Theatre

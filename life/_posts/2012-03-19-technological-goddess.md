@@ -8,7 +8,7 @@ slug: technological-goddess
 title: Technological Goddess
 wordpress_id: 478
 tags:
-- love
+- Love
 - Relationships
 ---
 

@@ -7,16 +7,11 @@ layout: post
 slug: golden-gate-bridge
 title: Golden Gate Bridge
 wordpress_id: 402
-categories:
-- Inspirational
-- Pictures
 post_format:
 - Image
 tags:
-- Fleet Week Cruise
-- Golden Gate Bridge
-- San Francisco
-- San Francisco Bay
+- Inspirational
+- Pictures
 ---
 
 <figure class="text-center">

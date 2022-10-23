@@ -7,7 +7,7 @@ layout: post
 slug: everywhere-i-look-its-like-a-scene-from-a-book
 title: Everywhere I Look it's Like a Scene from a Book
 wordpress_id: 102
-categories:
+tags:
 - Theatre
 - Dreams &amp; Goals
 - Experiences

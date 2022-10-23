@@ -1,13 +1,12 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-07-25 00:44:53+00:00
 layout: post
 slug: chimerical-highly-unrealistic-mildly-fanciful
 title: 'Chimerical: Highly unrealistic; mildly fanciful'
 wordpress_id: 63
-categories:
+tags:
 - Dreams &amp; Goals
 - Experiences
 - Theatre

@@ -9,13 +9,8 @@ title: Catching Her Tail
 wordpress_id: 433
 post_format:
 - Video
-categories:
-- Cats
 tags:
-- cat
-- kitty
-- pets
-- silly
+- Cats
 ---
 <div class="flex-video widescreen">
   <iframe width="853" height="480" src="//www.youtube.com/embed/sYj0MkRQ4N0?rel=0&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>

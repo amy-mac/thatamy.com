@@ -6,10 +6,8 @@ layout: post
 slug: being-privileged
 title: Being Privileged
 tags:
-- Police
 - Politics
 - Privilege
-- Riots
 share: true
 ---
 A couple days ago I saw post after post on Facebook made by white people that kept saying the same thing about the Baltimore riots. The sentiment tended to be, "I get why people are mad, _BUT why can't they protest peacefully..._" and it really started to infuriate me, because 1) No they don't get it, and 2) Everyone was focusing on the riots as opposed to the loss of human life like the former was so much more important. I'm not saying I advocate riots, and it's also worth noting that lots of people did protest peacefully, but the riots are a symptom and not the root problem. Now I'm not saying I understand what black people are going through, because how could I? The entire point of this post is that I'm willing to admit that I can't even imagine what it's like to live with that kind of oppression and fear and I wish more (white) people would recognize their privilege. I may be half Mexican but I have never identified as anything but white. Let me tell you a little story about my privilege.
