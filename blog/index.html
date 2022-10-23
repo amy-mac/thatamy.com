@@ -49,29 +49,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber
   <hr />
 {%- endfor -%}
 
-<nav class="pagination-centered">
-  <ul class="pagination">
-    {%- if pagination.href.previous -%}
-      <li class="arrow"><a href="{{ pagination.href.previous }}">&laquo;</a></li>
-    {%- else -%}
-      <li class="arrow unavailable">&laquo;</li>
-    {%- endif -%}
-
-    {%- for pageEntry in pagination.hrefs -%}
-      {%- if page.url == pageEntry -%}
-        <li class="current"><a aria-current="page" href="{{ pageEntry }}">{{ forloop.index }}</a></li>
-      {%- else -%}
-        <li><a href="{{ pageEntry }}">{{ forloop.index }}</a></li>
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- if pagination.href.next -%}
-      <li class="arrow"><a href="{{ pagination.href.next }}">&raquo;</a></li>
-    {%- else -%}
-      <li class="arrow unavailable">&raquo;</li>
-    {%- endif -%}
-  </ul>
-</nav>
+{%- include pagination.html -%}
 
 <p class="rss-subscribe text-right">
   <i class="fi-rss"></i>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>

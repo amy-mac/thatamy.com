@@ -14,4 +14,4 @@ share: true
 [iambeta](http://iambeta.tumblr.com/post/15314080408/geek-vs-nerd):
 
 
-[![Geeks vs Nerds](http://www.mastersinit.org/geeks-vs-nerds/geek-nerd.jpg)](http://www.mastersinit.org/geeks-vs-nerds/)
+[![Geeks vs Nerds](https://www.mastersinit.org/geeks-vs-nerds/geek-nerd.jpg)](http://www.mastersinit.org/geeks-vs-nerds/)

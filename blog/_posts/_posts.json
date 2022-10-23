@@ -1,0 +1,5 @@
+{
+  "comments": true,
+  "permalink": "blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "share": true
+}

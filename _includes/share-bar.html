@@ -1,3 +1,8 @@
+{% if page.url contains "blog" %}
+  {% assign twitterHandle = site.twitter_username %}
+{% else % }
+  {% assign twitterHandle = site.twitter_username_personal %}
+{% endif %}
 <aside id="share-bar">
   <h4>Share this:</h4>
 
@@ -8,25 +13,27 @@
       <i class="fi-social-facebook share-button"></i>
     </a>
 
-    <a href="https://twitter.com/intent/tweet?text={{ title }}{% if site.twitter_username %}&via={{ site.twitter_username }}{% endif %}&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+    <a href="https://twitter.com/intent/tweet?text={{ title }}{% if twitterHandle %}&via={{ twitterHandle }}{% endif %}&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
       <i class="fi-social-twitter share-button"></i>
     </a>
 
-    <a href="http://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}"
+    <a href="https://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}"
       onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
       title="Share on Tumblr" >
       <i class="fi-social-tumblr share-button"></i>
     </a>
 
-    <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}"
-      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
-      title="Share on Reddit" >
-      <i class="fi-social-reddit share-button"></i>
-    </a>
+    {%- if page.url contains "blog" -%}
+      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on Reddit" >
+        <i class="fi-social-reddit share-button"></i>
+      </a>
 
-    <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title }}&summary={{ description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
-      <i class="fi-social-linkedin share-button"></i>
-    </a>
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title }}&summary={{ description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+        <i class="fi-social-linkedin share-button"></i>
+      </a>
+    {%- endif -%}
 
     <a href="mailto:?subject={{ title }}&amp;body=Check out this post {{ site.url }}{{ page.url }}"
       title="Share via Email" >
