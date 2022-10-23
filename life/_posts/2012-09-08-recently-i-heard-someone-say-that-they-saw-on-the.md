@@ -1,6 +1,7 @@
 ---
 author: amy@amy-mac.com
 comments: true
+share: true
 date: 2012-09-08 21:45:12+00:00
 layout: post
 slug: recently-i-heard-someone-say-that-they-saw-on-the

@@ -13,7 +13,7 @@ share: true
 
 During Jesse's Spring Break we took a trip to Virginia for a number of reasons. My little sister Katie graduated college this May and we weren't going to be able to go out there due to Jesse's teaching duties, but I still wanted to pay her a visit. Originally Jesse couldn't imagine why he'd ever want to go to Virginia, but when he found out that Monticello is in the very town that Katie goes to college, he became interested. The trip then evolved into one that would satisfy Jesse's history interests while I got to enjoy being in an area I loved, and used to live in, as well as see some of my good friends. I assured Jesse that the area was full of history but it wasn't until we were there that he connected geographically exactly where it was I had lived. Needless to say, he was pleased and excited.
 
-##Day One
+## Day One
 We left early on a Wednesday to arrive in Richmond, Virginia during the afternoon and drove from there to Charlottesville. After checking into our comfy AirBNB house, we rested and then headed to the University area to eat dinner. Jesse had his local beers, I had my local ciders, and we enjoyed hushpuppies (yay Southern food!). After dinner we walked over to Dunkin' Donuts/Baskin Robbins where we were going to meet up for ice cream with Katie and my other friend Wes who I hadn't seen in 4 years. I can't even describe how great it felt to hang out with both Wes and Katie even for a little bit that night. Love them so much.
 
 <figure class="text-center">
@@ -23,7 +23,7 @@ We left early on a Wednesday to arrive in Richmond, Virginia during the afternoo
   <figcaption>Katie, me, and Wes</figcaption>
 </figure>
 
-##Day Two
+## Day Two
 We got up early to get to [Monticello](http://www.monticello.org/) right as it opened. 
 We had a tour of the house scheduled first thing, so we didn't even eat breakfast first. 
 It was a really beautiful day and everything around the estate was gorgeous. You're not allowed 
@@ -31,7 +31,7 @@ to take pictures inside of the house but we got plenty of the outside. We took o
 inside the house and that was pretty neat.
 
 <figure class="text-center">
-  <a class="th" href="https://www.flickr.com/photos/amy_sloan/14108738954" title="P1020651 by Amy MacKinnon, on Flickr"><img src="https://farm8.staticflickr.com/7177/14108738954_1c5a0fe663_z.jpg" width="640" height="480" alt="Jesse standing in front of the back of Monticello"></a>
+  <a class="th" data-flickr-embed="true" href="https://www.flickr.com/photos/amy_sloan/14108738954" title="P1020651"><img src="https://live.staticflickr.com/7177/14108738954_3cfafe8f8e_z.jpg" width="640" height="480" alt="The back of Monticello with Jesse standing in the foreground"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   <figcaption>Jesse standing in front of the back of the house</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ pleasure.
 After that we left Katie to work on an essay while we went and napped and then we all went out to 
 dinner at a restaurant downtown.
 
-##Day Three
+## Day Three
 We had breakfast at Bodo's, where Katie told us we must absolutely eat and then headed out on the 
 road to Newport News. We arrived much earlier in the day than I originally thought we would so 
 we went to the [Mariner's Museum](http://www.marinersmuseum.org/), which I had been to once or 
@@ -65,7 +65,7 @@ that I used to go to a lot called Smokey Bones.
   <figcaption>Jesse on the Monitor replica</figcaption>
 </figure>
 
-##Day Four
+## Day Four
 We arrived at [Colonial Williamsburg](http://www.colonialwilliamsburg.com/) right after it opened. 
 The weather was drizzly and a bit chilly but I assured Jesse that if you worried about rain 
 no one would ever get anything done in Virginia. We opted to walk across the footbridge from the 
@@ -78,9 +78,7 @@ I started to tear up when we were talking to one of the gentlemen in a slave dwe
 it'd be a miracle if I could go the whole day without crying.
 
 <figure class="text-center">
-  <a class="th" href="https://www.flickr.com/photos/amy_sloan/13922066509" title="P1020810 by Amy MacKinnon, on Flickr">
-    <img src="https://farm8.staticflickr.com/7338/13922066509_cf66945010_z.jpg" width="640" height="480" alt="Soldiers at Colonial Williamsburg">
-  </a>
+  <a class="th" data-flickr-embed="true" href="https://www.flickr.com/photos/amy_sloan/13922066509" title="P1020810"><img src="https://live.staticflickr.com/7338/13922066509_4eb3a92f10_z.jpg" width="640" height="480" alt="Colonial soldiers playing instruments"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </figure>
 
 There was a lot to see and do there and Jesse was really impressed with the largeness and quality
@@ -93,7 +91,7 @@ was very authentic. We visited the capitol and went into lots of shops. Jesse ch
 the local soldiers. I got an awesome new hat. Later in the night we went on a ghost tour that my 
 friend Bill was leading. It was a really terrific day and we both had a great time.
 
-##Day Five
+## Day Five
 I finally got to introduce Jesse to Cracker Barrel and he agreed with me that they're pretty great. 
 Jesse obliged me by going to [Busch Gardens](http://seaworldparks.com/en/buschgardens-williamsburg/), 
 which I assured him that he would enjoy because of the beauty, atmosphere, and shows, but once we 
@@ -104,7 +102,7 @@ realized, otherwise I probably wouldn't have taken him. We made the most of it t
 Ireland, which I knew he would, as well as the shows in Germany. After Busch we just went back
  to the hotel and relaxed.
 
-##Day Six
+## Day Six
 On this morning we headed over to the [Jamestown Settlement](http://historyisfun.org/), the first 
 permanent British colony in America. They teach you in elementary school all about the pilgrims that 
 came to Plymouth Rock, but that was after this settlement, and they probably leave out Jamestown 
@@ -115,7 +113,7 @@ because it wasn't exactly a happy story. I find it fitting to know just how Amer
  visitor's center.
 
 <figure>
-  <a class="th" href="https://www.flickr.com/photos/amy_sloan/13922216898" title="P1020860 by Amy MacKinnon, on Flickr"><img src="https://farm3.staticflickr.com/2907/13922216898_59af6dddc4_z.jpg" width="640" height="480" alt="A replica of one of the ships that brought the first settlers to Jamestowne"></a>
+  <a class="th" data-flickr-embed="true" href="https://www.flickr.com/photos/amy_sloan/13922216898" title="P1020860"><img src="https://live.staticflickr.com/2907/13922216898_06cfa40bde_z.jpg" width="640" height="480" alt=""></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   <figcaption>A replica of one of the ships that brought the first settlers to Jamestowne</figcaption>
 </figure>
 
@@ -133,7 +131,7 @@ In authentic fashion, the only light came from the candles on the table so it wa
 room we were dining. The menu had some pretty tasty (and expensive) things on it, but we were 
 willing to splurge for the experience. We loved everything about it.
 
-##Day Seven
+## Day Seven
 This was somewhat of a free day. I had planned on going to Virginia Beach to lay out if it was 
 warm enough. I thought it wasn't going to be, but it turned out that it was. However instead of 
 laying out on the beach, we went to the Yorktown Battlefield where General Lord Cornwallis 
@@ -146,7 +144,7 @@ Jesse made me walk across the grass field of sharp stickers in my sandals toward
 the French took, just so he could feel like he was storming it. What I do for love!
 
 <figure class="text-center">
-  <a class="th" href="https://www.flickr.com/photos/amy_sloan/13922971107" title="P1030059 by Amy MacKinnon, on Flickr"><img src="https://farm6.staticflickr.com/5497/13922971107_a786a8c690_z.jpg" width="640" height="480" alt="P1030059"></a>
+  <a class="th" data-flickr-embed="true" href="https://www.flickr.com/photos/amy_sloan/13922971107" title="P1030059"><img src="https://live.staticflickr.com/5497/13922971107_570032fa8c_z.jpg" width="640" height="480" alt="A green hill with a flag and a cannon"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   <figcaption>The redoubt that the French took</figcaption>
 </figure>
 

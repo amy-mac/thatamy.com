@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2012-05-03 02:17:13+00:00
 layout: post
 slug: thoughts-on-close-friendships

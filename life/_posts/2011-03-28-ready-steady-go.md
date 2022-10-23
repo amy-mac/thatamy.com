@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2011-03-28 00:06:32+00:00
 layout: post
 slug: ready-steady-go

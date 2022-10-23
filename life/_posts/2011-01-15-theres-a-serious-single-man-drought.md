@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2011-01-15 20:07:07+00:00
 layout: post
 slug: theres-a-serious-single-man-drought

@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2012-03-01 01:39:00+00:00
 layout: post
 slug: for-a-while-the-excitement-and-passion-had-been

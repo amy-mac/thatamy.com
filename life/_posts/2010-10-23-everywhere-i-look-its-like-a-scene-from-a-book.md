@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-10-23 17:44:55+00:00
 layout: post
 slug: everywhere-i-look-its-like-a-scene-from-a-book

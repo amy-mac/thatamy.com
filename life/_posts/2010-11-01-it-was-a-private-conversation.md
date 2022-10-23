@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-11-01 03:50:51+00:00
 layout: post
 slug: it-was-a-private-conversation

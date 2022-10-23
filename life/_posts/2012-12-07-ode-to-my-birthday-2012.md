@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2012-12-07 21:18:09+00:00
 layout: post
 slug: ode-to-my-birthday-2012

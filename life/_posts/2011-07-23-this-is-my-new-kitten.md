@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2011-07-23 21:12:07+00:00
 layout: post
 slug: this-is-my-new-kitten

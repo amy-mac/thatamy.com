@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-12-04 05:44:58+00:00
 layout: post
 slug: im-crazy-for-trying-and-crazy-for-crying

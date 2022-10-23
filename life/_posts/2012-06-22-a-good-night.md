@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2012-06-22 04:00:07+00:00
 layout: post
 slug: tonight-is-unreal

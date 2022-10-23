@@ -14,3 +14,6 @@ tags:
 ---
 
 Our first holiday tree! And my first one in 15 years! at The Pie Palace – View on [Path](https://path.com/p/u9zFS).
+
+**Update:**<br/>
+Path has since ceased to exist and of course it was stupid to host anything there.

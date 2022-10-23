@@ -6,7 +6,6 @@ layout: post
 title: Leaving the Island
 tags:
 - Oakland
-share: true
 ---
 
 **Big announcement that is both happy and sad**

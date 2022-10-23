@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2013-09-03 20:46:54+00:00
 layout: post
 slug: lost-music

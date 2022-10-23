@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2010-08-27 15:31:01+00:00
 layout: post
 slug: lady-peaceful-lady-happy-thats-what-i-long-to-be

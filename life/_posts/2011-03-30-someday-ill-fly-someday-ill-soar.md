@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2011-03-30 18:50:00+00:00
 layout: post
 slug: someday-ill-fly-someday-ill-soar

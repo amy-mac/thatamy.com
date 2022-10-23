@@ -1,7 +1,6 @@
 ---
 author: amy@amy-mac.com
 comments: true
-share: true
 date: 2011-12-02 03:50:37+00:00
 layout: post
 slug: where-do-we-go-from-here

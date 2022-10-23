@@ -17,4 +17,5 @@ tags:
 <figure class="text-center">
   <a href="http://www.flickr.com/photos/amy_sloan/8146231997/" title="100_0549 by AMsloan, on Flickr"><img src="http://farm9.staticflickr.com/8323/8146231997_087433a018_z.jpg" width="529" height="640" alt="100_0549"></a>
 </figure>
+
 Our costumes as King Aragorn and Queen Arwen. Unfortunately this was right before we fixed the bottom of Jesse's costume (it was layered wrong) but we're still pretty good-looking :-)
