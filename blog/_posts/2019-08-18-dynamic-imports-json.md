@@ -12,7 +12,6 @@ tags:
 ## TL:DR
 If you want to do a dynamic import of JSON with Webpack be sure to account for a JSON file not having a default export when you're trying to extract the value and call `default` on the returned module to return the whole JSON object.
 
-
 <hr/>
 
 As someone who has been around the web development scene a long time and has often worked on large enterprise software that is behind the times, it can be hard to keep up to date with all the latest technology and trends when you don't have opportunities to use it every day at work (and you have two small children at home to take care of). So I've been trying to find some extra time the last couple months to study up on all the tools that I'd be using at my new job and signed up for a [Front End Masters](https://frontendmasters.com/) account to help me brush up.
