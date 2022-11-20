@@ -13,10 +13,6 @@
       <i class="fi-social-facebook share-button"></i>
     </a>
 
-    <a href="https://twitter.com/intent/tweet?text={{ title }}{% if twitterHandle %}&via={{ twitterHandle }}{% endif %}&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
-      <i class="fi-social-twitter share-button"></i>
-    </a>
-
     <a href="https://www.tumblr.com/share/link?url={{ site.url }}{{ page.url }}"
       onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
       title="Share on Tumblr" >
@@ -30,7 +26,7 @@
         <i class="fi-social-reddit share-button"></i>
       </a>
 
-      <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title }}&summary={{ description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title }}&summary={{ description }}&source={{ site.title }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
         <i class="fi-social-linkedin share-button"></i>
       </a>
     {%- endif -%}
