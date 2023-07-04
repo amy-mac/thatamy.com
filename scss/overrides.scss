@@ -256,6 +256,14 @@ span {
   @include border-radius(20px);
 }
 
+.skill__subsection {
+  margin-top: 0.6em;
+}
+
+.skill__subsection + .inline-list {
+  margin-bottom: 0;
+}
+
 // POSTS
 
 code[class] {
