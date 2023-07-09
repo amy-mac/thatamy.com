@@ -2553,25 +2553,9 @@ blockquote p {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
 
   pre,
   blockquote {
@@ -2588,9 +2572,6 @@ blockquote p {
 
   img {
     max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
 
   p,
   h2,

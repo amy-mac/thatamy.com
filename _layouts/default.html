@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/overrides.css">
+    <link rel="stylesheet" href="/assets/css/overrides.css" media="all">
     {% if share %}
       <link rel="stylesheet" href="/assets/css/share-bar.css">
     {% endif %}
@@ -25,7 +25,7 @@
     <body>
       <!-- Header and Nav -->
 
-      <div class="row header">
+      <div class="row header hideForPrint">
         <div class="large-3 columns">
           <h1><a href="/"><img class="u-logo" src="/images/new-logo.png" data-interchange="[/images/new-logo-rt.png, (retina)]"></a></h1>
         </div>
@@ -50,7 +50,7 @@
 
   <!-- Footer -->
 
-    <footer class="row">
+    <footer class="row hideForPrint">
       <div class="large-12 columns">
         <hr>
         <div class="row">

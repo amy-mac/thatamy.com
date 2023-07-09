@@ -19,6 +19,10 @@ $button-sml: 0.975rem 1.65rem 0.9375rem 1.65rem;
 $button-lrg: rem-calc(16);
 
 // Foundation overrides
+abbr {
+  font-size: 100%;
+}
+
 .sub-nav dd {
   margin-left: 0.8rem;
 }
@@ -69,17 +73,6 @@ $button-lrg: rem-calc(16);
   line-height: normal;
   @extend strong;
   color: $dark-gray;
-  .hcard {
-    padding: 0;
-    border: none;
-    .p-name {
-      font-weight: normal;
-      font-size: inherit;
-    }
-  }
-  .hcard:before {
-    content: " by ";
-  }
   span[rel=tag]:before {
     content: " • ";
   }
@@ -117,6 +110,7 @@ h6 {
   font-family: $sans-font;
   font-weight: 400;
   color: $orange;
+  print-color-adjust: exact;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -138,16 +132,31 @@ h6 {
 p,
 ul,
 ol {
-  font-size: 1.1rem;
   font-weight: 300;
+}
+
+p:where(:last-child) {
+  margin-bottom: 0;
+}
+
+.p-summary {
+  margin-bottom: revert;
+}
+
+@media screen {
+  p,
+  ul,
+  ol {
+    font-size: 1.1rem;
+  }
 }
 
 a {
   color: $light-blue;
-}
-
-a:hover {
-  color: $link-hover;
+  print-color-adjust: exact;
+  &:hover {
+    color: $link-hover;
+  }
 }
 
 strong {
@@ -166,8 +175,6 @@ small {
 hr {
   border-color: $lt-orange;
 }
-
-
 
 aside {
   padding-top: 1em;
@@ -317,5 +324,74 @@ code[class] {
     border-radius: 5px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     height: 30px;
+  }
+}
+
+@page {
+  size: 8.5in 11in;
+  margin-left: 0.5in;
+  margin-right: 0.5in;
+  margin-top: 0.25in;
+  margin-bottom: 0.25in;
+}
+
+.printOnly {
+  display: none;
+}
+
+@media print {
+  :root {
+    font-size: 10pt;
+  }
+  .hideForPrint {
+    display: none;
+  }
+
+  .printOnly {
+    display: initial;
+  }
+
+  .columns {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  abbr {
+    border-bottom: none;
+  }
+
+  .h-resume {
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 1.45rem;
+    }
+    h3 {
+      font-size: 1.275rem;
+      margin-bottom: 0.3rem;
+    }
+    h5 {
+      font-size: 1.05rem;
+    }
+    ul.h-card {
+      padding-top: 0;
+      > li {
+        &:not(.hideForPrint) {
+          display: inline-block;
+        }
+      }
+    }
+
+    .skill__subsection + .inline-list {
+      font-size: 9pt;
+    }
   }
 }
