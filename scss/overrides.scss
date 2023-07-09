@@ -135,8 +135,12 @@ ol {
   font-weight: 300;
 }
 
-p:last-child {
+p:where(:last-child) {
   margin-bottom: 0;
+}
+
+.p-summary {
+  margin-bottom: revert;
 }
 
 @media screen {
@@ -388,10 +392,6 @@ code[class] {
 
     .skill__subsection + .inline-list {
       font-size: 9pt;
-    }
-
-    .p-summary {
-      margin-bottom: revert;
     }
   }
 }
