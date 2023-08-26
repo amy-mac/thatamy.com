@@ -83,11 +83,12 @@ abbr {
 }
 
 .p-description {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
 }
 
 ul.h-calendar {
+  margin-bottom: 20px;
   margin-left: 0;
 }
 
@@ -263,12 +264,41 @@ span {
   @include border-radius(20px);
 }
 
+.h-resume h2 {
+  border-bottom: 1px solid $lt-orange;
+  margin-bottom: 10px;
+}
+
+.jobTitle__container {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  > h3 {
+    margin: 0;
+  }
+}
+
+.subheader {
+  margin-top: 0;
+}
+
 .skill__subsection {
+  color: #000;
   margin-top: 0.6em;
 }
 
 .skill__subsection + .inline-list {
   margin-bottom: 0;
+  margin-left: 0;
+  > li {
+    margin-left: 0;
+    &:not(:last-child) {
+      &::after {
+        content: ",";
+        margin-right: 0.5ch;
+      }
+    }
+  }
 }
 
 // POSTS
@@ -327,6 +357,8 @@ code[class] {
   }
 }
 
+// PRINT STYLES
+
 @page {
   size: 8.5in 11in;
   margin-left: 0.5in;
@@ -341,7 +373,7 @@ code[class] {
 
 @media print {
   :root {
-    font-size: 10pt;
+    font-size: 9pt;
   }
   .hideForPrint {
     display: none;
@@ -375,12 +407,27 @@ code[class] {
       font-size: 1.45rem;
     }
     h3 {
-      font-size: 1.275rem;
-      margin-bottom: 0.3rem;
+      font-size: 1.2rem;
+      margin-bottom: 0;
     }
-    h5 {
-      font-size: 1.05rem;
+    .p-description {
+      margin-bottom: 4px;
+      margin-top: 4px;
     }
+    .skill__subsection {
+      font-size: 1rem;
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
+    .h-calendar {
+      > .h-card {
+        padding: 0;
+        & + .h-card {
+          margin-top: 14px;
+        }
+      }
+    }
+    /* Contact Info */
     ul.h-card {
       padding-top: 0;
       > li {
@@ -389,7 +436,6 @@ code[class] {
         }
       }
     }
-
     .skill__subsection + .inline-list {
       font-size: 9pt;
     }
