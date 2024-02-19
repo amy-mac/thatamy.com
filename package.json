@@ -1,5 +1,5 @@
 {
-  "name": "amymacblog",
+  "name": "thatamyblog",
   "version": "3.0.0",
   "description": "My personal blog; mostly about tech stuff",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/amy-mac/amy-mac.github.io.git"
   },
-  "author": "Amy MacKinnon",
+  "author": "Amy St. John",
   "license": "ISC",
   "homepage": "http://amy-mac.com",
   "devDependencies": {

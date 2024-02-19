@@ -6,6 +6,20 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const timeToRead = require("eleventy-plugin-time-to-read");
 
+const PASSTHROUGH_ITEMS = [
+  "assets",
+  "images",
+  "humans.txt",
+  "CNAME",
+  "favicon.ico",
+  "favicon-16x16.png",
+  "favicon-32x32.png",
+  "apple-touch-icon.png",
+  "android-chrome-192x192.png",
+  "android-chrome-512x512.png",
+  "site.webmanifest"
+];
+
 const MARKDOWN_OPTIONS = {
   html: true,
   breaks: false,
@@ -17,11 +31,9 @@ module.exports = (eleventyConfig) => {
   const markdownLibrary = markdownIt(MARKDOWN_OPTIONS);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("humans.txt");
-  eleventyConfig.addPassthroughCopy("CNAME");
-  eleventyConfig.addPassthroughCopy("favicon.ico");
+  PASSTHROUGH_ITEMS.forEach((item) => {
+    eleventyConfig.addPassthroughCopy(item);
+  });
 
   eleventyConfig.addPlugin(excerpt);
   eleventyConfig.addPlugin(syntaxHighlight);
