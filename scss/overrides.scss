@@ -411,6 +411,9 @@ code[class] {
       font-size: 1.2rem;
       margin-bottom: 0;
     }
+    .row:first-child {
+      margin-bottom: 10px;
+    }
     .p-description {
       margin-bottom: 4px;
       margin-top: 4px;
@@ -431,6 +434,7 @@ code[class] {
     /* Contact Info */
     ul.h-card {
       padding-top: 0;
+      padding-bottom: 0;
       > li {
         &:not(.hideForPrint) {
           display: inline-block;
