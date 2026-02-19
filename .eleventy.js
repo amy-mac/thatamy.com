@@ -1,5 +1,3 @@
-const excerpt = require("eleventy-plugin-excerpt");
-const fs = require("fs");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -35,26 +33,21 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy(item);
   });
 
-  eleventyConfig.addPlugin(excerpt);
+  eleventyConfig.addShortcode("excerpt", function (post) {
+    if (!post || !post.templateContent) return "";
+    if (post.data && post.data.excerpt) return post.data.excerpt;
+    const content = post.templateContent;
+    const index = content.indexOf("</p>");
+    return index !== -1 ? content.slice(0, index + 4) : "";
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(timeToRead);
 
-  eleventyConfig.setBrowserSyncConfig({
-    files: "./_site/assets/css/*.css",
-    callbacks: {
-      ready: function (err, bs) {
-        bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync("_site/404.html");
-          // Add 404 http status code in request header.
-          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
+  eleventyConfig.setServerOptions({
+    watch: ["./_site/assets/css/*.css"],
   });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
@@ -72,8 +65,16 @@ module.exports = (eleventyConfig) => {
     if (list.length === 2) {
       return list.join(" and ");
     }
-    const lastWord = list.splice(list.length - 1, 1);
-    return list.join(", ") + ", and " + lastWord[0];
+    const lastWord = list[list.length - 1];
+    return list.slice(0, -1).join(", ") + ", and " + lastWord;
+  });
+
+  eleventyConfig.addLiquidFilter("date_to_xmlschema", function (date) {
+    return date ? new Date(date).toISOString() : "";
+  });
+
+  eleventyConfig.addLiquidFilter("url_escape", function (str) {
+    return encodeURIComponent(str || "");
   });
 
   return {

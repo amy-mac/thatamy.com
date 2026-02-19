@@ -1,4 +1,4 @@
 {
-  "permalink": "life/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | title }}/",
+  "permalink": "life/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "share": false
 }
