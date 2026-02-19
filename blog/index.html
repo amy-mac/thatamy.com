@@ -49,8 +49,8 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber
   <hr />
 {%- endfor -%}
 
-{%- include pagination.html -%}
+{%- include "pagination.html" -%}
 
 <p class="rss-subscribe text-right">
-  <i class="fi-rss"></i>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+  <i class="fi-rss"></i>subscribe <a href="/feed.xml">via RSS</a>
 </p>

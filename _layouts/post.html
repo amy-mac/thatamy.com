@@ -39,7 +39,7 @@ layout: default
       </div>
 
       {% if share %}
-        {% include share-bar.html %}
+        {% include "share-bar.html" %}
       {% endif %}
 
       {% if site.disqus_shortname and comments %}
@@ -50,5 +50,5 @@ layout: default
 
   </div>
 
-  {%- include sidebar.html -%}
+  {%- include "sidebar.html" -%}
 </div>
