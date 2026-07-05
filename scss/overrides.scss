@@ -41,6 +41,7 @@ abbr {
   display: inline-block;
   margin: 0;
   padding: 0.625rem 0.75rem 0.625rem 0;
+  width: 100%;
   li & {
     margin: 0;
     display: block; 
@@ -88,7 +89,12 @@ abbr {
 }
 
 ul.h-calendar {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
   margin-left: 0;
 }
 
@@ -446,6 +452,20 @@ code[class] {
     }
     .skill__subsection + .inline-list {
       font-size: 9pt;
+    }
+
+    .p-description {
+      line-height: 1.4;
+    }
+
+    .p-education {
+      font-size: 8pt;
+      .p-category {
+        font-size: 1.1rem;
+      }
+      .p-description {
+        font-size: 8pt;
+      }
     }
   }
 }
